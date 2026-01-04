@@ -3,12 +3,10 @@ import { motion as Motion } from "framer-motion";
 
 export default function IlluminateTextSection() {
   return (
-    <section className="relative h-screen overflow-hidden flex items-center justify-center">
-
-
+    <section className="relative min-h-screen md:h-screen overflow-hidden flex items-center justify-center px-4 py-12 md:py-0">
 
       {/* Main Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 flex flex-col items-center justify-center text-center">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 flex flex-col items-center justify-center text-center">
 
         {/* BIG MASKED TEXT */}
         <Motion.h1
@@ -16,7 +14,7 @@ export default function IlluminateTextSection() {
           whileInView={{ opacity: 1, scale: 1.08 }}
           transition={{ duration: 1.3, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.3 }}
-          className="text-[22vw] md:text-[18vw] font-black tracking-tighter uppercase leading-none"
+          className="text-[20vw] sm:text-[16vw] md:text-[18vw] font-black tracking-tighter uppercase leading-none"
           style={{
             backgroundImage: "url('/light.jpg')",
             backgroundSize: "cover",
@@ -39,7 +37,7 @@ export default function IlluminateTextSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
           viewport={{ once: false, amount: 0.3 }}
-          className="mt-6 text-[#d4af37] text-sm md:text-base tracking-widest uppercase"
+          className="mt-4 sm:mt-6 text-[#d4af37] text-xs sm:text-sm tracking-widest uppercase"
         >
           Igniting smarter lighting solutions
         </Motion.p>
@@ -50,7 +48,7 @@ export default function IlluminateTextSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.9, duration: 0.6 }}
           viewport={{ once: false, amount: 0.3 }}
-          className="mt-10 px-8 py-3 border border-[#d4af37] text-[#d4af37] uppercase tracking-wider text-sm
+          className="mt-8 sm:mt-10 px-6 sm:px-8 py-2 sm:py-3 border border-[#d4af37] text-[#d4af37] uppercase tracking-wider text-xs sm:text-sm
                      hover:bg-[#d4af37] hover:text-black transition duration-300"
         >
           Explore Our Lighting

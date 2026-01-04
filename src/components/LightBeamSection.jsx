@@ -17,10 +17,10 @@ export default function LightBeamSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative h-screen overflow-hidden flex items-center justify-center"
+      className="relative min-h-screen md:h-screen overflow-hidden flex items-center justify-center px-4 py-12 md:py-0"
     >
       {/* LEFT IMAGE PLACEHOLDER */}
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1/3 h-[70%] ">
+      <div className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 w-1/3 h-[70%] ">
         {/* image yahan add karna */}
         <img
   src="/ata1.jpg"
@@ -31,7 +31,7 @@ export default function LightBeamSection() {
       </div>
 
       {/* RIGHT IMAGE PLACEHOLDER */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/3 h-[70%] opacity-40">
+      <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 w-1/3 h-[70%] opacity-40">
        
 
        
@@ -40,7 +40,7 @@ export default function LightBeamSection() {
       {/* LIGHT BEAM */}
       <Motion.div
         style={{ x: beamX }}
-        className="absolute top-1/2 h-[2px] w-[40%]
+        className="hidden md:block absolute top-1/2 h-[2px] w-[40%]
         bg-gradient-to-r from-transparent via-[#d4af37] to-transparent
         blur-sm"
       />
@@ -48,20 +48,20 @@ export default function LightBeamSection() {
       {/* GLOW */}
       <Motion.div
         style={{ x: beamX }}
-        className="absolute top-1/2 h-[120px] w-[120px]
+        className="hidden md:block absolute top-1/2 h-[120px] w-[120px]
         bg-[#d4af37]/10 rounded-full blur-3xl"
       />
 
       {/* TEXT */}
       <Motion.div
         style={{ opacity: textOpacity, y: textY }}
-        className="relative z-10 text-center px-6 max-w-2xl"
+        className="relative z-10 text-center px-4 sm:px-6 max-w-2xl"
       >
-        <p className="text-sm tracking-widest text-[#d4af37] mb-4">
+        <p className="text-xs sm:text-sm tracking-widest text-[#d4af37] mb-3 sm:mb-4">
           OUR PHILOSOPHY
         </p>
 
-        <h2 className="text-3xl md:text-5xl font-semibold text-white leading-tight">
+        <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight">
           Lighting is not just brightness,
           <br />
           it’s emotion.
