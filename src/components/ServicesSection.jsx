@@ -58,17 +58,12 @@
 //   );
 // }
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function ServicesSection() {
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const navigate = useNavigate();
 
   return (
     <section className="relative min-h-screen overflow-hidden text-white flex items-center justify-center bg-black px-4">
@@ -119,6 +114,7 @@ export default function ServicesSection() {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          onClick={() => navigate("/services")}
           className="mt-8 px-6 py-2 border border-white/60 rounded-full text-sm hover:bg-white hover:text-black transition"
         >
           SEE MORE
@@ -129,7 +125,7 @@ export default function ServicesSection() {
           initial={{ width: 0 }}
           whileInView={{ width: "12rem" }}
           transition={{ duration: 1, delay: 0.7 }}
-          className="mt-16 h-3 rounded-full bg-gradient-to-r from-[#8f7424] via-[#f5e7a1] to-[#8f7424] mx-auto"
+          className="mt-16 h-3 rounded-full bg-linear-to-r from-[#8f7424] via-[#f5e7a1] to-[#8f7424] mx-auto"
         />
       </motion.div>
     </section>

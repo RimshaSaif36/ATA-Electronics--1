@@ -1,5 +1,6 @@
 
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Hero from "./components/Hero";
 import ServicesSection from "./components/ServicesSection";
 import LightBeamSection from "./components/LightBeamSection";
@@ -10,7 +11,9 @@ import IlluminateTextSection from "./components/IlluminateTextSection";
 // import ATAHubSection from "./components/ATAHubSection";
 import Footer from "./components/Footer";
 import BrandsCards from "./components/BrandsCards";
-function App() {
+import ServicesDetailsPage from "./pages/ServicesDetailsPage";
+
+function HomePage() {
   return (
     <div className="relative min-h-screen bg-black">
       <div className="pointer-events-none absolute inset-0 z-0">
@@ -43,6 +46,17 @@ function App() {
         <Footer />
       </div>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/services" element={<ServicesDetailsPage />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -14,7 +14,7 @@ export default function BrandsCards() {
     "/lug.jpg",
     "/long.jpg",
     "/bsi.jpg",
-    "/ind.jpg",
+    "/lnd.jpg",
     "/kld.jpg",
   ];
 
@@ -80,7 +80,7 @@ export default function BrandsCards() {
         
  
        {/* LEFT SLIDER - Full height */} 
-       <div className="w-full lg:w-auto lg:absolute lg:left-82 z-10 flex flex-col items-center justify-center h-[70vh] lg:h-full min-h-[500px]"> 
+       <div className="w-full lg:w-auto lg:absolute lg:left-52 z-10 flex flex-col items-center justify-center h-[70vh] lg:h-full min-h-[500px]"> 
          <Motion.div 
            ref={containerRef} 
           className="flex flex-col items-center space-y-4 md:space-y-6 lg:space-y-10 xl:space-y-12 w-full"
@@ -114,7 +114,7 @@ export default function BrandsCards() {
        </Motion.h2> 
  
        {/* RIGHT SLIDER - Full height */} 
-      <div className="w-full lg:w-auto lg:absolute lg:right-82 z-10 flex flex-col items-center justify-center h-[70vh] lg:h-full min-h-[500px]">
+      <div className="w-full lg:w-auto lg:absolute lg:right-52 z-10 flex flex-col items-center justify-center h-[70vh] lg:h-full min-h-[500px]">
         <Motion.div
           className="flex flex-col items-center space-y-4 md:space-y-6 lg:space-y-10 xl:space-y-12 w-full"
           style={{ y: rightY }}
