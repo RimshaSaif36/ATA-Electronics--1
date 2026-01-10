@@ -37,15 +37,15 @@ function HomePage() {
       <div className="relative z-10">
         <Hero />
         <ExpertiseSection />
-         <IlluminateTextSection />
+        <IlluminateTextSection />
         <ServicesSection />
-       
+
         <LightBeamSection />
         <SinceSection />
         <ATAStorySection />
-        
-        
-        
+
+
+
         <BrandsCards />
         {/* <ATAHubSection /> */}
         <Footer />
