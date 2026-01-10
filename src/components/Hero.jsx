@@ -24,6 +24,7 @@ export default function Hero() {
             <p className="text-[8px] sm:text-xs tracking-widest opacity-70">ATA Electronics</p>
             <p className="text-[7px] sm:text-[10px] opacity-50">LIGHTING LLC</p>
           </div>
+          {/* <img src="/logo.png.png" alt="ATA Electronics Logo" className="w-24 sm:w-32 md:w-40" /> */}
         </div>
 
         <button className="px-4 sm:px-6 py-1.5 sm:py-2 rounded-full bg-[#d4af37] text-black font-medium text-xs sm:text-sm">

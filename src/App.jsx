@@ -12,6 +12,11 @@ import IlluminateTextSection from "./components/IlluminateTextSection";
 import Footer from "./components/Footer";
 import BrandsCards from "./components/BrandsCards";
 import ServicesPage from "./pages/ServicesPage";
+import LightingSolutions from "./pages/LightingSolutions";
+import ResidentialLighting from "./pages/ResidentialLighting";
+import ArchitecturalLighting from "./pages/ArchitecturalLighting";
+import CommercialLighting from "./pages/CommercialLighting";
+import OutdoorLighting from "./pages/OutdoorLighting";
 
 function HomePage() {
   return (
@@ -55,6 +60,11 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/services" element={<ServicesPage />} />
+        <Route path="/lighting-solutions" element={<LightingSolutions />} />
+        <Route path="/residential-lighting" element={<ResidentialLighting />} />
+        <Route path="/architectural-lighting" element={<ArchitecturalLighting />} />
+        <Route path="/commercial-lighting" element={<CommercialLighting />} />
+        <Route path="/outdoor-lighting" element={<OutdoorLighting />} />
       </Routes>
     </Router>
   );
