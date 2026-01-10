@@ -11,7 +11,7 @@ import IlluminateTextSection from "./components/IlluminateTextSection";
 // import ATAHubSection from "./components/ATAHubSection";
 import Footer from "./components/Footer";
 import BrandsCards from "./components/BrandsCards";
-import ServicesDetailsPage from "./pages/ServicesDetailsPage";
+import ServicesPage from "./pages/ServicesPage";
 
 function HomePage() {
   return (
@@ -54,7 +54,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/services" element={<ServicesDetailsPage />} />
+        <Route path="/services" element={<ServicesPage />} />
       </Routes>
     </Router>
   );

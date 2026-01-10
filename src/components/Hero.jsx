@@ -1,9 +1,10 @@
 import React from "react";
+import Navbar from "./Navbar";
 import { FaWhatsapp } from "react-icons/fa";
 export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden text-white">
-
+       <Navbar />
       {/* BACKGROUND VIDEO */}
       <video
         className="absolute inset-0 w-full h-full object-cover"

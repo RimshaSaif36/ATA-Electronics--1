@@ -106,7 +106,7 @@ export default function ServicesSection() {
         <p className="text-xs sm:text-sm opacity-70 mb-3 tracking-wide">Services</p>
 
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
-          Residential Lighting
+          Lighting
           <br />
           Solutions
         </h2>
