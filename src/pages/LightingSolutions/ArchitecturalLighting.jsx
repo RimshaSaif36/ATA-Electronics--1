@@ -1,29 +1,29 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Footer from "../../components/LightingSolutions/Footer";
+import Navbar from "../../components/LightingSolutions/Navbar";
 
-export default function OutdoorLighting() {
+export default function ArchitecturalLighting() {
     const navigate = useNavigate();
 
     const features = [
         {
-            title: "Landscape & Garden Transformation",
+            title: "Structural Emphasis Through Light",
             description:
-                "Transform your outdoor spaces into enchanting environments after sunset. Our landscape lighting solutions highlight trees, pathways, and architectural features with precision and elegance. Using warm color temperatures and strategic placement, we create depth and dimension that enhances the natural beauty of gardens, parks, and outdoor venues.",
+                "Architectural lighting transforms buildings into sculptural masterpieces. Our solutions highlight the intricate details of facades, columns, and unique architectural elements. Using precision beam angles and color-tuned LEDs, we accentuate the structure's geometry and materiality, creating dramatic nighttime visuals that enhance a building's aesthetic appeal.",
             image: "/light5.jpg",
         },
         {
-            title: "Safety & Security Lighting",
+            title: "Dynamic & Responsive Design",
             description:
-                "Outdoor security is paramount. Our lighting solutions provide excellent visibility for entry points, pathways, and perimeters while maintaining aesthetic appeal. Motion-sensor integrated systems offer intelligent operation, activating lights only when needed. High-CRI LEDs ensure true color recognition for surveillance, while energy-efficient designs minimize operational costs.",
+                "Our architectural systems can be programmed to adapt to different times of day, seasons, or special events. With advanced DMX controls and customizable color palettes, buildings can communicate different moods and messages. From warm amber tones for evening elegance to vibrant accent colors for celebrations, the possibilities are limitless.",
             image: "/light6.jpg",
         },
         {
-            title: "Weather-Resistant & Durable",
+            title: "Energy-Efficient Innovation",
             description:
-                "Built for the elements, our outdoor lighting fixtures are engineered with advanced weatherproofing and corrosion-resistant materials. UV-stabilized components ensure longevity in harsh outdoor conditions. With thermal management systems and robust construction, our outdoor lighting solutions provide years of reliable performance, even in extreme climates.",
+                "High-performance LED technology ensures minimal energy consumption while delivering maximum impact. Our fixtures are engineered for durability in outdoor environments, with UV and weather resistance. Advanced thermal management systems ensure longevity, making architectural lighting a sustainable investment for landmark structures and commercial buildings.",
             image: "/light5.jpg",
         },
     ];
@@ -66,15 +66,15 @@ export default function OutdoorLighting() {
                         className="px-6 max-w-4xl"
                     >
                         <p className="text-sm tracking-widest text-[#d4af37] mb-3">
-                            OUTDOOR SOLUTIONS
+                            ARCHITECTURAL SOLUTIONS
                         </p>
                         <h1 className="text-5xl md:text-7xl font-bold mb-6">
-                            OUTDOOR LIGHTING
+                            ARCHITECTURAL LIGHTING
                         </h1>
                         <p className="text-base md:text-lg text-white/80 leading-relaxed">
-                            Illuminate your outdoor world with weather-resistant solutions that blend
-                            safety, security, and stunning aesthetics. Create enchanting landscapes
-                            that shine brilliantly after dark.
+                            Illuminate the extraordinary. Our architectural lighting solutions
+                            transform buildings into iconic landmarks, showcasing structural beauty
+                            and creating unforgettable visual experiences.
                         </p>
 
                         {/* Back Button */}
@@ -90,7 +90,6 @@ export default function OutdoorLighting() {
 
                 {/* ================= FEATURES SECTION ================= */}
 
-
                 {/* ================= GALLERY SECTION ================= */}
                 <section className="py-20 px-6 md:px-16">
                     <div className="max-w-7xl mx-auto">
@@ -104,7 +103,7 @@ export default function OutdoorLighting() {
                                 OUR PORTFOLIO
                             </p>
                             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                                Outdoor Projects
+                                Architectural Projects
                             </h2>
                             <div className="w-20 h-1 bg-[#d4af37] mx-auto" />
                         </motion.div>
@@ -143,11 +142,11 @@ export default function OutdoorLighting() {
                         className="max-w-4xl mx-auto text-center"
                     >
                         <h2 className="text-3xl md:text-4xl font-semibold mb-6">
-                            Brighten Your Outdoor Spaces
+                            Transform Your Building's Facade
                         </h2>
                         <p className="text-base opacity-90 leading-relaxed mb-8">
-                            Explore our comprehensive outdoor lighting solutions designed for beauty,
-                            security, and durability. Contact our experts for a consultation.
+                            Let our architectural lighting experts design a stunning solution that
+                            showcases your building's unique character and creates a lasting impression.
                         </p>
                         <button className="border border-[#d4af37] text-[#d4af37] px-8 py-3 rounded hover:bg-[#d4af37]/10 transition duration-300">
                             Get in touch

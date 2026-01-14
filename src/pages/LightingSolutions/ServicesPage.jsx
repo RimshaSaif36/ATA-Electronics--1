@@ -143,7 +143,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Footer from "../components/Footer";
+import Footer from "../../components/LightingSolutions/Footer";
 
 export default function ServicesPage() {
   const services = [

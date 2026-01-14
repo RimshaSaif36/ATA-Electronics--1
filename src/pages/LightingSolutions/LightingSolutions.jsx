@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Footer from "../../components/LightingSolutions/Footer";
+import Navbar from "../../components/LightingSolutions/Navbar";
 
 export default function LightingSolutions() {
     const navigate = useNavigate();

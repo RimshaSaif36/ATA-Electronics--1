@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden text-white">
-       <Navbar />
+      <Navbar />
       {/* BACKGROUND VIDEO */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
@@ -60,19 +60,19 @@ export default function Hero() {
       {/* <div className="fixed bottom-6 right-6 z-20 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center">
         <span className="text-black text-xl">✆</span>
       </div> */}
-    <a
-  href="https://wa.me/91XXXXXXXXXX"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-20 w-12 h-12 sm:w-14 sm:h-14
+      <a
+        href="https://wa.me/91XXXXXXXXXX"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-20 w-12 h-12 sm:w-14 sm:h-14
              bg-[#25D366] rounded-full
              flex items-center justify-center
              shadow-xl
              transition-all duration-300
              hover:scale-110 hover:shadow-2xl"
->
-  <FaWhatsapp className="text-white text-xl sm:text-3xl" />
-</a>
+      >
+        <FaWhatsapp className="text-white text-xl sm:text-3xl" />
+      </a>
 
 
 
