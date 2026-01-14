@@ -212,34 +212,37 @@ export default function App() {
       </header>
 
       {/* ================= HERO SECTION ================= */}
-      <section
-        className="relative h-[80vh] bg-no-repeat bg-center bg-contain md:bg-cover"
-        style={{ backgroundImage: "url('/bg2.jpg')" }}
-      >
-        {/* Dark overlay */}
-        {/* <div className="absolute inset-0 bg-black/30" /> */}
+   <section className="relative h-[80vh] w-full">
+  {/* Background image */}
+  <img
+    src="/bg2.jpg"  // use this path if image is in public folder
+    alt="Background"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
 
-        {/* Content → TOP RIGHT */}
-        <div className="relative z-10 h-full flex items-start justify-end px-8 pt-24 text-white">
-          <div className="max-w-xl text-right">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              End-to-End Solutions
-            </h1>
-            <p className="text-lg mb-8">
-              ATA Electronics is a trusted electronics brand offering advanced lighting solutions, batteries, sound systems, and microelectronics with a commitment to quality and innovation.
+  {/* Optional dark overlay */}
+  {/* <div className="absolute inset-0 bg-black/30" /> */}
 
-            </p>
-            <div className="flex gap-4 justify-end">
-              <button className="px-6 py-3 bg-black/60 rounded">
-                Video Surveillance
-              </button>
-              <button className="px-6 py-3 bg-black/60 rounded">
-                Structured Cabling
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+  {/* Content → TOP RIGHT */}
+  <div className="relative z-10 h-full flex items-start justify-end px-8 pt-24 text-white">
+    <div className="max-w-xl text-right">
+      <h1 className="text-4xl md:text-5xl font-bold mb-6">
+        End-to-End Solutions
+      </h1>
+      <p className="text-lg mb-8">
+        ATA Electronics is a trusted electronics brand offering advanced lighting solutions, batteries, sound systems, and microelectronics with a commitment to quality and innovation.
+      </p>
+      <div className="flex gap-4 justify-end">
+        <button className="px-6 py-3 bg-black/60 rounded">
+          Video Surveillance
+        </button>
+        <button className="px-6 py-3 bg-black/60 rounded">
+          Structured Cabling
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* ================= PRODUCTS ================= */}
       <section className="py-16 px-3">
@@ -250,17 +253,17 @@ export default function App() {
           <ProductCard
             title="Video Surveillance"
             desc="Scalable and easy to integrate cameras, NVRs, servers and analytics solutions."
-            img="/public/video.jpg"
+            img="/video.jpg"
           />
           <ProductCard
             title="Fiber Optics"
             desc="Singlemode and multimode fiber optic cables and enclosures."
-            img="/public/fiber.jpg"
+            img="/fiber.jpg"
           />
           <ProductCard
             title="Copper Cabling"
             desc="Certified cabling systems with guaranteed performance."
-            img="/public/copper.jpg"
+            img="/copper.jpg"
           />
         </div>
       </section>
@@ -273,39 +276,39 @@ export default function App() {
         <div className="grid md:grid-cols-3 gap-2">
           <ProjectCard
             title=""
-            img="/public/dubai.jpg"
+            img="/dubai.jpg"
           />
           <ProjectCard
             title=""
-            img="/public/saudi.jpg"
+            img="/saudi.jpg"
           />
           <ProjectCard
             title=""
-            img="/public/oman.jpg"
+            img="/oman.jpg"
           />
            <ProjectCard
             title=""
-            img="/public/canada.jpg"
+            img="/canada.jpg"
           />
           <ProjectCard
             title=""
-            img="/public/abu.jpg"
+            img="/abu.jpg"
           />
           <ProjectCard
             title=""
-            img="/public/plant.jpg"
+            img="/plant.jpg"
           />
           <ProjectCard
             title=""
-            img="/public/dubai1.jpg"
+            img="/dubai1.jpg"
           />
           <ProjectCard
             title=""
-            img="/public/abu1.jpg"
+            img="/abu1.jpg"
           />
           <ProjectCard
             title=""
-            img="/public/usa.jpg"
+            img="/usa.jpg"
           />
         </div>
       </section>
@@ -329,17 +332,17 @@ export default function App() {
           <ProductCard
             title="Quality"
             desc="We are focused on providing quality products; check out our quality process and product performance certifications that help realize our quality goals."
-            img="/public/quality.jpg"
+            img="/quality.jpg"
           />
           <ProductCard
             title="Support"
             desc="Customer service is integral to our business.  Design, value engineering or quotes, we help you find the right products and solution."
-            img="/public/Support.jpg"
+            img="/support.jpg"
           />
           <ProductCard
             title="Partnership"
             desc="Big or Small, we welcome partners of all sizes.  ATA Electronics' channel partner program is designed for qualified resellers and integrators."
-            img="/public/Partner.jpg"
+            img="/partner.jpg"
           />
         </div>
       </section>
