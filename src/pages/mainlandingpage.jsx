@@ -214,7 +214,7 @@ export default function App() {
       {/* ================= HERO SECTION ================= */}
       <section
         className="relative h-[80vh] bg-no-repeat bg-center bg-contain md:bg-cover"
-        style={{ backgroundImage: "url('/bg1.jpg')" }}
+        style={{ backgroundImage: "url('/bg2.jpg')" }}
       >
         {/* Dark overlay */}
         {/* <div className="absolute inset-0 bg-black/30" /> */}
