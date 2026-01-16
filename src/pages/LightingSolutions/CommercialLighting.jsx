@@ -55,7 +55,7 @@ export default function CommercialLighting() {
             </div>
 
             <div className="relative z-10">
-                
+
 
                 {/* ================= HERO SECTION ================= */}
                 <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden pt-20">

@@ -55,7 +55,7 @@ export default function ResidentialLighting() {
       </div>
 
       <div className="relative z-10">
-        
+
 
         {/* ================= HERO SECTION ================= */}
         <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden pt-20">
@@ -89,7 +89,7 @@ export default function ResidentialLighting() {
         </section>
 
         {/* ================= FEATURES SECTION ================= */}
-        
+
 
         {/* ================= GALLERY SECTION ================= */}
         <section className="py-20 px-6 md:px-16">
