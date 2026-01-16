@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Footer from "../../components/LightingSolutions/Footer";
+import Navbar from "../../components/LightingSolutions/Navbar";
 
 export default function ResidentialLighting() {
   const navigate = useNavigate();
@@ -55,7 +55,7 @@ export default function ResidentialLighting() {
       </div>
 
       <div className="relative z-10">
-        <Navbar />
+        
 
         {/* ================= HERO SECTION ================= */}
         <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden pt-20">

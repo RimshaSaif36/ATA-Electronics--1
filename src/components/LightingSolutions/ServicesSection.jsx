@@ -114,7 +114,7 @@ export default function ServicesSection() {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          onClick={() => navigate("/services")}
+          onClick={() => navigate("/lighting-solutions")}
           className="mt-6 sm:mt-8 px-6 py-2 border border-white/60 rounded-full text-xs sm:text-sm hover:bg-white hover:text-black transition"
         >
           SEE MORE

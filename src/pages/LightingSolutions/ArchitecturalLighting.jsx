@@ -55,7 +55,6 @@ export default function ArchitecturalLighting() {
             </div>
 
             <div className="relative z-10">
-                <Navbar />
 
                 {/* ================= HERO SECTION ================= */}
                 <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden pt-20">

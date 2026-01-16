@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import Footer from "../../components/LightingSolutions/Footer";
 import Navbar from "../../components/LightingSolutions/Navbar";
-
+import Hero from "../../components/LightingSolutions/Hero";
 export default function LightingSolutions() {
     const navigate = useNavigate();
     const lightingSolutions = [
@@ -59,7 +59,7 @@ export default function LightingSolutions() {
             </div>
 
             <div className="relative z-10">
-                <Navbar />
+                
 
                 {/* ================= HERO SECTION ================= */}
                 <section className="relative h-screen flex items-center justify-center text-center overflow-hidden pt-20">

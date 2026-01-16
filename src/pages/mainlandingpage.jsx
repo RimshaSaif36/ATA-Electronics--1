@@ -184,6 +184,7 @@
 
 
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function App() {
   return (
@@ -202,12 +203,12 @@ export default function App() {
 
         {/* Navbar */}
         <nav className="hidden md:flex gap-6 text-sm font-medium">
-          <a href="#">Lighting Solutions</a>
-          <a href="#">Batteries</a>
-          <a href="#">Sound Systems</a>
-          <a href="#">Microelectronics</a>
-          <a href="#">Customer Support</a>
-          <a href="#">About Us</a>
+          <Link to="/lighting" className="hover:text-gray-600 transition">Lighting Solutions</Link>
+          <a href="#" className="hover:text-gray-600 transition">Batteries</a>
+          <a href="#" className="hover:text-gray-600 transition">Sound Systems</a>
+          <a href="#" className="hover:text-gray-600 transition">Microelectronics</a>
+          <a href="#" className="hover:text-gray-600 transition">Customer Support</a>
+          <a href="#" className="hover:text-gray-600 transition">About Us</a>
         </nav>
       </header>
 
