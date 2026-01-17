@@ -64,39 +64,39 @@ export default function LightingSolutions() {
             </div>
 
             <div className="relative z-10">
-                
+
 
                 {/* ================= HERO SECTION ================= */}
                 <section className="relative h-screen flex items-center justify-center text-center overflow-hidden pt-20">
-  
-  {/* Background Image */}
-  <div
-    className="absolute inset-0 bg-cover bg-center"
-    style={{ backgroundImage: "url('/public/bg3.jpg')" }}
-  />
 
-  {/* Dark Overlay */}
-  {/* <div className="absolute inset-0 bg-black/60" /> */}
+                    {/* Background Image */}
+                    <div
+                        className="absolute inset-0 bg-cover bg-center"
+                        style={{ backgroundImage: "url('/public/bg3.jpg')" }}
+                    />
 
-  {/* Content */}
-  <motion.div
-    initial={{ opacity: 0, y: 40 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1 }}
-    className="relative z-10 px-6 max-w-3xl text-white"
-  >
-    <p className="text-sm tracking-widest text-[#d4af37] mb-3">
-      ILLUMINATING SPACES
-    </p>
-    <h1 className="text-5xl md:text-7xl font-bold mb-6">
-      LIGHTING SOLUTIONS
-    </h1>
-    <p className="text-base md:text-lg text-white/80 leading-relaxed">
-      Welcome to a realm where light transcends the ordinary...
-    </p>
-  </motion.div>
+                    {/* Dark Overlay */}
+                    {/* <div className="absolute inset-0 bg-black/60" /> */}
 
-</section>
+                    {/* Content */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        className="relative z-10 px-6 max-w-3xl text-white"
+                    >
+                        <p className="text-sm tracking-widest text-[#d4af37] mb-3">
+                            ILLUMINATING SPACES
+                        </p>
+                        <h1 className="text-5xl md:text-7xl font-bold mb-6">
+                            LIGHTING SOLUTIONS
+                        </h1>
+                        <p className="text-base md:text-lg text-white/80 leading-relaxed">
+                            Welcome to a realm where light transcends the ordinary...
+                        </p>
+                    </motion.div>
+
+                </section>
 
 
                 {/* ================= LIGHTING SOLUTIONS SECTIONS ================= */}

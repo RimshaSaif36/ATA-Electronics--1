@@ -133,9 +133,8 @@ export default function TestimonialSliderSection() {
           {testimonials.map((_, i) => (
             <span
               key={i}
-              className={`w-1.5 h-1.5 rounded-full transition ${
-                i === index ? "bg-white" : "bg-white/40"
-              }`}
+              className={`w-1.5 h-1.5 rounded-full transition ${i === index ? "bg-white" : "bg-white/40"
+                }`}
             />
           ))}
         </div>

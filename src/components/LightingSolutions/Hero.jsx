@@ -14,7 +14,7 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen overflow-hidden text-white">
-      
+
       {/* BACKGROUND VIDEO */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
@@ -46,88 +46,88 @@ export default function Hero() {
       </header>
 
       {/* MENU OVERLAY */}
-{isMenuOpen && (
-  <div className="fixed inset-0 z-50 flex justify-end items-start">
-    
-    {/* BACKDROP */}
-    {/* <div 
+      {isMenuOpen && (
+        <div className="fixed inset-0 z-50 flex justify-end items-start">
+
+          {/* BACKDROP */}
+          {/* <div 
       className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-transparent backdrop-blur-md
                  animate-[fadeIn_0.4s_ease-out]"
       onClick={() => setIsMenuOpen(false)}
     /> */}
-    
-    {/* MENU PANEL */}
-    <div
-      className="relative w-full sm:w-[450px] max-h-[90vh] overflow-auto
+
+          {/* MENU PANEL */}
+          <div
+            className="relative w-full sm:w-[450px] max-h-[90vh] overflow-auto
            bg-white/5 backdrop-blur-2xl
            sm:rounded-l-3xl
            shadow-[0_30px_80px_rgba(0,0,0,0.7)]
            transform translate-x-0 animate-[slideInRight_0.5s_ease-out]"
 
-    >
-      
-      {/* DECORATIVE ELEMENTS */}
-      <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#d4af37]/20 to-transparent rounded-bl-full" />
-      <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-[#d4af37]/15 to-transparent rounded-tr-full" />
-      
-      {/* HEADER */}
-      <div className="relative p-8 sm:p-10 border-b border-white/10">
-        <div className="flex items-center justify-between">
-          <div>
-            {/* <h2 className="text-2xl font-bold text-white mb-1">
+          >
+
+            {/* DECORATIVE ELEMENTS */}
+            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#d4af37]/20 to-transparent rounded-bl-full" />
+            <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-[#d4af37]/15 to-transparent rounded-tr-full" />
+
+            {/* HEADER */}
+            <div className="relative p-8 sm:p-10 border-b border-white/10">
+              <div className="flex items-center justify-between">
+                <div>
+                  {/* <h2 className="text-2xl font-bold text-white mb-1">
               Lighting Solutions
             </h2>
             <p className="text-sm text-white/70">
               Illuminate Your Vision
             </p> */}
-          </div>
-          
-          {/* CLOSE BUTTON */}
-          <button
-            onClick={() => setIsMenuOpen(false)}
-            className="group relative w-10 h-10 rounded-full 
+                </div>
+
+                {/* CLOSE BUTTON */}
+                <button
+                  onClick={() => setIsMenuOpen(false)}
+                  className="group relative w-10 h-10 rounded-full 
                        bg-white/10 hover:bg-[#d4af37] 
                        transition-all duration-300 
                        hover:rotate-90 hover:scale-110"
-          >
-            <span className="absolute inset-0 flex items-center justify-center">
-              <svg 
-                className="w-5 h-5 text-white group-hover:text-black transition-colors" 
-                fill="none" 
-                viewBox="0 0 24 24" 
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </span>
-            <div className="absolute inset-0 rounded-full ring-2 ring-transparent group-hover:ring-[#d4af37]/30 transition-all duration-300" />
-          </button>
-        </div>
-      </div>
+                >
+                  <span className="absolute inset-0 flex items-center justify-center">
+                    <svg
+                      className="w-5 h-5 text-white group-hover:text-black transition-colors"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </span>
+                  <div className="absolute inset-0 rounded-full ring-2 ring-transparent group-hover:ring-[#d4af37]/30 transition-all duration-300" />
+                </button>
+              </div>
+            </div>
 
-      {/* MENU ITEMS */}
-      <div className="p-8 sm:p-10 space-y-2">
-        {menuItems.map((item, index) => (
-          <Link
-            key={item.name}
-            to={item.path}
-            onClick={() => setIsMenuOpen(false)}
-            className="group relative block p-4
+            {/* MENU ITEMS */}
+            <div className="p-8 sm:p-10 space-y-2">
+              {menuItems.map((item, index) => (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="group relative block p-4
            transition-all duration-300 ease-out
            transform hover:translate-x-2
            animate-[slideUp_0.6s_ease-out]"
-            style={{ animationDelay: `${index * 0.1}s` }}
-          >
-            
-            {/* BACKGROUND GLOW */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#d4af37]/0 via-[#d4af37]/5 to-[#d4af37]/0 
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+
+                  {/* BACKGROUND GLOW */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#d4af37]/0 via-[#d4af37]/5 to-[#d4af37]/0 
                             transform -translate-x-full group-hover:translate-x-full 
                             transition-transform duration-700 ease-out" />
-            
-            <div className="relative flex items-center justify-between">
-              <div className="flex items-center gap-4">
-                {/* ICON */}
-                {/* <div className="w-12 h-12 rounded-lg bg-[#d4af37]/20 
+
+                  <div className="relative flex items-center justify-between">
+                    <div className="flex items-center gap-4">
+                      {/* ICON */}
+                      {/* <div className="w-12 h-12 rounded-lg bg-[#d4af37]/20 
                                flex items-center justify-center
                                group-hover:bg-[#d4af37] group-hover:scale-110
                                transition-all duration-300">
@@ -135,41 +135,41 @@ export default function Hero() {
                                  group-hover:from-black group-hover:to-gray-800
                                  transition-all duration-300" />
                 </div> */}
-                
-                {/* TEXT */}
-                <div>
-                  <h3 className="text-lg font-semibold text-white group-hover:text-[#d4af37] 
+
+                      {/* TEXT */}
+                      <div>
+                        <h3 className="text-lg font-semibold text-white group-hover:text-[#d4af37] 
                                 transition-colors duration-300">
-                    {item.name}
-                  </h3>
-                  {/* <p className="text-sm text-white/60 group-hover:text-white/80 transition-colors">
+                          {item.name}
+                        </h3>
+                        {/* <p className="text-sm text-white/60 group-hover:text-white/80 transition-colors">
                     Premium solutions
                   </p> */}
-                </div>
-              </div>
-              
-              {/* ARROW */}
-              <div className="flex items-center">
-                <svg 
-                  className="w-5 h-5 text-white/40 group-hover:text-[#d4af37] 
-                            transform group-hover:translate-x-1 group-hover:scale-125
-                            transition-all duration-300" 
-                  fill="none" 
-                  viewBox="0 0 24 24" 
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </div>
-          </Link>
-        ))}
-      </div>
+                      </div>
+                    </div>
 
-      {/* FOOTER */}
-      <div className="relative p-8 sm:p-10 border-t border-white/10 bg-black/20">
-        <div className="text-center">
-          {/* <p className="text-sm text-white/60 mb-2">
+                    {/* ARROW */}
+                    <div className="flex items-center">
+                      <svg
+                        className="w-5 h-5 text-white/40 group-hover:text-[#d4af37] 
+                            transform group-hover:translate-x-1 group-hover:scale-125
+                            transition-all duration-300"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            {/* FOOTER */}
+            <div className="relative p-8 sm:p-10 border-t border-white/10 bg-black/20">
+              <div className="text-center">
+                {/* <p className="text-sm text-white/60 mb-2">
             Ready to illuminate your space?
           </p>
           <button className="px-6 py-3 rounded-full bg-gradient-to-r from-[#d4af37] to-[#f4d03f] 
@@ -178,11 +178,11 @@ export default function Hero() {
                            hover:scale-105 transform transition-all duration-300">
             Get Quote
           </button> */}
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-)}
+      )}
 
 
       {/* CENTER CONTENT */}

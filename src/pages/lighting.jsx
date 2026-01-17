@@ -48,7 +48,7 @@ const Lighting = () => {
         <section className={sectionSpacing}>
           <ATAStorySection />
         </section>
-       
+
 
         <section className="pt-4 sm:pt-5 lg:pt-6 pb-3">
           <BrandsCards />
