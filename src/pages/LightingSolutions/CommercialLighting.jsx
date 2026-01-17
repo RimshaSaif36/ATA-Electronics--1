@@ -58,35 +58,50 @@ export default function CommercialLighting() {
 
 
                 {/* ================= HERO SECTION ================= */}
-                <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden pt-20">
-                    <motion.div
-                        initial={{ opacity: 0, y: 40 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1 }}
-                        className="px-6 max-w-4xl"
-                    >
-                        <p className="text-sm tracking-widest text-[#d4af37] mb-3">
-                            COMMERCIAL SOLUTIONS
-                        </p>
-                        <h1 className="text-5xl md:text-7xl font-bold mb-6">
-                            COMMERCIAL LIGHTING
-                        </h1>
-                        <p className="text-base md:text-lg text-white/80 leading-relaxed">
-                            Elevate your commercial spaces with intelligent lighting solutions
-                            that enhance productivity, showcase your brand, and optimize energy
-                            efficiency for your bottom line.
-                        </p>
+<section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden pt-20">
 
-                        {/* Back Button */}
-                        <motion.button
-                            onClick={() => navigate("/lighting-solutions")}
-                            className="mt-8 border border-[#d4af37] text-[#d4af37] px-6 py-2 rounded hover:bg-[#d4af37]/10 transition duration-300"
-                            whileHover={{ scale: 1.05 }}
-                        >
-                            ← Back to Lighting Solutions
-                        </motion.button>
-                    </motion.div>
-                </section>
+  {/* Background Image */}
+  <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{ backgroundImage: "url('/commercial.jpg')" }}
+  />
+
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black/60" />
+
+  {/* Content */}
+  <motion.div
+    initial={{ opacity: 0, y: 40 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1 }}
+    className="relative z-10 px-6 max-w-4xl text-white"
+  >
+    <p className="text-sm tracking-widest text-[#d4af37] mb-3">
+      COMMERCIAL SOLUTIONS
+    </p>
+
+    <h1 className="text-5xl md:text-7xl font-bold mb-6">
+      COMMERCIAL LIGHTING
+    </h1>
+
+    <p className="text-base md:text-lg text-white/80 leading-relaxed">
+      Elevate your commercial spaces with intelligent lighting solutions
+      that enhance productivity, showcase your brand, and optimize energy
+      efficiency for your bottom line.
+    </p>
+
+    {/* Back Button */}
+    <motion.button
+      onClick={() => navigate("/lighting-solutions")}
+      className="mt-8 border border-[#d4af37] text-[#d4af37] px-6 py-2 rounded hover:bg-[#d4af37]/10 transition duration-300"
+      whileHover={{ scale: 1.05 }}
+    >
+      ← Back to Lighting Solutions
+    </motion.button>
+  </motion.div>
+
+</section>
+
 
                 {/* ================= FEATURES SECTION ================= */}
 

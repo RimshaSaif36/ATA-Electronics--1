@@ -66,7 +66,7 @@ export default function ServicesSection() {
   const navigate = useNavigate();
 
   return (
-    <section className="relative min-h-screen overflow-hidden text-white flex items-center justify-center bg-black px-4 py-12 md:py-0">
+    <section className="relative min-h-screen overflow-hidden text-white flex items-center justify-center px-4 py-12 md:py-0">
 
       {/* LEFT IMAGE - HIDDEN ON MOBILE */}
       <motion.div

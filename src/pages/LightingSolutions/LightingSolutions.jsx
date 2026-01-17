@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import Footer from "../../components/LightingSolutions/Footer";
@@ -6,6 +6,11 @@ import Navbar from "../../components/LightingSolutions/Navbar";
 import Hero from "../../components/LightingSolutions/Hero";
 export default function LightingSolutions() {
     const navigate = useNavigate();
+
+    // Scroll to top when component mounts
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const lightingSolutions = [
         {
             title: "Residential Lighting",
@@ -63,26 +68,36 @@ export default function LightingSolutions() {
 
                 {/* ================= HERO SECTION ================= */}
                 <section className="relative h-screen flex items-center justify-center text-center overflow-hidden pt-20">
-                    <motion.div
-                        initial={{ opacity: 0, y: 40 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1 }}
-                        className="px-6 max-w-3xl"
-                    >
-                        <p className="text-sm tracking-widest text-[#d4af37] mb-3">
-                            ILLUMINATING SPACES
-                        </p>
-                        <h1 className="text-5xl md:text-7xl font-bold mb-6">
-                            LIGHTING SOLUTIONS
-                        </h1>
-                        <p className="text-base md:text-lg text-white/80 leading-relaxed">
-                            Welcome to a realm where light transcends the ordinary. At ATA Electronics,
-                            our lighting services are more than solutions—they're a fusion of art,
-                            innovation, and technology. Step into our universe where every project is
-                            a masterpiece crafted to elevate your space into a beacon of brilliance.
-                        </p>
-                    </motion.div>
-                </section>
+  
+  {/* Background Image */}
+  <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{ backgroundImage: "url('/public/bg3.jpg')" }}
+  />
+
+  {/* Dark Overlay */}
+  {/* <div className="absolute inset-0 bg-black/60" /> */}
+
+  {/* Content */}
+  <motion.div
+    initial={{ opacity: 0, y: 40 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1 }}
+    className="relative z-10 px-6 max-w-3xl text-white"
+  >
+    <p className="text-sm tracking-widest text-[#d4af37] mb-3">
+      ILLUMINATING SPACES
+    </p>
+    <h1 className="text-5xl md:text-7xl font-bold mb-6">
+      LIGHTING SOLUTIONS
+    </h1>
+    <p className="text-base md:text-lg text-white/80 leading-relaxed">
+      Welcome to a realm where light transcends the ordinary...
+    </p>
+  </motion.div>
+
+</section>
+
 
                 {/* ================= LIGHTING SOLUTIONS SECTIONS ================= */}
                 {lightingSolutions.map((solution, index) => (

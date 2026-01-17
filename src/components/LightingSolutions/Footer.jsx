@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/
 
 export default function Footer() {
   return (
-    <footer className="relative bg-black text-white">
+    <footer className="relative text-white">
       {/* Top gold line */}
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#d4af37]/70 to-transparent" />
 
@@ -100,7 +100,7 @@ export default function Footer() {
                 type="email"
                 placeholder="Your email"
                 className="
-                  flex-1 bg-black
+                  flex-1 bg-black/40 backdrop-blur-sm
                   border border-[#d4af37]/40
                   rounded-md px-4 py-3
                   text-xs sm:text-sm
@@ -124,8 +124,11 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Bottom gradient line */}
+        {/* <div className="mt-14 h-px bg-gradient-to-r from-transparent via-[#d4af37]/40 to-transparent" /> */}
+
         {/* Bottom Bar */}
-        <div className="mt-14 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-[#d4af37]/20 pt-6">
+        <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-[10px] sm:text-xs text-gray-500">
             © {new Date().getFullYear()} ATA Electronics. All rights reserved.
           </p>
