@@ -36,7 +36,7 @@ export default function OutdoorLighting() {
     const galleryImages = [
         "/outdoor3.jpg",
         "/outdoor.jpg",
-        "/outdoor2.jpg",
+        "/outdoor7.jpg",
         "/outdoor6.jpg",
         "/outdoor5.jpg",
         "/outdoor6.jpg",
