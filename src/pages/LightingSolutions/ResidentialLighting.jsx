@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import Footer from "../../components/LightingSolutions/Footer";
@@ -7,12 +7,17 @@ import Navbar from "../../components/LightingSolutions/Navbar";
 export default function ResidentialLighting() {
   const navigate = useNavigate();
 
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }, []);
+
   const features = [
     {
       title: "Tailored Ambiance Through Technology",
       description:
         "At home, lighting is not just about illumination—it's about creating a mood. Our residential solutions use diffused LED panels and customizable fixtures that offer a spectrum of color temperatures. Whether you prefer the soft, welcoming glow of 2700K or the crisp clarity of 5000K daylight, our systems provide versatile lighting that adapts to your lifestyle.",
-      image: "/light6.jpg",
+      image: "/residential1.jpg",
     },
     {
       title: "Smart Home Integration",
@@ -29,16 +34,17 @@ export default function ResidentialLighting() {
   ];
 
   const galleryImages = [
-    "/light5.jpg",
-    "/light6.jpg",
-    "/light5.jpg",
-    "/light6.jpg",
-    "/light5.jpg",
-    "/light6.jpg",
+    "/residential2.jpg",
+    "/residential5.jpg",
+    "/residential3.jpg",
+    "/residential4.jpg",
+    
+    "/street.jpg",
+    "/residential6.jpg",
   ];
 
   return (
-    <div className="relative min-h-screen bg-black text-white overflow-hidden">
+    <div className="relative min-h-screen bg-black text-white overflow-x-hidden">
       {/* Background Effects */}
       <div className="pointer-events-none absolute inset-0 z-0">
         <div
@@ -55,6 +61,7 @@ export default function ResidentialLighting() {
       </div>
 
       <div className="relative z-10">
+        <Navbar />
 
 
        {/* ================= HERO SECTION ================= */}
@@ -95,7 +102,7 @@ export default function ResidentialLighting() {
       className="mt-8 border border-[#d4af37] text-[#d4af37] px-6 py-2 rounded hover:bg-[#d4af37]/10 transition duration-300"
       whileHover={{ scale: 1.05 }}
     >
-      ←
+     ← Back to Lighting Solutions
     </motion.button>
   </motion.div>
 
@@ -103,7 +110,37 @@ export default function ResidentialLighting() {
 
 
         {/* ================= FEATURES SECTION ================= */}
-
+        {/* <section className="py-20 px-6 md:px-16">
+          <div className="max-w-7xl mx-auto">
+            {features.map((feature, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                className={`flex flex-col lg:flex-row items-center gap-12 mb-20 ${
+                  index % 2 === 1 ? "lg:flex-row-reverse" : ""
+                }`}
+              >
+                <div className="flex-1 space-y-6">
+                  <h3 className="text-2xl md:text-3xl font-semibold text-[#d4af37]">
+                    {feature.title}
+                  </h3>
+                  <p className="text-base leading-relaxed opacity-90">
+                    {feature.description}
+                  </p>
+                </div>
+                <div className="flex-1">
+                  <img
+                    src={feature.image}
+                    alt={feature.title}
+                    className="w-full h-64 md:h-80 object-cover rounded-lg"
+                  />
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </section> */}
 
         {/* ================= GALLERY SECTION ================= */}
         <section className="py-20 px-6 md:px-16">

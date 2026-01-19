@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import Footer from "../../components/LightingSolutions/Footer";
@@ -6,6 +6,11 @@ import Navbar from "../../components/LightingSolutions/Navbar";
 
 export default function OutdoorLighting() {
     const navigate = useNavigate();
+
+    // Scroll to top when component mounts
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }, []);
 
     const features = [
         {
@@ -29,12 +34,12 @@ export default function OutdoorLighting() {
     ];
 
     const galleryImages = [
-        "/light5.jpg",
-        "/light6.jpg",
-        "/light5.jpg",
-        "/light6.jpg",
-        "/light5.jpg",
-        "/light6.jpg",
+        "/outdoor3.jpg",
+        "/outdoor.jpg",
+        "/outdoor2.jpg",
+        "/outdoor6.jpg",
+        "/outdoor5.jpg",
+        "/outdoor6.jpg",
     ];
 
     return (
@@ -55,7 +60,7 @@ export default function OutdoorLighting() {
             </div>
 
             <div className="relative z-10">
-                
+                <Navbar />
 
                 {/* ================= HERO SECTION ================= */}
 <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden pt-20">
@@ -63,11 +68,11 @@ export default function OutdoorLighting() {
   {/* Background Image */}
   <div
     className="absolute inset-0 bg-cover bg-center"
-    style={{ backgroundImage: "url('/outdoor.jpg')" }}
+    style={{ backgroundImage: "url('outdoor2.jpg')" }}
   />
 
   {/* Dark Overlay */}
-  <div className="absolute inset-0 bg-black/60" />
+  <div className="absolute inset-0 bg-black/40" />
 
   {/* Content */}
   <motion.div

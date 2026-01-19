@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import Footer from "../../components/LightingSolutions/Footer";
@@ -6,6 +6,11 @@ import Navbar from "../../components/LightingSolutions/Navbar";
 
 export default function ArchitecturalLighting() {
     const navigate = useNavigate();
+
+    // Scroll to top when component mounts
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }, []);
 
     const features = [
         {
@@ -29,12 +34,12 @@ export default function ArchitecturalLighting() {
     ];
 
     const galleryImages = [
-        "/light5.jpg",
-        "/light6.jpg",
-        "/light5.jpg",
-        "/light6.jpg",
-        "/light5.jpg",
-        "/light6.jpg",
+        "/architectural1.jpg",
+        "/architectural3.jpg",
+        "/architectural4.jpg",
+        "/architectural5.jpg",
+        "/architectural6.jpg",
+        "/architectural2.jpg",
     ];
 
     return (
@@ -55,6 +60,8 @@ export default function ArchitecturalLighting() {
             </div>
 
             <div className="relative z-10">
+                <Navbar />
+                
 
                 {/* ================= HERO SECTION ================= */}
 <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden pt-20">

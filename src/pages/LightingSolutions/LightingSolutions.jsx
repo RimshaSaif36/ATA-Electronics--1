@@ -9,7 +9,7 @@ export default function LightingSolutions() {
 
     // Scroll to top when component mounts
     useEffect(() => {
-        window.scrollTo(0, 0);
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
     const lightingSolutions = [
         {
@@ -17,7 +17,7 @@ export default function LightingSolutions() {
             description:
                 "Transform your home with premium architectural and decorative lighting solutions. Our residential lighting designs elevate luxury spaces with precision and elegance, creating the perfect ambiance for every room.",
             image: "/light6.jpg",
-            hoverImage: "/light5.jpg",
+            hoverImage: "/residential1.jpg",
             link: "/residential-lighting",
         },
         {
@@ -25,23 +25,23 @@ export default function LightingSolutions() {
             description:
                 "Illuminate buildings with stunning architectural lighting that showcases structural beauty and enhances nighttime aesthetics. Perfect for commercial buildings, museums, and landmark structures.",
             image: "/light5.jpg",
-            hoverImage: "/light6.jpg",
+            hoverImage: "/architectural1.jpg",
             link: "/architectural-lighting",
         },
         {
             title: "Commercial Lighting",
             description:
                 "Professional lighting solutions for offices, retail spaces, and commercial environments. Our systems provide optimal visibility and energy efficiency while maintaining a sophisticated aesthetic.",
-            image: "/light6.jpg",
-            hoverImage: "/light5.jpg",
+            image: "/commercial1.jpg",
+            hoverImage: "/commercial2.jpg",
             link: "/commercial-lighting",
         },
         {
             title: "Outdoor Lighting",
             description:
                 "Enhance outdoor spaces with durable and stylish lighting solutions. From landscape lighting to facade illumination, we create stunning visual impacts for exterior environments.",
-            image: "/light5.jpg",
-            hoverImage: "/light6.jpg",
+            image: "/outdoor2.jpg",
+            hoverImage: "/outdoor1.jpg",
             link: "/outdoor-lighting",
         },
     ];
@@ -64,7 +64,7 @@ export default function LightingSolutions() {
             </div>
 
             <div className="relative z-10">
-
+                <Navbar />
 
                 {/* ================= HERO SECTION ================= */}
                 <section className="relative h-screen flex items-center justify-center text-center overflow-hidden pt-20">
@@ -72,7 +72,7 @@ export default function LightingSolutions() {
                     {/* Background Image */}
                     <div
                         className="absolute inset-0 bg-cover bg-center"
-                        style={{ backgroundImage: "url('/public/bg3.jpg')" }}
+                        style={{ backgroundImage: "url('/public/bg4.jpg')" }}
                     />
 
                     {/* Dark Overlay */}

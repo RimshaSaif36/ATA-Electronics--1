@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import Footer from "../../components/LightingSolutions/Footer";
@@ -6,6 +6,11 @@ import Navbar from "../../components/LightingSolutions/Navbar";
 
 export default function CommercialLighting() {
     const navigate = useNavigate();
+
+    // Scroll to top when component mounts
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }, []);
 
     const features = [
         {
@@ -29,12 +34,12 @@ export default function CommercialLighting() {
     ];
 
     const galleryImages = [
-        "/light5.jpg",
-        "/light6.jpg",
-        "/light5.jpg",
-        "/light6.jpg",
-        "/light5.jpg",
-        "/light6.jpg",
+        "/commercial1.jpg",
+        "/commercial3.jpg",
+        "/commercial5.jpg",
+        "/commercial4.jpg",
+        "/commercial6.jpg",
+        "/commercial2.jpg",
     ];
 
     return (
@@ -55,6 +60,8 @@ export default function CommercialLighting() {
             </div>
 
             <div className="relative z-10">
+                <Navbar />
+                
 
 
                 {/* ================= HERO SECTION ================= */}
@@ -63,7 +70,7 @@ export default function CommercialLighting() {
   {/* Background Image */}
   <div
     className="absolute inset-0 bg-cover bg-center"
-    style={{ backgroundImage: "url('/commercial.jpg')" }}
+    style={{ backgroundImage: "url('/bg6.jpg')" }}
   />
 
   {/* Dark Overlay */}
