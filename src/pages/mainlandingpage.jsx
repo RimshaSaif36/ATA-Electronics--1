@@ -226,7 +226,7 @@ export default function App() {
       {isMenuOpen && (
         <div className="fixed inset-0 z-50 flex justify-end items-start md:hidden">
           {/* Backdrop */}
-          <div 
+          <div
             className="absolute inset-0 bg-black/50 backdrop-blur-sm"
             onClick={() => setIsMenuOpen(false)}
           />
@@ -318,10 +318,10 @@ export default function App() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-end">
               <button className="px-6 py-3 bg-black/60 rounded hover:bg-black/70 transition">
-                Micro Electronics 
+                Micro Electronics
               </button>
               <button className="px-6 py-3 bg-black/60 rounded hover:bg-black/70 transition">
-                Lighting Solutions 
+                Lighting Solutions
               </button>
             </div>
           </div>
@@ -378,7 +378,7 @@ export default function App() {
           <ProjectCard
             title=""
             img="/project.jpg"
-            // Hilton Abu Dhabi Yas Island, Abu Dhabi 
+          // Hilton Abu Dhabi Yas Island, Abu Dhabi 
           />
           <ProjectCard
             title=""
