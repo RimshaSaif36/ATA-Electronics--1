@@ -61,52 +61,52 @@ export default function ArchitecturalLighting() {
 
             <div className="relative z-10">
                 <Navbar />
-                
+
 
                 {/* ================= HERO SECTION ================= */}
-<section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden pt-20">
+                <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden pt-20">
 
-  {/* Background Image */}
-  <div
-    className="absolute inset-0 bg-cover bg-center"
-    style={{ backgroundImage: "url('/architectural.jpg')" }}
-  />
+                    {/* Background Image */}
+                    <div
+                        className="absolute inset-0 bg-cover bg-center"
+                        style={{ backgroundImage: "url('/architectural.jpg')" }}
+                    />
 
-  {/* Dark Overlay */}
-  <div className="absolute inset-0 bg-black/60" />
+                    {/* Dark Overlay */}
+                    <div className="absolute inset-0 bg-black/60" />
 
-  {/* Content */}
-  <motion.div
-    initial={{ opacity: 0, y: 40 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1 }}
-    className="relative z-10 px-6 max-w-4xl text-white"
-  >
-    <p className="text-sm tracking-widest text-[#d4af37] mb-3">
-      ARCHITECTURAL SOLUTIONS
-    </p>
+                    {/* Content */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        className="relative z-10 px-6 max-w-4xl text-white"
+                    >
+                        <p className="text-sm tracking-widest text-[#d4af37] mb-3">
+                            ARCHITECTURAL SOLUTIONS
+                        </p>
 
-    <h1 className="text-5xl md:text-7xl font-bold mb-6">
-      ARCHITECTURAL LIGHTING
-    </h1>
+                        <h1 className="text-5xl md:text-7xl font-bold mb-6">
+                            ARCHITECTURAL LIGHTING
+                        </h1>
 
-    <p className="text-base md:text-lg text-white/80 leading-relaxed">
-      Illuminate the extraordinary. Our architectural lighting solutions
-      transform buildings into iconic landmarks, showcasing structural beauty
-      and creating unforgettable visual experiences.
-    </p>
+                        <p className="text-base md:text-lg text-white/80 leading-relaxed">
+                            Illuminate the extraordinary. Our architectural lighting solutions
+                            transform buildings into iconic landmarks, showcasing structural beauty
+                            and creating unforgettable visual experiences.
+                        </p>
 
-    {/* Back Button */}
-    <motion.button
-      onClick={() => navigate("/lighting-solutions")}
-      className="mt-8 border border-[#d4af37] text-[#d4af37] px-6 py-2 rounded hover:bg-[#d4af37]/10 transition duration-300"
-      whileHover={{ scale: 1.05 }}
-    >
-      ← Back to Lighting Solutions
-    </motion.button>
-  </motion.div>
+                        {/* Back Button */}
+                        <motion.button
+                            onClick={() => navigate("/lighting-solutions")}
+                            className="mt-8 border border-[#d4af37] text-[#d4af37] px-6 py-2 rounded hover:bg-[#d4af37]/10 transition duration-300"
+                            whileHover={{ scale: 1.05 }}
+                        >
+                            ← Back to Lighting Solutions
+                        </motion.button>
+                    </motion.div>
 
-</section>
+                </section>
 
 
                 {/* ================= FEATURES SECTION ================= */}

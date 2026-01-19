@@ -63,49 +63,49 @@ export default function OutdoorLighting() {
                 <Navbar />
 
                 {/* ================= HERO SECTION ================= */}
-<section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden pt-20">
+                <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden pt-20">
 
-  {/* Background Image */}
-  <div
-    className="absolute inset-0 bg-cover bg-center"
-    style={{ backgroundImage: "url('outdoor2.jpg')" }}
-  />
+                    {/* Background Image */}
+                    <div
+                        className="absolute inset-0 bg-cover bg-center"
+                        style={{ backgroundImage: "url('outdoor2.jpg')" }}
+                    />
 
-  {/* Dark Overlay */}
-  <div className="absolute inset-0 bg-black/40" />
+                    {/* Dark Overlay */}
+                    <div className="absolute inset-0 bg-black/40" />
 
-  {/* Content */}
-  <motion.div
-    initial={{ opacity: 0, y: 40 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1 }}
-    className="relative z-10 px-6 max-w-4xl text-white"
-  >
-    <p className="text-sm tracking-widest text-[#d4af37] mb-3">
-      OUTDOOR SOLUTIONS
-    </p>
+                    {/* Content */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        className="relative z-10 px-6 max-w-4xl text-white"
+                    >
+                        <p className="text-sm tracking-widest text-[#d4af37] mb-3">
+                            OUTDOOR SOLUTIONS
+                        </p>
 
-    <h1 className="text-5xl md:text-7xl font-bold mb-6">
-      OUTDOOR LIGHTING
-    </h1>
+                        <h1 className="text-5xl md:text-7xl font-bold mb-6">
+                            OUTDOOR LIGHTING
+                        </h1>
 
-    <p className="text-base md:text-lg text-white/80 leading-relaxed">
-      Illuminate your outdoor world with weather-resistant solutions that blend
-      safety, security, and stunning aesthetics. Create enchanting landscapes
-      that shine brilliantly after dark.
-    </p>
+                        <p className="text-base md:text-lg text-white/80 leading-relaxed">
+                            Illuminate your outdoor world with weather-resistant solutions that blend
+                            safety, security, and stunning aesthetics. Create enchanting landscapes
+                            that shine brilliantly after dark.
+                        </p>
 
-    {/* Back Button */}
-    <motion.button
-      onClick={() => navigate("/lighting-solutions")}
-      className="mt-8 border border-[#d4af37] text-[#d4af37] px-6 py-2 rounded hover:bg-[#d4af37]/10 transition duration-300"
-      whileHover={{ scale: 1.05 }}
-    >
-      ← Back to Lighting Solutions
-    </motion.button>
-  </motion.div>
+                        {/* Back Button */}
+                        <motion.button
+                            onClick={() => navigate("/lighting-solutions")}
+                            className="mt-8 border border-[#d4af37] text-[#d4af37] px-6 py-2 rounded hover:bg-[#d4af37]/10 transition duration-300"
+                            whileHover={{ scale: 1.05 }}
+                        >
+                            ← Back to Lighting Solutions
+                        </motion.button>
+                    </motion.div>
 
-</section>
+                </section>
 
 
                 {/* ================= FEATURES SECTION ================= */}

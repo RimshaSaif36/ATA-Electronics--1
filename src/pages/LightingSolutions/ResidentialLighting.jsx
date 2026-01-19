@@ -38,7 +38,7 @@ export default function ResidentialLighting() {
     "/residential5.jpg",
     "/residential3.jpg",
     "/residential4.jpg",
-    
+
     "/street.jpg",
     "/residential6.jpg",
   ];
@@ -64,49 +64,49 @@ export default function ResidentialLighting() {
         <Navbar />
 
 
-       {/* ================= HERO SECTION ================= */}
-<section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden pt-20">
+        {/* ================= HERO SECTION ================= */}
+        <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden pt-20">
 
-  {/* Background Image */}
-  <div
-    className="absolute inset-0 bg-cover bg-center"
-    style={{ backgroundImage: "url('/residential.jpg')" }}
-  />
+          {/* Background Image */}
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: "url('/residential.jpg')" }}
+          />
 
-  {/* Dark Overlay */}
-  <div className="absolute inset-0 bg-black/50" />
+          {/* Dark Overlay */}
+          <div className="absolute inset-0 bg-black/50" />
 
-  {/* Content */}
-  <motion.div
-    initial={{ opacity: 0, y: 40 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1 }}
-    className="relative z-10 px-6 max-w-4xl text-white"
-  >
-    <p className="text-sm tracking-widest text-[#d4af37] mb-3">
-      RESIDENTIAL SOLUTIONS
-    </p>
+          {/* Content */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="relative z-10 px-6 max-w-4xl text-white"
+          >
+            <p className="text-sm tracking-widest text-[#d4af37] mb-3">
+              RESIDENTIAL SOLUTIONS
+            </p>
 
-    <h1 className="text-5xl md:text-7xl font-bold mb-6">
-      RESIDENTIAL LIGHTING
-    </h1>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6">
+              RESIDENTIAL LIGHTING
+            </h1>
 
-    <p className="text-base md:text-lg text-white/80 leading-relaxed">
-      Transform your living spaces into havens of comfort and elegance.
-      Our residential lighting solutions blend cutting-edge technology with
-      timeless design, creating perfect ambiance for every moment of your day.
-    </p>
+            <p className="text-base md:text-lg text-white/80 leading-relaxed">
+              Transform your living spaces into havens of comfort and elegance.
+              Our residential lighting solutions blend cutting-edge technology with
+              timeless design, creating perfect ambiance for every moment of your day.
+            </p>
 
-    <motion.button
-      onClick={() => navigate("/lighting-solutions")}
-      className="mt-8 border border-[#d4af37] text-[#d4af37] px-6 py-2 rounded hover:bg-[#d4af37]/10 transition duration-300"
-      whileHover={{ scale: 1.05 }}
-    >
-     ← Back to Lighting Solutions
-    </motion.button>
-  </motion.div>
+            <motion.button
+              onClick={() => navigate("/lighting-solutions")}
+              className="mt-8 border border-[#d4af37] text-[#d4af37] px-6 py-2 rounded hover:bg-[#d4af37]/10 transition duration-300"
+              whileHover={{ scale: 1.05 }}
+            >
+              ← Back to Lighting Solutions
+            </motion.button>
+          </motion.div>
 
-</section>
+        </section>
 
 
         {/* ================= FEATURES SECTION ================= */}

@@ -12,7 +12,8 @@
 }
 
 /* Ensure body doesn't show scrollbar */
-html, body {
+html,
+body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
