@@ -72,7 +72,7 @@ export default function LightingSolutions() {
                     {/* Background Image */}
                     <div
                         className="absolute inset-0 bg-cover bg-center"
-                        style={{ backgroundImage: "url('/public/bg4.jpg')" }}
+                        style={{ backgroundImage: "url('/bg4.jpg')" }}
                     />
 
                     {/* Dark Overlay */}

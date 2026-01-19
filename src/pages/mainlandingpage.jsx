@@ -43,7 +43,7 @@
 //       {/* Hero Section */}
 //       <section
 //         className="relative h-[80vh] bg-cover bg-center flex items-center"
-//         style={{ backgroundImage: "url('/public/bg1.jpg')" }}
+//         style={{ backgroundImage: "url('/bg1.jpg')" }}
 //       >
 //         <div className="absolute inset-0 " />
 //         <div className="relative z-10 max-w-4xl px-8 text-white">
@@ -183,15 +183,17 @@
 // }
 
 
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div className="font-sans text-gray-800">
 
       {/* ================= HEADER ================= */}
-      <header className="flex items-center justify-between px-8 h-16 shadow-sm bg-white">
+      <header className="flex items-center justify-between px-8 h-16 shadow-sm bg-white ">
         {/* Logo */}
         <div className="flex items-center h-full">
           <img
@@ -201,7 +203,7 @@ export default function App() {
           />
         </div>
 
-        {/* Navbar */}
+        {/* Desktop Navbar */}
         <nav className="hidden md:flex gap-6 text-sm font-medium">
           <Link to="/lighting" className="hover:text-gray-600 transition">Lighting Solutions</Link>
           <a href="#" className="hover:text-gray-600 transition">Batteries</a>
@@ -210,7 +212,88 @@ export default function App() {
           <a href="#" className="hover:text-gray-600 transition">Customer Support</a>
           <a href="#" className="hover:text-gray-600 transition">About Us</a>
         </nav>
+
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setIsMenuOpen(true)}
+          className="md:hidden px-4 py-2 rounded-md bg-gray-100 hover:bg-gray-200 text-sm font-medium transition"
+        >
+          MENU
+        </button>
       </header>
+
+      {/* Mobile Menu Overlay */}
+      {isMenuOpen && (
+        <div className="fixed inset-0 z-50 flex justify-end items-start md:hidden">
+          {/* Backdrop */}
+          <div 
+            className="absolute inset-0 bg-black/50 backdrop-blur-sm"
+            onClick={() => setIsMenuOpen(false)}
+          />
+
+          {/* Menu Panel */}
+          <div className="relative w-full max-w-sm h-full bg-white shadow-xl">
+            {/* Header */}
+            <div className="flex items-center justify-between p-4 sm:p-6 border-b">
+              <span className="text-lg font-semibold">Menu</span>
+              <button
+                onClick={() => setIsMenuOpen(false)}
+                className="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition"
+              >
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Menu Items */}
+            <div className="p-4 sm:p-6">
+              <Link
+                to="/lighting"
+                onClick={() => setIsMenuOpen(false)}
+                className="block py-3 text-gray-700 hover:text-gray-900 font-medium border-b border-gray-100 transition text-base"
+              >
+                Lighting Solutions
+              </Link>
+              <a
+                href="#"
+                onClick={() => setIsMenuOpen(false)}
+                className="block py-3 text-gray-700 hover:text-gray-900 font-medium border-b border-gray-100 transition text-base"
+              >
+                Batteries
+              </a>
+              <a
+                href="#"
+                onClick={() => setIsMenuOpen(false)}
+                className="block py-3 text-gray-700 hover:text-gray-900 font-medium border-b border-gray-100 transition text-base"
+              >
+                Sound Systems
+              </a>
+              <a
+                href="#"
+                onClick={() => setIsMenuOpen(false)}
+                className="block py-3 text-gray-700 hover:text-gray-900 font-medium border-b border-gray-100 transition text-base"
+              >
+                Microelectronics
+              </a>
+              <a
+                href="#"
+                onClick={() => setIsMenuOpen(false)}
+                className="block py-3 text-gray-700 hover:text-gray-900 font-medium border-b border-gray-100 transition text-base"
+              >
+                Customer Support
+              </a>
+              <a
+                href="#"
+                onClick={() => setIsMenuOpen(false)}
+                className="block py-3 text-gray-700 hover:text-gray-900 font-medium border-b border-gray-100 last:border-b-0 transition text-base"
+              >
+                About Us
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* ================= HERO SECTION ================= */}
       <section className="relative h-[70vh] sm:h-[80vh] w-full">
@@ -235,10 +318,10 @@ export default function App() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-end">
               <button className="px-6 py-3 bg-black/60 rounded hover:bg-black/70 transition">
-                Video Surveillance
+                Micro Electronics 
               </button>
               <button className="px-6 py-3 bg-black/60 rounded hover:bg-black/70 transition">
-                Structured Cabling
+                Lighting Solutions 
               </button>
             </div>
           </div>
@@ -246,32 +329,37 @@ export default function App() {
       </section>
 
       {/* ================= PRODUCTS ================= */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-semibold text-center mb-12">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
+        <h2 className="text-xl xs:text-2xl sm:text-3xl font-semibold text-center mb-8 sm:mb-12 px-4">
           Discover our products
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           <ProductCard
-            title="Video Surveillance"
-            desc="Scalable and easy to integrate cameras, NVRs, servers and analytics solutions."
-            img="/video.jpg"
+            title="Sound Systems"
+            desc="Smart, scalable security and analytics solutions built for seamless integration."
+            img="/sound2.jpg"
           />
           <ProductCard
-            title="Fiber Optics"
-            desc="Singlemode and multimode fiber optic cables and enclosures."
-            img="/fiber.jpg"
+            title="Lighting Solutions"
+            desc="Smart lighting solutions that enhance spaces with efficiency, control, and modern design."
+            img="/l1.jpg"
           />
           <ProductCard
-            title="Copper Cabling"
-            desc="Certified cabling systems with guaranteed performance."
-            img="/copper.jpg"
+            title="Batteries"
+            desc="High-performance lithium lighting engineered for durability, efficiency, and uninterrupted illumination."
+            img="/battery2.jpg"
+          />
+          <ProductCard
+            title="Microelectronics"
+            desc="Advanced microelectronics solutions enabling efficient, reliable, and intelligent systems."
+            img="/microelectronics.jpg"
           />
         </div>
       </section>
 
       {/* ================= PROJECTS ================= */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-semibold text-center mb-12">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
+        <h2 className="text-xl xs:text-2xl sm:text-3xl font-semibold text-center mb-8 sm:mb-12 px-4">
           Featured Projects
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -289,7 +377,8 @@ export default function App() {
           />
           <ProjectCard
             title=""
-            img="/canada.jpg"
+            img="/project.jpg"
+            // Hilton Abu Dhabi Yas Island, Abu Dhabi 
           />
           <ProjectCard
             title=""
@@ -325,8 +414,8 @@ export default function App() {
           <AdvantageCard title="Partnership" desc="Channel partner programs for integrators and resellers." />
         </div>
       </section> */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-semibold text-center mb-12">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
+        <h2 className="text-xl xs:text-2xl sm:text-3xl font-semibold text-center mb-8 sm:mb-12 px-4">
           ATA Electronics Advantage
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
@@ -357,29 +446,26 @@ export default function App() {
         }}
       >
         {/* Overlay */}
-        <div className=" py-10">
-          <h2 className="text-3xl font-semibold mb-4">
+        <div className="py-8 sm:py-10 px-4">
+          <h2 className="text-xl xs:text-2xl sm:text-3xl font-semibold mb-4 leading-tight">
             Are you working on a project?
           </h2>
-          <p className="max-w-2xl mx-auto mb-6">
+          <p className="max-w-2xl mx-auto mb-6 text-sm xs:text-base leading-relaxed px-4 sm:px-0">
             With quality products and industry-leading warranties, we help customers
             realize true business value.
           </p>
-          <button className="px-8 py-3 bg-white/60 text-black font-medium hover:bg-white/80 transition">
+          <button className="px-6 sm:px-8 py-2 sm:py-3 bg-white/60 text-black text-sm sm:text-base font-medium hover:bg-white/80 transition rounded">
             Contact Us
           </button>
-
-
-
         </div>
       </section>
       {/* ================= FOOTER ================= */}
-      <footer className="bg-[#363839] text-gray-300 px-8 py-20 text-sm">
-        <div className="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+      <footer className="bg-[#363839] text-gray-300 px-4 sm:px-8 py-12 sm:py-20 text-sm">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 max-w-7xl mx-auto">
 
           {/* About */}
           <div>
-            <h4 className="text-white font-semibold mb-6 uppercase">
+            <h4 className="text-white font-semibold mb-4 sm:mb-6 uppercase text-sm sm:text-base">
               About Us
             </h4>
             <ul className="space-y-4">
@@ -400,7 +486,7 @@ export default function App() {
 
           {/* Locations */}
           <div>
-            <h4 className="text-white font-semibold mb-6 uppercase">
+            <h4 className="text-white font-semibold mb-4 sm:mb-6 uppercase text-sm sm:text-base">
               Locations
             </h4>
             <ul className="space-y-4">
@@ -418,27 +504,27 @@ export default function App() {
 
           {/* CSR */}
           <div>
-            <h4 className="text-white font-semibold mb-6 uppercase">
+            <h4 className="text-white font-semibold mb-4 sm:mb-6 uppercase text-sm sm:text-base">
               CSR Statement
             </h4>
-            <p className="leading-relaxed text-gray-300">
+            <p className="leading-relaxed text-gray-300 text-sm">
               Taking responsibility for a better tomorrow
             </p>
           </div>
 
           {/* Social */}
           <div>
-            <h4 className="text-white font-semibold mb-6 uppercase">
+            <h4 className="text-white font-semibold mb-4 sm:mb-6 uppercase text-sm sm:text-base">
               Follow Us
             </h4>
-            <div className="flex items-center gap-6">
-              <span className="hover:text-white transition cursor-pointer">
+            <div className="flex items-center gap-4 sm:gap-6 flex-wrap">
+              <span className="hover:text-white transition cursor-pointer text-sm">
                 Facebook
               </span>
-              <span className="hover:text-white transition cursor-pointer">
+              <span className="hover:text-white transition cursor-pointer text-sm">
                 Twitter
               </span>
-              <span className="hover:text-white transition cursor-pointer">
+              <span className="hover:text-white transition cursor-pointer text-sm">
                 LinkedIn
               </span>
             </div>
@@ -447,7 +533,7 @@ export default function App() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-16 pt-6 border-t border-white/40 text-center text-gray-400">
+        <div className="mt-12 sm:mt-16 pt-4 sm:pt-6 border-t border-white/40 text-center text-gray-400 text-xs sm:text-sm">
           © 2026 ATA Electronics Inc. All Rights Reserved.
         </div>
       </footer>
@@ -466,10 +552,10 @@ function ProductCard({ title, desc, img }) {
       <div className="w-full aspect-[4/3] overflow-hidden">
         <img src={img} alt={title} className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300" />
       </div>
-      <div className="p-4">
-        <h3 className="font-semibold text-lg mb-2">{title}</h3>
-        <p className="text-sm text-gray-600 mb-2">{desc}</p>
-        <a href="#" className="text-sm font-medium">
+      <div className="p-3 sm:p-4">
+        <h3 className="font-semibold text-base sm:text-lg mb-2 leading-tight">{title}</h3>
+        <p className="text-xs sm:text-sm text-gray-600 mb-2 leading-relaxed">{desc}</p>
+        <a href="#" className="text-xs sm:text-sm font-medium hover:text-gray-800 transition">
           Learn more
         </a>
       </div>
@@ -490,10 +576,10 @@ function ProjectCard({ title, img }) {
 
 function AdvantageCard({ title, desc }) {
   return (
-    <div className="text-center p-6 border rounded-lg">
-      <h3 className="font-semibold text-lg mb-2">{title}</h3>
-      <p className="text-sm text-gray-600">{desc}</p>
-      <a href="#" className="block mt-3 font-medium">
+    <div className="text-center p-4 sm:p-6 border rounded-lg">
+      <h3 className="font-semibold text-base sm:text-lg mb-2 leading-tight">{title}</h3>
+      <p className="text-xs sm:text-sm text-gray-600 mb-2 leading-relaxed">{desc}</p>
+      <a href="#" className="block mt-3 font-medium text-xs sm:text-sm hover:text-gray-800 transition">
         Learn more
       </a>
     </div>
