@@ -6,6 +6,7 @@ export default function Hero() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
+    { name: "Home", path: "/" },
     { name: "Residential Lighting", path: "/residential-lighting" },
     { name: "Architectural Lighting", path: "/architectural-lighting" },
     { name: "Commercial Lighting", path: "/commercial-lighting" },
@@ -31,11 +32,13 @@ export default function Hero() {
 
       {/* HEADER */}
       <header className="relative z-10 flex items-center justify-between px-4 sm:px-6 md:px-10 py-3">
-        <img
-          src="/logo2.png"
-          alt="ATA Electronics Logo"
-          className="w-20 sm:w-32 md:w-40"
-        />
+        <Link to="/">
+          <img
+            src="/logo2.png"
+            alt="ATA Electronics Logo"
+            className="w-20 sm:w-32 md:w-40 cursor-pointer hover:scale-105 transition-transform duration-300"
+          />
+        </Link>
 
         <button
           onClick={() => setIsMenuOpen(true)}

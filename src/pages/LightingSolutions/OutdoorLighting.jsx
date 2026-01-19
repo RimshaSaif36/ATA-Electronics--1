@@ -63,11 +63,11 @@ export default function OutdoorLighting() {
                 <Navbar />
 
                 {/* ================= HERO SECTION ================= */}
-                <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden pt-20">
+                <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden pt-16 sm:pt-20">
 
                     {/* Background Image */}
                     <div
-                        className="absolute inset-0 bg-cover bg-center"
+                        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                         style={{ backgroundImage: "url('outdoor2.jpg')" }}
                     />
 
@@ -95,20 +95,77 @@ export default function OutdoorLighting() {
                             that shine brilliantly after dark.
                         </p>
 
-                        {/* Back Button */}
-                        <motion.button
-                            onClick={() => navigate("/lighting-solutions")}
-                            className="mt-8 border border-[#d4af37] text-[#d4af37] px-6 py-2 rounded hover:bg-[#d4af37]/10 transition duration-300"
-                            whileHover={{ scale: 1.05 }}
-                        >
-                            ← Back to Lighting Solutions
-                        </motion.button>
+                        {/* Navigation Buttons */}
+                        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                            <motion.button
+                                onClick={() => navigate("/lighting-solutions")}
+                                className="border border-[#d4af37] text-[#d4af37] px-6 py-2 rounded hover:bg-[#d4af37]/10 transition duration-300"
+                                whileHover={{ scale: 1.05 }}
+                            >
+                                ← Back to Lighting Solutions
+                            </motion.button>
+                            {/* <motion.button
+                                onClick={() => navigate("/")}
+                                className="border border-white text-white px-6 py-2 rounded hover:bg-white/10 transition duration-300"
+                                whileHover={{ scale: 1.05 }}
+                            >
+                                🏠 Back to Home
+                            </motion.button> */}
+                        </div>
                     </motion.div>
 
                 </section>
 
 
                 {/* ================= FEATURES SECTION ================= */}
+                <section className="py-16 sm:py-20 px-4 sm:px-6 md:px-16">
+                    <div className="max-w-7xl mx-auto">
+                        <motion.div
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            className="text-center mb-12 sm:mb-16"
+                        >
+                            <p className="text-sm tracking-widest text-[#d4af37] mb-3">
+                                OUR FEATURES
+                            </p>
+                            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+                                Outdoor Excellence
+                            </h2>
+                            <div className="w-20 h-1 bg-[#d4af37] mx-auto" />
+                        </motion.div>
+
+                        <div className="space-y-12 sm:space-y-16 lg:space-y-20">
+                            {features.map((feature, index) => (
+                                <motion.div
+                                    key={index}
+                                    initial={{ opacity: 0, y: 40 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 1, delay: index * 0.2 }}
+                                    className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-8 lg:gap-12`}
+                                >
+                                    <div className="w-full lg:w-1/2">
+                                        <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
+                                            <img
+                                                src={feature.image}
+                                                alt={feature.title}
+                                                className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="w-full lg:w-1/2 text-center lg:text-left">
+                                        <h3 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">
+                                            {feature.title}
+                                        </h3>
+                                        <p className="text-base sm:text-lg text-white/80 leading-relaxed">
+                                            {feature.description}
+                                        </p>
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
 
 
                 {/* ================= GALLERY SECTION ================= */}
@@ -129,19 +186,19 @@ export default function OutdoorLighting() {
                             <div className="w-20 h-1 bg-[#d4af37] mx-auto" />
                         </motion.div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                             {galleryImages.map((img, index) => (
                                 <motion.div
                                     key={index}
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.5, delay: index * 0.1 }}
-                                    className="relative h-64 md:h-72 rounded-lg overflow-hidden group cursor-pointer"
+                                    className="relative w-full aspect-[4/3] rounded-lg overflow-hidden group cursor-pointer"
                                 >
                                     <img
                                         src={img}
                                         alt={`Gallery ${index + 1}`}
-                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                        className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
                                     />
                                     <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
                                         <span className="text-[#d4af37] tracking-widest text-sm">

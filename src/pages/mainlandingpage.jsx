@@ -213,31 +213,31 @@ export default function App() {
       </header>
 
       {/* ================= HERO SECTION ================= */}
-      <section className="relative h-[80vh] w-full">
+      <section className="relative h-[70vh] sm:h-[80vh] w-full">
         {/* Background image */}
         <img
           src="/bg2.jpg"  // use this path if image is in public folder
           alt="Background"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-center"
         />
 
         {/* Optional dark overlay */}
         {/* <div className="absolute inset-0 bg-black/30" /> */}
 
         {/* Content → TOP RIGHT */}
-        <div className="relative z-10 h-full flex items-start justify-end px-8 pt-24 text-white">
-          <div className="max-w-xl text-right">
+        <div className="relative z-10 h-full flex items-start justify-center sm:justify-end px-4 sm:px-8 pt-16 sm:pt-24 text-white">
+          <div className="max-w-xl text-center sm:text-right">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               End-to-End Solutions
             </h1>
             <p className="text-lg mb-8">
               ATA Electronics is a trusted electronics brand offering advanced lighting solutions, batteries, sound systems, and microelectronics with a commitment to quality and innovation.
             </p>
-            <div className="flex gap-4 justify-end">
-              <button className="px-6 py-3 bg-black/60 rounded">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-end">
+              <button className="px-6 py-3 bg-black/60 rounded hover:bg-black/70 transition">
                 Video Surveillance
               </button>
-              <button className="px-6 py-3 bg-black/60 rounded">
+              <button className="px-6 py-3 bg-black/60 rounded hover:bg-black/70 transition">
                 Structured Cabling
               </button>
             </div>
@@ -246,11 +246,11 @@ export default function App() {
       </section>
 
       {/* ================= PRODUCTS ================= */}
-      <section className="py-16 px-3">
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-semibold text-center mb-12">
           Discover our products
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           <ProductCard
             title="Video Surveillance"
             desc="Scalable and easy to integrate cameras, NVRs, servers and analytics solutions."
@@ -270,11 +270,11 @@ export default function App() {
       </section>
 
       {/* ================= PROJECTS ================= */}
-      <section className="py-6 px-2 ">
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-semibold text-center mb-12">
           Featured Projects
         </h2>
-        <div className="grid md:grid-cols-3 gap-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           <ProjectCard
             title=""
             img="/dubai.jpg"
@@ -325,11 +325,11 @@ export default function App() {
           <AdvantageCard title="Partnership" desc="Channel partner programs for integrators and resellers." />
         </div>
       </section> */}
-      <section className="py-16 px-3">
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-semibold text-center mb-12">
           ATA Electronics Advantage
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           <ProductCard
             title="Quality"
             desc="We are focused on providing quality products; check out our quality process and product performance certifications that help realize our quality goals."
@@ -463,7 +463,9 @@ export default function App() {
 function ProductCard({ title, desc, img }) {
   return (
     <div className=" overflow-hidden">
-      <img src={img} alt={title} className="h-86 w-full object-cover" />
+      <div className="w-full aspect-[4/3] overflow-hidden">
+        <img src={img} alt={title} className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300" />
+      </div>
       <div className="p-4">
         <h3 className="font-semibold text-lg mb-2">{title}</h3>
         <p className="text-sm text-gray-600 mb-2">{desc}</p>
@@ -477,8 +479,8 @@ function ProductCard({ title, desc, img }) {
 
 function ProjectCard({ title, img }) {
   return (
-    <div className="relative h-110 overflow-hidden">
-      <img src={img} alt={title} className="absolute inset-0 w-full h-full object-cover" />
+    <div className="relative w-full aspect-[4/3] overflow-hidden group cursor-pointer">
+      <img src={img} alt={title} className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500" />
       <div className="absolute inset-0  flex items-end p-4">
         <span className="text-white font-semibold">{title}</span>
       </div>

@@ -5,6 +5,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
+    { name: "Home", path: "/" },
     { name: "Lighting Solutions", path: "/lighting-solutions" },
     { name: "Residential Lighting", path: "/residential-lighting" },
     { name: "Architectural Lighting", path: "/architectural-lighting" },
@@ -16,7 +17,7 @@ export default function Navbar() {
     <>
       {/* HEADER */}
       <header className="absolute top-0 left-0 w-full z-50 flex items-center justify-between px-4 sm:px-6 md:px-10 py-3">
-        <Link to="/lighting">
+        <Link to="/">
           <img
             src="/logo2.png"
             alt="ATA Electronics Logo"
