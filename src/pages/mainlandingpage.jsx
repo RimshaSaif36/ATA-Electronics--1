@@ -206,7 +206,8 @@ export default function App() {
         {/* Desktop Navbar */}
         <nav className="hidden md:flex gap-6 text-sm font-medium">
           <Link to="/lighting" className="hover:text-gray-600 transition">Lighting Solutions</Link>
-          <a href="#" className="hover:text-gray-600 transition">Batteries</a>
+  
+          <Link to="/batteries" className="hover:text-gray-600 transition">Batteries</Link>
           <a href="#" className="hover:text-gray-600 transition">Sound Systems</a>
           <a href="#" className="hover:text-gray-600 transition">Microelectronics</a>
           <a href="#" className="hover:text-gray-600 transition">Customer Support</a>
@@ -376,7 +377,7 @@ export default function App() {
             img="/oman.jpg"
           />
           <ProjectCard
-            title=""
+            title=" Hilton Abu Dhabi Yas Island, Abu Dhabi"
             img="/project.jpg"
           // Hilton Abu Dhabi Yas Island, Abu Dhabi 
           />
@@ -565,14 +566,24 @@ function ProductCard({ title, desc, img }) {
 
 function ProjectCard({ title, img }) {
   return (
-    <div className="relative w-full aspect-[4/3] overflow-hidden group cursor-pointer">
-      <img src={img} alt={title} className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500" />
-      <div className="absolute inset-0  flex items-end p-4">
-        <span className="text-white font-semibold">{title}</span>
-      </div>
+    <div className="relative w-full aspect-[4/3] overflow-hidden">
+      <img
+        src={img}
+        alt={title}
+        className="w-full h-full object-cover"
+      />
+
+      {title && (
+        <div className="absolute bottom-0 left-0 right-0 bg-black/40 px-3 py-4">
+          <span className="text-white text-base sm:text-lg lg:text-2xl font-bold leading-snug">
+            {title}
+          </span>
+        </div>
+      )}
     </div>
   );
 }
+
 
 function AdvantageCard({ title, desc }) {
   return (

@@ -8,7 +8,7 @@ import ArchitecturalLighting from "./pages/LightingSolutions/ArchitecturalLighti
 import CommercialLighting from "./pages/LightingSolutions/CommercialLighting";
 import OutdoorLighting from "./pages/LightingSolutions/OutdoorLighting";
 import Lighting from "./pages/lighting";
-
+import ProductPage from "./pages/Batteries/ProductPage";
 function App() {
   return (
     <Router>
@@ -21,6 +21,7 @@ function App() {
         <Route path="/architectural-lighting" element={<ArchitecturalLighting />} />
         <Route path="/commercial-lighting" element={<CommercialLighting />} />
         <Route path="/outdoor-lighting" element={<OutdoorLighting />} />
+        <Route path="/batteries" element={<ProductPage />} />
       </Routes>
     </Router>
   );
