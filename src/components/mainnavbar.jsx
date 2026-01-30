@@ -79,7 +79,7 @@ export default function Header() {
                 { name: "Lighting Solutions", path: "/lighting" },
                 { name: "Batteries", path: "/batteries" },
                 { name: "Sound Systems", path: "/sound" },
-                { name: "Microelectronics", path: "/micro" },
+                { name: "Microelectronics", path: "/micro-electronics" },
                 { name: "Customer Support", path: "/support" },
                 { name: "About Us", path: "/about" },
               ].map((item) => (
