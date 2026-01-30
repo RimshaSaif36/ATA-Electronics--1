@@ -9,6 +9,8 @@ import CommercialLighting from "./pages/LightingSolutions/CommercialLighting";
 import OutdoorLighting from "./pages/LightingSolutions/OutdoorLighting";
 import Lighting from "./pages/lighting";
 import ProductPage from "./pages/Batteries/ProductPage";
+import SoundProduct from "./pages/SoundSystems/ProductPage";
+import ElectronicProducts from "./pages/MicroElectronics/ProductPage";
 function App() {
   return (
     <Router>
@@ -22,6 +24,8 @@ function App() {
         <Route path="/commercial-lighting" element={<CommercialLighting />} />
         <Route path="/outdoor-lighting" element={<OutdoorLighting />} />
         <Route path="/batteries" element={<ProductPage />} />
+        <Route path="/sound" element={<SoundProduct />} />
+        <Route path="/micro-electronics" element={<ElectronicProducts />} />
       </Routes>
     </Router>
   );

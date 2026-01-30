@@ -1,60 +1,78 @@
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
-
+import Header from "../../components/mainnavbar";
 const products = [
   {
-    title: "LECXO LX2.8-6 VIETNAM",
-    size: "65×32×97MM (L×W×H)",
-    battery: "6V 2.8AH LEAD ACID BATTERY",
+    title: "LX1000 TT VIETNAM",
+    size: "503×190×408MM (L×W×H)",
+    battery: "12V - 100Ah TUBULAR BATTERY",
     img: "/b1.jpg",
   },
   {
-    title: "LECXO LX3.4-6 VIETNAM",
-    size: "134×33×59MM (L×W×H)",
-    battery: "6V 3.4AH LEAD ACID BATTERY",
+    title: "LX1.2-6 VIETNAM",
+    size: "97±1 × 24±1 × 57±2MM (L×W×H)",
+    battery: "6V - 1.2Ah VRLA BATTERY",
     img: "/b2.jpg",
   },
   {
-    title: "LECXO LX4.5-6 VIETNAM",
-    size: "70×47×101MM (L×W×H)",
-    battery: "6V 4.5AH LEAD ACID BATTERY",
+    title: "LX4.5-6 VIETNAM",
+    size: "70±1 × 47±1 × 106±2MM (L×W×H)",
+    battery: "6V 4.5AH VRLA BATTERY",
     img: "/b3.jpg",
   },
   {
-    title: "LECXO LX7-6 VIETNAM",
-    size: "151×34×94MM (L×W×H)",
-    battery: "6V 7AH LEAD ACID BATTERY",
+    title: "LEP1207 VIETNAM",
+    size: "151 × 65 × 99MM (L×W×H)",
+    battery: "12V - 7Ah LITHIUM BATTERY",
     img: "/b4.jpg",
   },
   {
-    title: "LECXO LX12-6 VIETNAM",
-    size: "151×50×94MM (L×W×H)",
-    battery: "6V 12AH LEAD ACID BATTERY",
+    title: "9V VIETNAM",
+    size: "17.5×26.5×48.5MM (L×W×H)",
+    battery: "300mAh - 9V RECHARGEABLE BATTERY",
     img: "/b5.jpg",
   },
   {
-    title: "LECXO LX0.8-12 VIETNAM",
-    size: "96×25×62MM (L×W×H)",
-    battery: "12V 0.8AH LEAD ACID BATTERY",
+    title: "LXRC12-200 VIETNAM",
+    size: "522±2 × 268±2 × 226±2MM (L×W×H)",
+    battery: "12V - 200Ah LEAD-CARBON BATTERY",
     img: "/b6.jpg",
   },
+  {
+    title: "AA Series",
+    size: "14 × 14 × 50 mm (L × W × H)",
+    battery: "1.5V USB Rechargeable Lithium Battery",
+    img: "/b7.jpg",
+  },
+  {
+    title: "AA Series",
+    size: "14 × 14 × 50 mm (L × W × H)",
+    battery: " 1.2V-1200 mAh ATA Rechargeable Battery",
+    img: "/b8.jpg",
+  },
+
 ];
 
 export default function ProductPage() {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {products.map((item, index) => (
-          <ProductCard key={index} {...item} />
-        ))}
+    <>
+      <Header />
+
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {products.map((item, index) => (
+            <ProductCard key={index} {...item} />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
+
 function ProductCard({ title, size, battery, img }) {
   return (
-    <div className="border border-red-500 p-6 text-center relative">
+    <div className="border border-blue-800 p-6 text-center relative">
       {/* Image */}
       <img
         src={img}
@@ -64,7 +82,7 @@ function ProductCard({ title, size, battery, img }) {
 
       {/* Copyright */}
       <p className="text-[10px] text-gray-400 mb-3">
-        Copyright © Square Electronics & Trading
+        {/* Copyright © Square Electronics & Trading */}
       </p>
 
       {/* Title */}
@@ -72,7 +90,7 @@ function ProductCard({ title, size, battery, img }) {
 
       {/* Size */}
       <p className="text-xs mb-1">
-        <span className="font-semibold">SIZE :</span> {size}
+        <span className="font-semibold">DIMENSION :</span> {size}
       </p>
 
       {/* Battery */}
@@ -82,7 +100,7 @@ function ProductCard({ title, size, battery, img }) {
 
       {/* Buttons */}
       <div className="flex items-center justify-center gap-3">
-        <button className="bg-red-600 text-white text-xs px-6 py-2 rounded-full font-semibold hover:bg-red-700 transition">
+        <button className="bg-blue-800 text-white text-xs px-6 py-2 rounded-full font-semibold hover:bg-blue-900 transition">
           ENQUIRY
         </button>
 

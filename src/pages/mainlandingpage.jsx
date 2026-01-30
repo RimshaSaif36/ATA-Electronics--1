@@ -208,7 +208,7 @@ export default function App() {
           <Link to="/lighting" className="hover:text-gray-600 transition">Lighting Solutions</Link>
   
           <Link to="/batteries" className="hover:text-gray-600 transition">Batteries</Link>
-          <a href="#" className="hover:text-gray-600 transition">Sound Systems</a>
+          <Link to="/sound" className="hover:text-gray-600 transition">Sound Systems</Link>
           <a href="#" className="hover:text-gray-600 transition">Microelectronics</a>
           <a href="#" className="hover:text-gray-600 transition">Customer Support</a>
           <a href="#" className="hover:text-gray-600 transition">About Us</a>
@@ -575,7 +575,7 @@ function ProjectCard({ title, img }) {
 
       {title && (
         <div className="absolute bottom-0 left-0 right-0 bg-black/40 px-3 py-4">
-          <span className="text-white text-base sm:text-lg lg:text-2xl font-bold leading-snug">
+          <span className="text-white text-base sm:text-lg lg:text-xl font-bold leading-snug">
             {title}
           </span>
         </div>
