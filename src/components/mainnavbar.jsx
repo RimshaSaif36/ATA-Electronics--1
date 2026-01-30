@@ -61,13 +61,14 @@ export default function Header() {
           />
 
           {/* Menu Panel */}
-          <div className="relative w-full max-w-sm h-full bg-white shadow-xl">
+          <div className="relative w-full max-w-sm h-full bg-white shadow-xl overflow-y-auto">
             {/* Header */}
-            <div className="flex items-center justify-between p-4 border-b">
+            <div className="flex items-center justify-between p-4 border-b sticky top-0 bg-white">
               <span className="text-lg font-semibold">Menu</span>
               <button
                 onClick={() => setIsMenuOpen(false)}
-                className="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center"
+                className="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600"
+                type="button"
               >
                 ✕
               </button>
@@ -75,23 +76,48 @@ export default function Header() {
 
             {/* Menu Items */}
             <div className="p-4">
-              {[
-                { name: "Lighting Solutions", path: "/lighting" },
-                { name: "Batteries", path: "/batteries" },
-                { name: "Sound Systems", path: "/sound" },
-                { name: "Microelectronics", path: "/micro-electronics" },
-                { name: "Customer Support", path: "/support" },
-                { name: "About Us", path: "/about" },
-              ].map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="block py-3 border-b text-gray-700 hover:text-gray-900 transition"
-                >
-                  {item.name}
-                </Link>
-              ))}
+              <Link
+                to="/lighting"
+                onClick={() => setIsMenuOpen(false)}
+                className="block py-3 px-2 border-b text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition rounded"
+              >
+                Lighting Solutions
+              </Link>
+              <Link
+                to="/batteries"
+                onClick={() => setIsMenuOpen(false)}
+                className="block py-3 px-2 border-b text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition rounded"
+              >
+                Batteries
+              </Link>
+              <Link
+                to="/sound"
+                onClick={() => setIsMenuOpen(false)}
+                className="block py-3 px-2 border-b text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition rounded"
+              >
+                Sound Systems
+              </Link>
+              <Link
+                to="/micro-electronics"
+                onClick={() => setIsMenuOpen(false)}
+                className="block py-3 px-2 border-b text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition rounded"
+              >
+                Microelectronics
+              </Link>
+              <Link
+                to="/support"
+                onClick={() => setIsMenuOpen(false)}
+                className="block py-3 px-2 border-b text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition rounded"
+              >
+                Customer Support
+              </Link>
+              <Link
+                to="/about"
+                onClick={() => setIsMenuOpen(false)}
+                className="block py-3 px-2 text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition rounded"
+              >
+                About Us
+              </Link>
             </div>
           </div>
         </div>
