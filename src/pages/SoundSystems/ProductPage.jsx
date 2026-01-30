@@ -148,7 +148,7 @@ function ProductCard({ title, size, battery, img }) {
       {/* Buttons */}
       <div className="flex items-center justify-center gap-3">
         <button className="bg-blue-800 text-white text-xs px-6 py-2 rounded-full font-semibold hover:bg-blue-900 transition">
-          DETAIL
+          ENQUIRY
         </button>
 
         <a
