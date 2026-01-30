@@ -209,7 +209,7 @@ export default function App() {
   
           <Link to="/batteries" className="hover:text-gray-600 transition">Batteries</Link>
           <Link to="/sound" className="hover:text-gray-600 transition">Sound Systems</Link>
-          <a href="#" className="hover:text-gray-600 transition">Microelectronics</a>
+          <a href="/micro-electronics" className="hover:text-gray-600 transition">Microelectronics</a>
           <a href="#" className="hover:text-gray-600 transition">Customer Support</a>
           <a href="#" className="hover:text-gray-600 transition">About Us</a>
         </nav>
@@ -257,21 +257,21 @@ export default function App() {
                 Lighting Solutions
               </Link>
               <a
-                href="#"
+                href="/batteries"
                 onClick={() => setIsMenuOpen(false)}
                 className="block py-3 text-gray-700 hover:text-gray-900 font-medium border-b border-gray-100 transition text-base"
               >
                 Batteries
               </a>
               <a
-                href="#"
+                href="/sound"
                 onClick={() => setIsMenuOpen(false)}
                 className="block py-3 text-gray-700 hover:text-gray-900 font-medium border-b border-gray-100 transition text-base"
               >
                 Sound Systems
               </a>
               <a
-                href="#"
+                href="/micro-electronics"
                 onClick={() => setIsMenuOpen(false)}
                 className="block py-3 text-gray-700 hover:text-gray-900 font-medium border-b border-gray-100 transition text-base"
               >
@@ -318,12 +318,12 @@ export default function App() {
               ATA Electronics is a trusted electronics brand offering advanced lighting solutions, batteries, sound systems, and microelectronics with a commitment to quality and innovation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-end">
-              <button className="px-6 py-3 bg-black/60 rounded hover:bg-black/70 transition">
+              {/* <button className="px-6 py-3 bg-black/60 rounded hover:bg-black/70 transition">
                 Micro Electronics
               </button>
               <button className="px-6 py-3 bg-black/60 rounded hover:bg-black/70 transition">
                 Lighting Solutions
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
@@ -341,14 +341,14 @@ export default function App() {
             img="/sound2.jpg"
           />
           <ProductCard
-            title="Lighting Solutions"
-            desc="Smart lighting solutions that enhance spaces with efficiency, control, and modern design."
-            img="/l1.jpg"
-          />
-          <ProductCard
             title="Batteries"
             desc="High-performance lithium lighting engineered for durability, efficiency, and uninterrupted illumination."
             img="/battery2.jpg"
+          />
+          <ProductCard
+            title="Lighting Solutions"
+            desc="Smart lighting solutions that enhance spaces with efficiency, control, and modern design."
+            img="/l1.jpg"
           />
           <ProductCard
             title="Microelectronics"

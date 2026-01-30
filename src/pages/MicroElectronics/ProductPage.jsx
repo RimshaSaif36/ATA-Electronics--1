@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import Header from "../../components/mainnavbar";
+import EnquiryModal from "../../components/EnquiryModal";
 const products = [
   {
     title: " IEC 53(RVV)",
@@ -83,6 +84,19 @@ const products = [
 ];
 
 export default function ElectronicProducts() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
+  const openModal = (product) => {
+    setSelectedProduct(product);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedProduct(null);
+  };
+
   return (
     <>
       <Header />
@@ -90,16 +104,25 @@ export default function ElectronicProducts() {
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((item, index) => (
-            <ProductCard key={index} {...item} />
+            <ProductCard key={index} {...item} onEnquiry={() => openModal(item)} />
           ))}
         </div>
       </div>
+
+      {/* Enquiry Modal */}
+      {isModalOpen && (
+        <EnquiryModal 
+          isOpen={isModalOpen} 
+          onClose={closeModal} 
+          product={selectedProduct}
+        />
+      )}
     </>
   );
 }
 
 
-function ProductCard({ title, size, battery, img }) {
+function ProductCard({ title, size, battery, img, onEnquiry }) {
   return (
     <div className="border border-blue-800 p-6 text-center relative">
       {/* Image */}
@@ -129,7 +152,10 @@ function ProductCard({ title, size, battery, img }) {
 
       {/* Buttons */}
       <div className="flex items-center justify-center gap-3">
-        <button className="bg-blue-800 text-white text-xs px-6 py-2 rounded-full font-semibold hover:bg-blue-900 transition">
+        <button 
+          onClick={onEnquiry}
+          className="bg-blue-800 text-white text-xs px-6 py-2 rounded-full font-semibold hover:bg-blue-900 transition"
+        >
           ENQUIRY
         </button>
 
