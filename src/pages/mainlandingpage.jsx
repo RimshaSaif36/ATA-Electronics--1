@@ -199,7 +199,7 @@ export default function App() {
           <img
             src="/logo1.png"
             alt="ATA Electronics Logo"
-            className="h-28 w-auto object-contain"
+            className="h-15 w-auto object-contain"
           />
         </div>
 
@@ -209,9 +209,9 @@ export default function App() {
   
           <Link to="/batteries" className="hover:text-gray-600 transition">Batteries</Link>
           <Link to="/sound" className="hover:text-gray-600 transition">Sound Systems</Link>
-          <a href="/micro-electronics" className="hover:text-gray-600 transition">Microelectronics</a>
-          <a href="#" className="hover:text-gray-600 transition">Customer Support</a>
-          <a href="#" className="hover:text-gray-600 transition">About Us</a>
+          <Link to="/micro-electronics" className="hover:text-gray-600 transition">Microelectronics</Link>
+          <Link to="/support" className="hover:text-gray-600 transition">Customer Support</Link>
+          <Link to="/about" className="hover:text-gray-600 transition">About Us</Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -256,41 +256,41 @@ export default function App() {
               >
                 Lighting Solutions
               </Link>
-              <a
-                href="/batteries"
+              <Link
+                to="/batteries"
                 onClick={() => setIsMenuOpen(false)}
                 className="block py-3 text-gray-700 hover:text-gray-900 font-medium border-b border-gray-100 transition text-base"
               >
                 Batteries
-              </a>
-              <a
-                href="/sound"
+              </Link>
+              <Link
+                to="/sound"
                 onClick={() => setIsMenuOpen(false)}
                 className="block py-3 text-gray-700 hover:text-gray-900 font-medium border-b border-gray-100 transition text-base"
               >
                 Sound Systems
-              </a>
-              <a
-                href="/micro-electronics"
+              </Link>
+              <Link
+                to="/micro-electronics"
                 onClick={() => setIsMenuOpen(false)}
                 className="block py-3 text-gray-700 hover:text-gray-900 font-medium border-b border-gray-100 transition text-base"
               >
                 Microelectronics
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/support"
                 onClick={() => setIsMenuOpen(false)}
                 className="block py-3 text-gray-700 hover:text-gray-900 font-medium border-b border-gray-100 transition text-base"
               >
                 Customer Support
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/about"
                 onClick={() => setIsMenuOpen(false)}
                 className="block py-3 text-gray-700 hover:text-gray-900 font-medium border-b border-gray-100 last:border-b-0 transition text-base"
               >
                 About Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>

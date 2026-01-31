@@ -10,14 +10,14 @@ export default function Header() {
       <header className="flex items-center justify-between px-8 h-16  bg-white">
         {/* Logo */}
         <div className="flex items-center h-full">
-  <Link to="/">
-    <img
-      src="/logo1.png"
-      alt="ATA Electronics Logo"
-      className="h-28 w-auto object-contain cursor-pointer"
-    />
-  </Link>
-</div>
+          <Link to="/">
+            <img
+              src="/logo1.png"
+              alt="ATA Electronics Logo"
+              className="h-15 w-auto object-contain cursor-pointer"
+            />
+          </Link>
+        </div>
 
 
         {/* Desktop Navbar */}

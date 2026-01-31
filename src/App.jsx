@@ -11,6 +11,8 @@ import Lighting from "./pages/lighting";
 import ProductPage from "./pages/Batteries/ProductPage";
 import SoundProduct from "./pages/SoundSystems/ProductPage";
 import ElectronicProducts from "./pages/MicroElectronics/ProductPage";
+import SupportPage from "./pages/SupportPage";
+import AboutPage from "./pages/AboutPage";
 function App() {
   return (
     <Router>
@@ -26,6 +28,8 @@ function App() {
         <Route path="/batteries" element={<ProductPage />} />
         <Route path="/sound" element={<SoundProduct />} />
         <Route path="/micro-electronics" element={<ElectronicProducts />} />
+        <Route path="/support" element={<SupportPage />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </Router>
   );
