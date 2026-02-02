@@ -32,7 +32,7 @@ function EnquiryModal({ isOpen, onClose, product }) {
     <div className="fixed inset-0 bg-transparent bg-opacity-60 flex items-center justify-center z-50 p-4 ">
       <div className="bg-white rounded-lg shadow-2xl max-w-md w-full mx-4 relative border border-gray-200">
         {/* Header */}
-        <div className="bg-gradient-to-r from-blue-800 to-blue-900 text-white p-4 rounded-t-lg relative">
+        <div className="bg-linear-to-r from-blue-800 to-blue-900 text-white p-4 rounded-t-lg relative">
           <h2 className="text-lg font-bold text-center uppercase tracking-wide">Product Enquiry</h2>
           <button
             onClick={onClose}
@@ -110,7 +110,7 @@ function EnquiryModal({ isOpen, onClose, product }) {
             </button>
             <button
               type="submit"
-              className="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-2.5 rounded-md hover:from-red-700 hover:to-red-800 transition-all duration-200 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center gap-2"
+              className="bg-linear-to-r from-red-600 to-red-700 text-white px-6 py-2.5 rounded-md hover:from-red-700 hover:to-red-800 transition-all duration-200 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center gap-2"
             >
               <span>SUBMIT</span>
               <span className="text-xs"></span>
