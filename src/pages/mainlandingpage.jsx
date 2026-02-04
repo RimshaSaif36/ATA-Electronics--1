@@ -471,7 +471,7 @@ export default function App() {
             </h4>
             <ul className="space-y-4">
               <li className="inline-block w-fit pb-1 border-b border-white/60 hover:text-white transition cursor-pointer">
-                About ATA Electronics
+                <a href="/about">About ATA Electronics</a>
               </li><br />
               <li className="inline-block w-fit pb-1 border-b border-white/60 hover:text-white transition cursor-pointer">
                 Solutions
@@ -480,8 +480,9 @@ export default function App() {
                 Warranty Policy
               </li><br />
               <li className="inline-block w-fit hover:text-white transition cursor-pointer">
-                Contact Us
-              </li>
+  <a href="/support">Contact Us</a>
+</li>
+
             </ul>
           </div>
 
@@ -492,13 +493,14 @@ export default function App() {
             </h4>
             <ul className="space-y-4">
               <li className="inline-block w-fit pb-1 border-b border-white/60">
-                North America
+                Jeddah
               </li><br />
               <li className="inline-block w-fit pb-1 border-b border-white/60">
-                Middle East
+               Riyadh
+
               </li><br />
               <li className="inline-block w-fit">
-                Asia Pacific
+                Madinah
               </li>
             </ul>
           </div>
@@ -519,9 +521,15 @@ export default function App() {
               Follow Us
             </h4>
             <div className="flex items-center gap-4 sm:gap-6 flex-wrap">
-              <span className="hover:text-white transition cursor-pointer text-sm">
-                Facebook
-              </span>
+              <a
+  href="https://www.facebook.com/share/1AEMhRzxiE/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hover:text-white transition cursor-pointer text-sm"
+>
+  Facebook
+</a>
+
               <span className="hover:text-white transition cursor-pointer text-sm">
                 Twitter
               </span>

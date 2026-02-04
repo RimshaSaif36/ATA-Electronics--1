@@ -67,106 +67,275 @@ export default function AboutPage() {
           </section>
 
           {/* EVOLUTION & GROWTH */}
-          <section className="grid md:grid-cols-2 gap-10 md:gap-12 items-start">
+          <section className="space-y-16 md:space-y-20">
 
-            {/* LEFT TEXT */}
-            <div>
-              <p className="text-xs font-semibold tracking-[0.18em] text-gray-500 mb-2">
-                THE EVOLUTION
-              </p>
-              <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
-                Meeting the Challenge
-              </h2>
-              <p className="text-sm md:text-base text-gray-700 mb-3">
-                As projects became smarter and more connected, our portfolio
-                evolved beyond individual products to complete solutions.
-              </p>
-              <p className="text-sm md:text-base text-gray-700 mb-3">
-                ATA Electronics supports consultants with detailed design input
-                and technical documentation.
-              </p>
-              <p className="text-sm md:text-base text-gray-700">
-                Our goal is to remove complexity while keeping performance high.
-              </p>
+            {/* Evolution Section */}
+            <div className="grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+              {/* LEFT TEXT */}
+              <div>
+                <p className="text-xs font-semibold tracking-[0.18em] text-gray-500 mb-2">
+                  THE EVOLUTION
+                </p>
+                <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+                  Meeting the Challenge
+                </h2>
+                <p className="text-sm md:text-base text-gray-700 mb-3">
+                  As projects became smarter and more connected, our portfolio
+                  evolved beyond individual products to complete solutions.
+                </p>
+                <p className="text-sm md:text-base text-gray-700 mb-3">
+                  ATA Electronics supports consultants with detailed design input
+                  and technical documentation.
+                </p>
+                <p className="text-sm md:text-base text-gray-700">
+                  Our goal is to remove complexity while keeping performance high.
+                </p>
+              </div>
+
+              {/* RIGHT IMAGE */}
+              <div className="relative overflow-hidden h-80 md:h-[350px] ">
+                <img
+                  src="/mission.jpg"
+                  alt="Evolution"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
 
-            {/* RIGHT IMAGE */}
-            <div className="relative overflow-hidden h-80 md:h-[350px] ">
-              <img
-                src="/mission.jpg"
-                alt="Evolution"
-                className="w-full h-full object-cover"
-              />
-            </div>
+            {/* Growth Section */}
+            <div className="grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+              {/* LEFT IMAGE */}
+              <div className="relative overflow-hidden h-80 md:h-[350px]">
+                <img
+                  src="/building1.jpg"
+                  alt="Growth"
+                  className="w-full h-full object-cover"
+                />
+              </div>
 
-            {/* LEFT IMAGE */}
-            <div className="relative overflow-hidden h-80 md:h-[350px]  md:order-none order-2">
-              <img
-                src="/building1.jpg"
-                alt="Growth"
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* RIGHT TEXT */}
-            <div className="md:order-none order-1">
-              <p className="text-xs font-semibold tracking-[0.18em] text-gray-500 mb-2">
-                THE GROWTH
-              </p>
-              <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-3">
-                Expanding our Footprint
-              </h3>
-              <p className="text-sm md:text-base text-gray-700 mb-3">
-                With a growing presence in the GCC, ATA Electronics is trusted
-                for hotels, villas, offices and retail environments.
-              </p>
-              <p className="text-sm md:text-base text-gray-700">
-                We continue investing in product development and local support.
-              </p>
+              {/* RIGHT TEXT */}
+              <div>
+                <p className="text-xs font-semibold tracking-[0.18em] text-gray-500 mb-2">
+                  THE GROWTH
+                </p>
+                <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-3">
+                  Expanding our Footprint
+                </h3>
+                <p className="text-sm md:text-base text-gray-700 mb-3">
+                  With a growing presence in the GCC, ATA Electronics is trusted
+                  for hotels, villas, offices, and retail environments.
+                </p>
+                <p className="text-sm md:text-base text-gray-700 mb-3">
+                  Our solutions are designed to meet regional standards while
+                  maintaining international quality and reliability.
+                </p>
+                <p className="text-sm md:text-base text-gray-700 mb-3">
+                  Through strategic partnerships and a strong distribution network,
+                  we ensure timely delivery, consistent performance, and long-term value.
+                </p>
+                <p className="text-sm md:text-base text-gray-700">
+                  We continue investing in advanced product development, skilled teams,
+                  and localized technical support to better serve our customers.
+                </p>
+              </div>
             </div>
           </section>
 
           {/* STRATEGY / TEAMWORK / QUALITY */}
-          <section className="grid md:grid-cols-2 gap-10 md:gap-14 items-start">
-            <div className="space-y-10">
-              {[
-                ["STRATEGY", "Focused on Complete Solutions"],
-                ["TEAMWORK", "Working Alongside Your Team"],
-                ["QUALITY", "Built for Long-Term Performance"],
-              ].map(([title, heading]) => (
-                <div key={title}>
-                  <p className="text-xs font-semibold tracking-[0.18em] text-gray-500 mb-2">
-                    {title}
-                  </p>
-                  <h2 className="text-2xl font-semibold text-gray-900 mb-3">
-                    {heading}
-                  </h2>
-                  <p className="text-sm md:text-base text-gray-700">
-                    We deliver consistency, support and reliability on every
-                    project we undertake.
-                  </p>
-                </div>
-              ))}
-            </div>
+          <section className="space-y-16 md:space-y-20">
+  {[
+    {
+      title: "Strategy",
+      description:
+        "Our end-to-end solutions provide customers the flexibility to deploy our products on projects of any size. With regional offices combined with a network of distributors and system integrators, our customers are guaranteed to receive unconditional service and support from a team of diligent and seasoned professionals.",
+      images: [
+        "/1.jpg",
+        "/copper.jpg",
+        "/3.jpg",
+        "/video.jpg",
+        "/strategy.jpg",
+        "/fiber.jpg",
+      ],
+    },
+    {
+      title: "Teamwork",
+      description:
+        "Every project has its challenges and we are with you in your quest to get the best from it. Think of us as an extension of your team and we are here to answer any questions you may have regarding the project design and estimation, installation and commissioning of our products.",
+      images: [
+        "/tw.jpg",
+        "/tw1.jpg",
+        "/quality.jpg",
+        "/tw2.jpg",
+        "/tw3.jpg",
+        "/tw4.jpg",
+      ],
+    },
+    {
+      title: "Quality",
+      description:
+        "We focus on providing high quality products for a wide range of structured cabling and video surveillance solutions that help our customers realize true business value through a process of continuous improvement of both design and manufacture.",
+      images: [
+        "/hosca.jpg",
+        "/kld.jpg",
+        "/lug.jpg",
+        "/unilamp.jpg",
+        "/tryka.jpg",
+        "/atm.jpg",
+      ],
+    },
+  ].map((item) => {
+    const isTeamwork = item.title === "Teamwork";
 
-            <div className="grid grid-cols-2 gap-4 md:gap-5">
-              {[
-                "Lighting, power and low-voltage products",
-                "Support for consultants and design offices",
-                "Logistics and delivery across the region",
-                "Commitment to innovation and quality",
-              ].map((text, i) => (
-                <div
-                  key={i}
-                  className="rounded-lg bg-gray-50 border border-gray-100 h-28 md:h-32 flex items-center justify-center text-xs md:text-sm text-gray-600 text-center px-3"
-                >
-                  {text}
-                </div>
-              ))}
+    return (
+      <div
+        key={item.title}
+        className="grid md:grid-cols-2 gap-10 md:gap-12 items-center"
+      >
+        {/* TEXT */}
+        <div className={isTeamwork ? "md:order-1" : ""}>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            {item.title}
+          </h2>
+          <p className="text-sm md:text-base text-gray-700">
+            {item.description}
+          </p>
+
+          {item.title === "Quality" && (
+            <a
+              href="#"
+              className="text-sm font-semibold text-blue-600 hover:underline mt-4 inline-block"
+            >
+              
+            </a>
+          )}
+        </div>
+
+        {/* IMAGES */}
+        <div
+          className={`grid grid-cols-3 gap-2 ${
+            isTeamwork ? "md:order-2" : ""
+          }`}
+        >
+          {item.images.map((src, i) => (
+            <div
+              key={i}
+              className="bg-gray-100 h-24 md:h-28 overflow-hidden"
+            >
+              <img
+                src={src}
+                alt={`${item.title} image ${i + 1}`}
+                className="w-full h-full object-cover"
+              />
             </div>
-          </section>
+          ))}
+        </div>
+      </div>
+    );
+  })}
+</section>
+
         </div>
       </main>
+      {/* ================= CTA ================= */}
+      <section
+        className="relative py-11 text-white text-center bg-no-repeat bg-center bg-cover"
+        style={{
+          backgroundImage: "url('/about.jpg')",
+          backgroundAttachment: "fixed",
+        }}
+      >
+        {/* Overlay */}
+        <div className="py-8 sm:py-10 px-4">
+          <h2 className="text-xl xs:text-2xl sm:text-3xl font-semibold mb-4 leading-tight">
+            Need help on your project?
+          </h2>
+          <p className="max-w-2xl mx-auto mb-6 text-sm xs:text-base leading-relaxed px-4 sm:px-0">
+            We have a team of specialists ready to find the right products
+that suit your project requirements.
+          </p>
+          <button className="px-6 sm:px-8 py-2 sm:py-3 bg-white/60 text-black text-sm sm:text-base font-medium hover:bg-white/80 transition rounded">
+            Contact Us
+          </button>
+        </div>
+      </section>
+      {/* ================= FOOTER ================= */}
+      <footer className="bg-[#363839] text-gray-300 px-4 sm:px-8 py-12 sm:py-20 text-sm">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 max-w-7xl mx-auto">
+
+          {/* About */}
+          <div>
+            <h4 className="text-white font-semibold mb-4 sm:mb-6 uppercase text-sm sm:text-base">
+              About Us
+            </h4>
+            <ul className="space-y-4">
+              <li className="inline-block w-fit pb-1 border-b border-white/60 hover:text-white transition cursor-pointer">
+                About ATA Electronics
+              </li><br />
+              <li className="inline-block w-fit pb-1 border-b border-white/60 hover:text-white transition cursor-pointer">
+                Solutions
+              </li><br />
+              <li className="inline-block w-fit pb-1 border-b border-white/60 hover:text-white transition cursor-pointer">
+                Warranty Policy
+              </li><br />
+              <li className="inline-block w-fit hover:text-white transition cursor-pointer">
+                Contact Us
+              </li>
+            </ul>
+          </div>
+
+          {/* Locations */}
+          <div>
+            <h4 className="text-white font-semibold mb-4 sm:mb-6 uppercase text-sm sm:text-base">
+              Locations
+            </h4>
+            <ul className="space-y-4">
+              <li className="inline-block w-fit pb-1 border-b border-white/60">
+                Jeddah
+              </li><br />
+              <li className="inline-block w-fit pb-1 border-b border-white/60">
+                Riyadh
+              </li><br />
+              <li className="inline-block w-fit">
+                Madinah
+              </li>
+            </ul>
+          </div>
+
+          {/* CSR */}
+          <div>
+            <h4 className="text-white font-semibold mb-4 sm:mb-6 uppercase text-sm sm:text-base">
+              CSR Statement
+            </h4>
+            <p className="leading-relaxed text-gray-300 text-sm">
+              Taking responsibility for a better tomorrow
+            </p>
+          </div>
+
+          {/* Social */}
+          <div>
+            <h4 className="text-white font-semibold mb-4 sm:mb-6 uppercase text-sm sm:text-base">
+              Follow Us
+            </h4>
+            <div className="flex items-center gap-4 sm:gap-6 flex-wrap">
+              <span className="hover:text-white transition cursor-pointer text-sm">
+                Facebook
+              </span>
+              <span className="hover:text-white transition cursor-pointer text-sm">
+                Twitter
+              </span>
+              <span className="hover:text-white transition cursor-pointer text-sm">
+                LinkedIn
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="mt-12 sm:mt-16 pt-4 sm:pt-6 border-t border-white/40 text-center text-gray-400 text-xs sm:text-sm">
+          © 2026 ATA Electronics Inc. All Rights Reserved.
+        </div>
+      </footer>
     </>
   );
 }

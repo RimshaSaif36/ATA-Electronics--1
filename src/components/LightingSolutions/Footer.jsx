@@ -2,6 +2,21 @@ import React from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
+  // Define URLs for social media
+  const socialLinks = {
+    facebook: "https://www.facebook.com/share/1AEMhRzxiE/",
+    instagram: "https://www.instagram.com/yourinstagram/", // Replace with real Instagram URL
+    linkedin: "https://www.linkedin.com/in/yourlinkedin/", // Replace with real LinkedIn URL
+    whatsapp: "https://wa.me/yourwhatsappnumber", // Replace with real WhatsApp URL
+  };
+
+  const socialIcons = [
+    { icon: FaFacebookF, url: socialLinks.facebook },
+    { icon: FaInstagram, url: socialLinks.instagram },
+    { icon: FaLinkedinIn, url: socialLinks.linkedin },
+    { icon: FaWhatsapp, url: socialLinks.whatsapp },
+  ];
+
   return (
     <footer className="relative text-white">
       {/* Top gold line */}
@@ -24,28 +39,27 @@ export default function Footer() {
               "
             />
 
-
             <div className="flex items-center gap-3">
-              {[FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp].map(
-                (Icon, i) => (
-                  <a
-                    key={i}
-                    href="#"
-                    className="
-                      w-9 h-9 rounded-full
-                      border border-[#d4af37]/40
-                      flex items-center justify-center
-                      hover:bg-[#d4af37]
-                      hover:text-black
-                      hover:shadow-[0_0_12px_rgba(212,175,55,0.6)]
-                      transition-all duration-300
-                      text-xs
-                    "
-                  >
-                    <Icon />
-                  </a>
-                )
-              )}
+              {socialIcons.map(({ icon: Icon, url }, i) => (
+                <a
+                  key={i}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
+                    w-9 h-9 rounded-full
+                    border border-[#d4af37]/40
+                    flex items-center justify-center
+                    hover:bg-[#d4af37]
+                    hover:text-black
+                    hover:shadow-[0_0_12px_rgba(212,175,55,0.6)]
+                    transition-all duration-300
+                    text-xs
+                  "
+                >
+                  <Icon />
+                </a>
+              ))}
             </div>
           </div>
 
@@ -55,12 +69,7 @@ export default function Footer() {
               Solutions
             </h4>
             <ul className="space-y-3 text-xs sm:text-sm text-gray-300">
-              {[
-                "Residential Lighting",
-                "Commercial Lighting",
-                "Batteries & Storage",
-                "Solar Solutions",
-              ].map((item, i) => (
+              {["Residential Lighting", "Commercial Lighting", "Batteries & Storage", "Solar Solutions"].map((item, i) => (
                 <li key={i}>
                   <a className="hover:text-[#d4af37] transition" href="#">
                     {item}
@@ -123,9 +132,6 @@ export default function Footer() {
             </form>
           </div>
         </div>
-
-        {/* Bottom gradient line */}
-        {/* <div className="mt-14 h-px bg-gradient-to-r from-transparent via-[#d4af37]/40 to-transparent" /> */}
 
         {/* Bottom Bar */}
         <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
