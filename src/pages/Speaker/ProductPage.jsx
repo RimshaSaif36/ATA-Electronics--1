@@ -12,21 +12,21 @@ const products = [
     img: "/speaker1.jpg",
   },
   {
-    title: "HOME THEATER SPEAKER", 
+    title: "HOME THEATER SPEAKER",
     size: "250×180×200MM (L×W×H)",
     battery: "5.1 HOME THEATER SYSTEM",
     img: "/speaker2.jpg",
   },
   {
     title: "PA SPEAKER",
-    size: "500×350×300MM (L×W×H)", 
+    size: "500×350×300MM (L×W×H)",
     battery: "500W PA SPEAKER SYSTEM",
     img: "/speaker3.jpg",
   },
   {
     title: "CEILING SPEAKER",
     size: "200MM DIAMETER",
-    battery: "20W CEILING MOUNTED SPEAKER", 
+    battery: "20W CEILING MOUNTED SPEAKER",
     img: "/speaker4.jpg",
   },
   {
@@ -37,7 +37,7 @@ const products = [
   },
   {
     title: "COLUMN SPEAKER",
-    size: "800×150×150MM (H×W×D)", 
+    size: "800×150×150MM (H×W×D)",
     battery: "60W COLUMN SPEAKER",
     img: "/speaker2.jpg",
   },
@@ -72,7 +72,7 @@ export default function SpeakerPage() {
   return (
     <>
       <Header />
-      
+
       <section className="bg-white">
         <div className="relative overflow-hidden bg-gradient-to-r from-red-800 via-red-700 to-red-900">
           <div className="max-w-6xl mx-auto px-6 py-10 text-white">
@@ -94,16 +94,16 @@ export default function SpeakerPage() {
         <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {products.map((item, index) => (
-            <ProductCard key={index} {...item} onEnquiry={() => openModal(item)} />
+              <ProductCard key={index} {...item} onEnquiry={() => openModal(item)} />
             ))}
           </div>
         </div>
       </section>
 
       {isModalOpen && (
-        <EnquiryModal 
-          isOpen={isModalOpen} 
-          onClose={closeModal} 
+        <EnquiryModal
+          isOpen={isModalOpen}
+          onClose={closeModal}
           product={selectedProduct}
         />
       )}
@@ -127,7 +127,7 @@ function ProductCard({ title, size, battery, img, onEnquiry }) {
         {battery}
       </p>
       <div className="flex items-center justify-center gap-3">
-        <button 
+        <button
           onClick={onEnquiry}
           className="bg-red-600 text-white text-xs px-6 py-2 rounded-full font-semibold hover:bg-red-700 transition"
         >

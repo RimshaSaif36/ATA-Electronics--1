@@ -12,21 +12,21 @@ const products = [
     img: "/inverter1.jpg",
   },
   {
-    title: "MODIFIED SINE WAVE INVERTER", 
+    title: "MODIFIED SINE WAVE INVERTER",
     size: "200×100×50MM (L×W×H)",
     battery: "12V - 500W MODIFIED SINE WAVE",
     img: "/inverter2.jpg",
   },
   {
     title: "HIGH FREQUENCY INVERTER",
-    size: "350×200×80MM (L×W×H)", 
+    size: "350×200×80MM (L×W×H)",
     battery: "24V - 2000W HIGH FREQUENCY",
     img: "/inverter3.jpg",
   },
   {
     title: "SOLAR INVERTER",
     size: "300×180×75MM (L×W×H)",
-    battery: "48V - 3000W SOLAR INVERTER", 
+    battery: "48V - 3000W SOLAR INVERTER",
     img: "/inverter4.jpg",
   },
   {
@@ -37,7 +37,7 @@ const products = [
   },
   {
     title: "GRID TIE INVERTER",
-    size: "400×250×100MM (L×W×H)", 
+    size: "400×250×100MM (L×W×H)",
     battery: "220V - 5000W GRID TIE",
     img: "/inverter2.jpg",
   },
@@ -72,7 +72,7 @@ export default function InverterPage() {
   return (
     <>
       <Header />
-      
+
       {/* Header Section with Breadcrumbs */}
       <section className="bg-white">
         <div className="relative overflow-hidden bg-gradient-to-r from-red-800 via-red-700 to-red-900">
@@ -95,7 +95,7 @@ export default function InverterPage() {
         <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {products.map((item, index) => (
-            <ProductCard key={index} {...item} onEnquiry={() => openModal(item)} />
+              <ProductCard key={index} {...item} onEnquiry={() => openModal(item)} />
             ))}
           </div>
         </div>
@@ -103,9 +103,9 @@ export default function InverterPage() {
 
       {/* Enquiry Modal */}
       {isModalOpen && (
-        <EnquiryModal 
-          isOpen={isModalOpen} 
-          onClose={closeModal} 
+        <EnquiryModal
+          isOpen={isModalOpen}
+          onClose={closeModal}
           product={selectedProduct}
         />
       )}
@@ -138,7 +138,7 @@ function ProductCard({ title, size, battery, img, onEnquiry }) {
 
       {/* Buttons */}
       <div className="flex items-center justify-center gap-3">
-        <button 
+        <button
           onClick={onEnquiry}
           className="bg-red-600 text-white text-xs px-6 py-2 rounded-full font-semibold hover:bg-red-700 transition"
         >

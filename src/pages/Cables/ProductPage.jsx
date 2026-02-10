@@ -12,21 +12,21 @@ const products = [
     img: "/cable1.jpg",
   },
   {
-    title: "USB CABLE", 
+    title: "USB CABLE",
     size: "1M / 2M / 3M LENGTH",
     battery: "USB 3.0 TYPE-C CABLE",
     img: "/cable2.jpg",
   },
   {
     title: "VGA CABLE",
-    size: "1.5M / 3M / 5M LENGTH", 
+    size: "1.5M / 3M / 5M LENGTH",
     battery: "VGA MALE TO MALE CABLE",
     img: "/cable3.jpg",
   },
   {
     title: "AUDIO CABLE",
     size: "1M / 2M / 5M LENGTH",
-    battery: "3.5MM AUX AUDIO CABLE", 
+    battery: "3.5MM AUX AUDIO CABLE",
     img: "/cable4.jpg",
   },
   {
@@ -37,7 +37,7 @@ const products = [
   },
   {
     title: "POWER CABLE",
-    size: "1.5M / 3M LENGTH", 
+    size: "1.5M / 3M LENGTH",
     battery: "3 PIN POWER CABLE",
     img: "/cable2.jpg",
   },
@@ -72,7 +72,7 @@ export default function CablesPage() {
   return (
     <>
       <Header />
-      
+
       <section className="bg-white">
         <div className="relative overflow-hidden bg-gradient-to-r from-red-800 via-red-700 to-red-900">
           <div className="max-w-6xl mx-auto px-6 py-10 text-white">
@@ -94,16 +94,16 @@ export default function CablesPage() {
         <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {products.map((item, index) => (
-            <ProductCard key={index} {...item} onEnquiry={() => openModal(item)} />
+              <ProductCard key={index} {...item} onEnquiry={() => openModal(item)} />
             ))}
           </div>
         </div>
       </section>
 
       {isModalOpen && (
-        <EnquiryModal 
-          isOpen={isModalOpen} 
-          onClose={closeModal} 
+        <EnquiryModal
+          isOpen={isModalOpen}
+          onClose={closeModal}
           product={selectedProduct}
         />
       )}
@@ -127,7 +127,7 @@ function ProductCard({ title, size, battery, img, onEnquiry }) {
         {battery}
       </p>
       <div className="flex items-center justify-center gap-3">
-        <button 
+        <button
           onClick={onEnquiry}
           className="bg-red-600 text-white text-xs px-6 py-2 rounded-full font-semibold hover:bg-red-700 transition"
         >

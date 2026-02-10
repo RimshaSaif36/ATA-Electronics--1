@@ -11,21 +11,21 @@ const products = [
     img: "/b1.jpg",
   },
   {
-    title: "LEAD ACID BATTERY", 
+    title: "LEAD ACID BATTERY",
     size: "97±1 × 24±1 × 57±2MM (L×W×H)",
     battery: "6V - 1.2Ah VRLA BATTERY",
     img: "/b2.jpg",
   },
   {
     title: "RECHARGEABLE BATTERY",
-    size: "70±1 × 47±1 × 106±2MM (L×W×H)", 
+    size: "70±1 × 47±1 × 106±2MM (L×W×H)",
     battery: "6V 4.5AH VRLA BATTERY",
     img: "/b3.jpg",
   },
   {
     title: "LITHIUM BATTERY",
     size: "151 × 65 × 99MM (L×W×H)",
-    battery: "12V - 7Ah LITHIUM BATTERY", 
+    battery: "12V - 7Ah LITHIUM BATTERY",
     img: "/b4.jpg",
   },
   {
@@ -36,7 +36,7 @@ const products = [
   },
   {
     title: "BATTERY PACK",
-    size: "522±2 × 268±2 × 226±2MM (L×W×H)", 
+    size: "522±2 × 268±2 × 226±2MM (L×W×H)",
     battery: "12V - 200Ah LEAD-CARBON BATTERY",
     img: "/b6.jpg",
   },
@@ -59,7 +59,7 @@ const products = [
     img: "/b1.jpg",
   },
   {
-    title: "COIN & BUTTON BATTERY", 
+    title: "COIN & BUTTON BATTERY",
     size: "20×3.2MM (D×H)",
     battery: "3V - CR2032 Lithium Battery",
     img: "/b2.jpg",
@@ -72,7 +72,7 @@ const products = [
   },
   {
     title: "BATTERY CHARGER",
-    size: "120×68×35MM (L×W×H)", 
+    size: "120×68×35MM (L×W×H)",
     battery: "AA/AAA NiMH Battery Charger",
     img: "/b4.jpg",
   },
@@ -95,7 +95,7 @@ export default function ProductPage() {
   return (
     <>
       <Header />
-      
+
       {/* Header Section with Breadcrumbs */}
       <section className="bg-white">
         <div className="relative overflow-hidden bg-gradient-to-r from-red-800 via-red-700 to-red-900">
@@ -118,7 +118,7 @@ export default function ProductPage() {
         <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {products.map((item, index) => (
-            <ProductCard key={index} {...item} onEnquiry={() => openModal(item)} />
+              <ProductCard key={index} {...item} onEnquiry={() => openModal(item)} />
             ))}
           </div>
         </div>
@@ -126,9 +126,9 @@ export default function ProductPage() {
 
       {/* Enquiry Modal */}
       {isModalOpen && (
-        <EnquiryModal 
-          isOpen={isModalOpen} 
-          onClose={closeModal} 
+        <EnquiryModal
+          isOpen={isModalOpen}
+          onClose={closeModal}
           product={selectedProduct}
         />
       )}
@@ -167,7 +167,7 @@ function ProductCard({ title, size, battery, img, onEnquiry }) {
 
       {/* Buttons */}
       <div className="flex items-center justify-center gap-3">
-        <button 
+        <button
           onClick={onEnquiry}
           className="bg-red-600 text-white text-xs px-6 py-2 rounded-full font-semibold hover:bg-red-700 transition"
         >
