@@ -205,6 +205,7 @@ export default function App() {
 
         {/* Desktop Navbar */}
         <nav className="hidden md:flex gap-6 text-sm font-medium">
+          <Link to="/products" className="hover:text-gray-600 transition">Products</Link>
           <Link to="/lighting" className="hover:text-gray-600 transition">Lighting Solutions</Link>
   
           <Link to="/batteries" className="hover:text-gray-600 transition">Batteries</Link>
@@ -249,6 +250,13 @@ export default function App() {
 
             {/* Menu Items */}
             <div className="p-4 sm:p-6">
+              <Link
+                to="/products"
+                onClick={() => setIsMenuOpen(false)}
+                className="block py-3 text-gray-700 hover:text-gray-900 font-medium border-b border-gray-100 transition text-base"
+              >
+                Products
+              </Link>
               <Link
                 to="/lighting"
                 onClick={() => setIsMenuOpen(false)}

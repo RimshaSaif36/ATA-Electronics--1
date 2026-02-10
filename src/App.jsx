@@ -8,6 +8,7 @@ import ArchitecturalLighting from "./pages/LightingSolutions/ArchitecturalLighti
 import CommercialLighting from "./pages/LightingSolutions/CommercialLighting";
 import OutdoorLighting from "./pages/LightingSolutions/OutdoorLighting";
 import Lighting from "./pages/lighting";
+import ProductsCategories from "./pages/ProductsCategories";
 import ProductPage from "./pages/Batteries/ProductPage";
 import SoundProduct from "./pages/SoundSystems/ProductPage";
 import ElectronicProducts from "./pages/MicroElectronics/ProductPage";
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainHero />} />
         <Route path="/lighting" element={<Lighting />} />
+        <Route path="/products" element={<ProductsCategories />} />
 
         <Route path="/lighting-solutions" element={<LightingSolutions />} />
         <Route path="/residential-lighting" element={<ResidentialLighting />} />
