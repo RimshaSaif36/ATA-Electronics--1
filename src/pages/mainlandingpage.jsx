@@ -207,7 +207,7 @@ export default function App() {
         <nav className="hidden md:flex gap-6 text-sm font-medium">
           <Link to="/products" className="hover:text-gray-600 transition">Products</Link>
           <Link to="/lighting" className="hover:text-gray-600 transition">Lighting Solutions</Link>
-  
+
           <Link to="/batteries" className="hover:text-gray-600 transition">Batteries</Link>
           <Link to="/sound" className="hover:text-gray-600 transition">Sound Systems</Link>
           <Link to="/micro-electronics" className="hover:text-gray-600 transition">Microelectronics</Link>
@@ -488,8 +488,8 @@ export default function App() {
                 Warranty Policy
               </li><br />
               <li className="inline-block w-fit hover:text-white transition cursor-pointer">
-  <a href="/support">Contact Us</a>
-</li>
+                <a href="/support">Contact Us</a>
+              </li>
 
             </ul>
           </div>
@@ -504,7 +504,7 @@ export default function App() {
                 Jeddah
               </li><br />
               <li className="inline-block w-fit pb-1 border-b border-white/60">
-               Riyadh
+                Riyadh
 
               </li><br />
               <li className="inline-block w-fit">
@@ -530,13 +530,13 @@ export default function App() {
             </h4>
             <div className="flex items-center gap-4 sm:gap-6 flex-wrap">
               <a
-  href="https://www.facebook.com/share/1AEMhRzxiE/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="hover:text-white transition cursor-pointer text-sm"
->
-  Facebook
-</a>
+                href="https://www.facebook.com/share/1AEMhRzxiE/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition cursor-pointer text-sm"
+              >
+                Facebook
+              </a>
 
               <span className="hover:text-white transition cursor-pointer text-sm">
                 Twitter

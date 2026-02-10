@@ -38,38 +38,38 @@ const categories = [
     image: "/projector.jpg",
     to: "/projector",
   },
-   {
+  {
     title: "Tablet Stand",
     image: "/tabletstand.jpg",
     to: "/tablet-stand",
   },
-   {
+  {
     title: "Cables",
     image: "/Cables.jpg",
     to: "/tablet-stand",
   },
-    
-   {
+
+  {
     title: "Cable Converters",
     image: "/cable.jpg",
     to: "/tablet-stand",
   },
-   {
+  {
     title: "Audio-Video Converters",
     image: "/Audiovideoconverters.jpg",
     to: "/tablet-stand",
   },
-   {
+  {
     title: "Splitter",
     image: "/Splitter.jpg",
     to: "/Splitter",
   },
-   {
+  {
     title: "Extender",
     image: "/extender.jpg",
     to: "/extender",
   },
-   {
+  {
     title: "SELECTOR SWITCH",
     image: "/SELECTORSWITCH.jpg",
     to: "/selector-switch",
@@ -79,19 +79,19 @@ const categories = [
     image: "/Connectors.jpg",
     to: "/connectors",
   },
-   
-   {
+
+  {
     title: "Power Supplies",
     image: "/PowerSupplies.jpg",
     to: "/power-supplies",
   },
-  
-   {
+
+  {
     title: "Multi Adapter",
     image: "/MultiAdapter.jpg",
     to: "/multi-adapter",
   },
-   {
+  {
     title: "Power Extension",
     image: "/PowerExtension.jpg",
     to: "/power-extension",
@@ -101,7 +101,7 @@ const categories = [
     image: "/DESKTOPSOCKETS.jpg",
     to: "/desktop-sockets",
   },
-   {
+  {
     title: "Remote",
     image: "/Remote.jpg",
     to: "/remote",
@@ -111,18 +111,18 @@ const categories = [
     image: "/CoolingFan.jpg",
     to: "/cooling-fan",
   },
-    {
+  {
     title: "Electronics Components",
     image: "/ElectronicsComponents.jpg",
     to: "/electronics-components",
   },
-   {
+  {
     title: "School Projects",
     image: "/SchoolProjects.jpg",
     to: "/school-projects",
   },
-  
-   {
+
+  {
     title: "Arduino Kit",
     image: "/ArduinoKit.jpg",
     to: "/arduino-kit",
@@ -142,17 +142,17 @@ const categories = [
     image: "/VOLUMECONTROLLERS.jpg.jpg",
     to: "/volume-controllers",
   },
-   {
+  {
     title: "Microphone",
     image: "/Microphone.jpg",
     to: "/microphone",
   },
-   {
+  {
     title: "Mic & Speaker Stand",
     image: "/MicSpeakerStand.jpg",
     to: "/mic-speaker-stand",
   },
-   {
+  {
     title: "Faceplate",
     image: "/Faceplate.jpg",
     to: "/faceplate",
@@ -167,7 +167,7 @@ const categories = [
     image: "/MultiMeter.jpg",
     to: "/multi-meter",
   },
-   {
+  {
     title: "Clamp Meter",
     image: "/ClampMeter.jpg",
     to: "/clamp-meter",
@@ -177,7 +177,7 @@ const categories = [
     image: "/Instruments.jpg",
     to: "/instruments",
   },
-    {
+  {
     title: "Tools",
     image: "/Tools.jpg",
     to: "/tools",
