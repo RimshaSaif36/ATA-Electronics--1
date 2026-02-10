@@ -3,82 +3,59 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Header from "../../components/mainnavbar";
 import EnquiryModal from "../../components/EnquiryModal";
+
 const products = [
   {
-    title: "LITHIUM ION BATTERY",
-    size: "503×190×408MM (L×W×H)",
-    battery: "12V - 100Ah TUBULAR BATTERY",
-    img: "/b1.jpg",
+    title: "PURE SINE WAVE INVERTER",
+    size: "280×150×70MM (L×W×H)",
+    battery: "12V - 1000W PURE SINE WAVE",
+    img: "/inverter1.jpg",
   },
   {
-    title: "LEAD ACID BATTERY", 
-    size: "97±1 × 24±1 × 57±2MM (L×W×H)",
-    battery: "6V - 1.2Ah VRLA BATTERY",
-    img: "/b2.jpg",
+    title: "MODIFIED SINE WAVE INVERTER", 
+    size: "200×100×50MM (L×W×H)",
+    battery: "12V - 500W MODIFIED SINE WAVE",
+    img: "/inverter2.jpg",
   },
   {
-    title: "RECHARGEABLE BATTERY",
-    size: "70±1 × 47±1 × 106±2MM (L×W×H)", 
-    battery: "6V 4.5AH VRLA BATTERY",
-    img: "/b3.jpg",
+    title: "HIGH FREQUENCY INVERTER",
+    size: "350×200×80MM (L×W×H)", 
+    battery: "24V - 2000W HIGH FREQUENCY",
+    img: "/inverter3.jpg",
   },
   {
-    title: "LITHIUM BATTERY",
-    size: "151 × 65 × 99MM (L×W×H)",
-    battery: "12V - 7Ah LITHIUM BATTERY", 
-    img: "/b4.jpg",
+    title: "SOLAR INVERTER",
+    size: "300×180×75MM (L×W×H)",
+    battery: "48V - 3000W SOLAR INVERTER", 
+    img: "/inverter4.jpg",
   },
   {
-    title: "ALKALINE BATTERY",
-    size: "17.5×26.5×48.5MM (L×W×H)",
-    battery: "300mAh - 9V RECHARGEABLE BATTERY",
-    img: "/b5.jpg",
+    title: "UPS INVERTER",
+    size: "250×120×60MM (L×W×H)",
+    battery: "12V - 800W UPS INVERTER",
+    img: "/inverter1.jpg",
   },
   {
-    title: "BATTERY PACK",
-    size: "522±2 × 268±2 × 226±2MM (L×W×H)", 
-    battery: "12V - 200Ah LEAD-CARBON BATTERY",
-    img: "/b6.jpg",
+    title: "GRID TIE INVERTER",
+    size: "400×250×100MM (L×W×H)", 
+    battery: "220V - 5000W GRID TIE",
+    img: "/inverter2.jpg",
   },
   {
-    title: "SPECIAL BATTERY",
-    size: "14 × 14 × 50 mm (L × W × H)",
-    battery: "1.5V USB Rechargeable Lithium Battery",
-    img: "/b7.jpg",
+    title: "MICRO INVERTER",
+    size: "180×120×40MM (L×W×H)",
+    battery: "24V - 300W MICRO INVERTER",
+    img: "/inverter3.jpg",
   },
   {
-    title: "LI-PO BATTERY",
-    size: "14 × 14 × 50 mm (L × W × H)",
-    battery: " 1.2V-1200 mAh ATA Rechargeable Battery",
-    img: "/b8.jpg",
-  },
-  {
-    title: "CORDLESS PHONE BATTERY",
-    size: "70×47×106MM (L×W×H)",
-    battery: "3.6V - 600mAh NiMH Battery",
-    img: "/b1.jpg",
-  },
-  {
-    title: "COIN & BUTTON BATTERY", 
-    size: "20×3.2MM (D×H)",
-    battery: "3V - CR2032 Lithium Battery",
-    img: "/b2.jpg",
-  },
-  {
-    title: "LEAD-ACID BATTERY CHARGER",
-    size: "180×85×60MM (L×W×H)",
-    battery: "12V - 2A Smart Battery Charger",
-    img: "/b3.jpg",
-  },
-  {
-    title: "BATTERY CHARGER",
-    size: "120×68×35MM (L×W×H)", 
-    battery: "AA/AAA NiMH Battery Charger",
-    img: "/b4.jpg",
+    title: "POWER INVERTER",
+    size: "320×170×85MM (L×W×H)",
+    battery: "12V - 1500W POWER INVERTER",
+    img: "/inverter4.jpg",
   },
 ];
 
-export default function ProductPage() {
+export default function InverterPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -109,7 +86,7 @@ export default function ProductPage() {
                 Products Category
               </Link>
             </div>
-            <h1 className="text-3xl sm:text-4xl font-bold">BATTERIES</h1>
+            <h1 className="text-3xl sm:text-4xl font-bold">INVERTER</h1>
           </div>
         </div>
       </section>
@@ -136,7 +113,6 @@ export default function ProductPage() {
   );
 }
 
-
 function ProductCard({ title, size, battery, img, onEnquiry }) {
   return (
     <div className="border border-red-500 p-6 text-center relative">
@@ -146,11 +122,6 @@ function ProductCard({ title, size, battery, img, onEnquiry }) {
         alt={title}
         className="mx-auto h-44 object-contain mb-4"
       />
-
-      {/* Copyright */}
-      <p className="text-[10px] text-gray-400 mb-3">
-        {/* Copyright © Square Electronics & Trading */}
-      </p>
 
       {/* Title */}
       <h3 className="font-bold text-sm mb-2 uppercase">{title}</h3>

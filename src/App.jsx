@@ -12,6 +12,10 @@ import ProductsCategories from "./pages/ProductsCategories";
 import ProductPage from "./pages/Batteries/ProductPage";
 import SoundProduct from "./pages/SoundSystems/ProductPage";
 import ElectronicProducts from "./pages/MicroElectronics/ProductPage";
+import InverterPage from "./pages/Inverter/ProductPage";
+import VoltageStabilizerPage from "./pages/VoltageStabilizer/ProductPage";
+import CablesPage from "./pages/Cables/ProductPage";
+import SpeakerPage from "./pages/Speaker/ProductPage";
 import SupportPage from "./pages/SupportPage";
 import AboutPage from "./pages/AboutPage";
 function App() {
@@ -28,6 +32,10 @@ function App() {
         <Route path="/commercial-lighting" element={<CommercialLighting />} />
         <Route path="/outdoor-lighting" element={<OutdoorLighting />} />
         <Route path="/batteries" element={<ProductPage />} />
+        <Route path="/inverter" element={<InverterPage />} />
+        <Route path="/voltage-stabilizer" element={<VoltageStabilizerPage />} />
+        <Route path="/cables" element={<CablesPage />} />
+        <Route path="/speaker" element={<SpeakerPage />} />
         <Route path="/sound" element={<SoundProduct />} />
         <Route path="/micro-electronics" element={<ElectronicProducts />} />
         <Route path="/support" element={<SupportPage />} />

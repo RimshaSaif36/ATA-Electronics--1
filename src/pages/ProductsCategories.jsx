@@ -46,7 +46,7 @@ const categories = [
   {
     title: "Cables",
     image: "/Cables.jpg",
-    to: "/tablet-stand",
+    to: "/cables",
   },
 
   {
