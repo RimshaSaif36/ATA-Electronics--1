@@ -5,60 +5,40 @@ import EnquiryModal from "../../components/EnquiryModal";
 
 const products = [
   {
-    title: "Lithium Ion Battery",
-    img: "/lithiumionbattery.jpg",
+    title: "AC DC Power Supply",
+    img: "/ACDCPowerSupply.jpg",
   },
   {
-    title: "Lead Acid Battery",
-    img: "/LeadAcidBattery.jpg",
+    title: "SMPS Power Supply",
+    img: "/SMPSPowerSupply.jpg",
   },
   {
-    title: "Rechargeable Battery",
-    img: "/RechargeableBattery.jpg",
+    title: "Desktop Power Adapter",
+    img: "/DesktopPowerAdapter.jpg",
   },
   {
-    title: "Lithium Battery",
-    img: "/LithiumBattery.jpg",
+    title: "Wall Mount Power Adapter",
+    img: "/WallMountPowerAdapter.jpg",
   },
   {
-    title: "Alkaline Battery",
-    img: "/AlkalineBattery.jpg",
+    title: "Industrial Power Supply",
+    img: "/IndustrialPowerSupply.jpg",
   },
   {
-    title: "Battery Pack",
-    img: "/BatteryPack.jpg",
+    title: "LED Power Supply",
+    img: "/LEDPowerSupply.jpg",
   },
   {
-    title: "Special Battery",
-    img: "/SpecialBattery.jpg",
+    title: "Battery Charger Power Supply",
+    img: "/BatteryChargerPowerSupply.jpg",
   },
   {
-    title: "Li-Po Battery",
-    img: "/LiPoBattery.jpg",
-  },
-  {
-    title: "Cordless Phone Battery",
-    img: "/CordlessPhoneBattery.jpg",
-  },
-  {
-    title: "Coin & Button Battery",
-    img: "/CoinButtonBattery.jpg",
-  },
-   {
-    title: "Lead-Acid Battery Charger",
-    img: "/LeadAcidBatteryCharger.jpg",
-  },
-  {
-    title: "BATTERY CHARGER",
-    img: "/BATTERYCHARGER.jpg",
-  },
-   {
-    title: "Battery Materials",
-    img: "/BatteryMaterials.jpg",
+    title: "Open Frame Power Supply",
+    img: "/OpenFramePowerSupply.jpg",
   },
 ];
 
-export default function InverterPage() {
+export default function PowerSuppliersPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -89,11 +69,11 @@ export default function InverterPage() {
                 Products Category
               </Link>
               <span className="mx-2">/</span>
-              <span>Batteries</span>
+              <span>Power Suppliers</span>
             </div>
 
             <h1 className="text-3xl sm:text-4xl font-bold">
-              BATTERIES
+              POWER SUPPLIERS
             </h1>
           </div>
         </div>

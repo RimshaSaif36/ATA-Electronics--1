@@ -3,73 +3,38 @@ import { Link } from "react-router-dom";
 import Header from "../../components/mainnavbar";
 import EnquiryModal from "../../components/EnquiryModal";
 
-const products = [
-  {
-    title: "Lithium Ion Battery",
-    img: "/lithiumionbattery.jpg",
-  },
-  {
-    title: "Lead Acid Battery",
-    img: "/LeadAcidBattery.jpg",
-  },
-  {
-    title: "Rechargeable Battery",
-    img: "/RechargeableBattery.jpg",
-  },
-  {
-    title: "Lithium Battery",
-    img: "/LithiumBattery.jpg",
-  },
-  {
-    title: "Alkaline Battery",
-    img: "/AlkalineBattery.jpg",
-  },
-  {
-    title: "Battery Pack",
-    img: "/BatteryPack.jpg",
-  },
-  {
-    title: "Special Battery",
-    img: "/SpecialBattery.jpg",
-  },
-  {
-    title: "Li-Po Battery",
-    img: "/LiPoBattery.jpg",
-  },
-  {
-    title: "Cordless Phone Battery",
-    img: "/CordlessPhoneBattery.jpg",
-  },
-  {
-    title: "Coin & Button Battery",
-    img: "/CoinButtonBattery.jpg",
-  },
-   {
-    title: "Lead-Acid Battery Charger",
-    img: "/LeadAcidBatteryCharger.jpg",
-  },
-  {
-    title: "BATTERY CHARGER",
-    img: "/BATTERYCHARGER.jpg",
-  },
-   {
-    title: "Battery Materials",
-    img: "/BatteryMaterials.jpg",
-  },
+// ✅ Define a Product type
+type Product = {
+  title: string;
+  img: string;
+};
+
+// ✅ Typed products array
+const products: Product[] = [
+  { title: "Adjustable Mic Stand", img: "/AdjustableMicStand.jpg" },
+  { title: "Tripod Mic Stand", img: "/TripodMicStand.jpg" },
+  { title: "Desk Mic Stand", img: "/DeskMicStand.jpg" },
+  { title: "Boom Mic Stand", img: "/BoomMicStand.jpg" },
+  { title: "Speaker Stand", img: "/SpeakerStand.jpg" },
+  { title: "Foldable Mic Stand", img: "/FoldableMicStand.jpg" },
+  { title: "Heavy-Duty Stand", img: "/HeavyDutyStand.jpg" },
+  { title: "Compact Speaker Stand", img: "/CompactSpeakerStand.jpg" },
 ];
 
-export default function InverterPage() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedProduct, setSelectedProduct] = useState(null);
+export default function MicSpeakerStandPage() {
+  // ✅ Typed state for selectedProduct
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
-  const openModal = (product) => {
+  // ✅ Typed parameter
+  const openModal = (product: Product) => {
     setSelectedProduct(product);
     setIsModalOpen(true);
   };
 
   const closeModal = () => {
-    setIsModalOpen(false);
     setSelectedProduct(null);
+    setIsModalOpen(false);
   };
 
   return (
@@ -89,11 +54,11 @@ export default function InverterPage() {
                 Products Category
               </Link>
               <span className="mx-2">/</span>
-              <span>Batteries</span>
+              <span>Mic & Speaker Stands</span>
             </div>
 
             <h1 className="text-3xl sm:text-4xl font-bold">
-              BATTERIES
+              MIC & SPEAKER STANDS
             </h1>
           </div>
         </div>
@@ -131,7 +96,7 @@ export default function InverterPage() {
       </section>
 
       {/* Enquiry Modal */}
-      {isModalOpen && (
+      {isModalOpen && selectedProduct && (
         <EnquiryModal
           isOpen={isModalOpen}
           onClose={closeModal}

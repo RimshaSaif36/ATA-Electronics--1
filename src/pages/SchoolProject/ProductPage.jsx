@@ -5,60 +5,40 @@ import EnquiryModal from "../../components/EnquiryModal";
 
 const products = [
   {
-    title: "Lithium Ion Battery",
-    img: "/lithiumionbattery.jpg",
+    title: "Science Project Kit",
+    img: "/ScienceProjectKit.jpg",
   },
   {
-    title: "Lead Acid Battery",
-    img: "/LeadAcidBattery.jpg",
+    title: "Electronics Learning Kit",
+    img: "/ElectronicsLearningKit.jpg",
   },
   {
-    title: "Rechargeable Battery",
-    img: "/RechargeableBattery.jpg",
+    title: "Robotics Starter Kit",
+    img: "/RoboticsStarterKit.jpg",
   },
   {
-    title: "Lithium Battery",
-    img: "/LithiumBattery.jpg",
+    title: "STEM Education Kit",
+    img: "/STEMEducationKit.jpg",
   },
   {
-    title: "Alkaline Battery",
-    img: "/AlkalineBattery.jpg",
+    title: "DIY Circuit Kit",
+    img: "/DIYCircuitKit.jpg",
   },
   {
-    title: "Battery Pack",
-    img: "/BatteryPack.jpg",
+    title: "Arduino Starter Kit",
+    img: "/ArduinoStarterKit.jpg",
   },
   {
-    title: "Special Battery",
-    img: "/SpecialBattery.jpg",
+    title: "Solar Project Kit",
+    img: "/SolarProjectKit.jpg",
   },
   {
-    title: "Li-Po Battery",
-    img: "/LiPoBattery.jpg",
-  },
-  {
-    title: "Cordless Phone Battery",
-    img: "/CordlessPhoneBattery.jpg",
-  },
-  {
-    title: "Coin & Button Battery",
-    img: "/CoinButtonBattery.jpg",
-  },
-   {
-    title: "Lead-Acid Battery Charger",
-    img: "/LeadAcidBatteryCharger.jpg",
-  },
-  {
-    title: "BATTERY CHARGER",
-    img: "/BATTERYCHARGER.jpg",
-  },
-   {
-    title: "Battery Materials",
-    img: "/BatteryMaterials.jpg",
+    title: "Model Making Kit",
+    img: "/ModelMakingKit.jpg",
   },
 ];
 
-export default function InverterPage() {
+export default function SchoolProjectPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -89,11 +69,11 @@ export default function InverterPage() {
                 Products Category
               </Link>
               <span className="mx-2">/</span>
-              <span>Batteries</span>
+              <span>School Projects</span>
             </div>
 
             <h1 className="text-3xl sm:text-4xl font-bold">
-              BATTERIES
+              SCHOOL PROJECTS
             </h1>
           </div>
         </div>

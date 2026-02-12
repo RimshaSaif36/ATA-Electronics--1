@@ -5,60 +5,40 @@ import EnquiryModal from "../../components/EnquiryModal";
 
 const products = [
   {
-    title: "Lithium Ion Battery",
-    img: "/lithiumionbattery.jpg",
+    title: "Universal TV Stand Mount",
+    img: "/UniversalTVStandMount.jpg",
   },
   {
-    title: "Lead Acid Battery",
-    img: "/LeadAcidBattery.jpg",
+    title: "Adjustable TV Floor Stand",
+    img: "/AdjustableTVFloorStand.jpg",
   },
   {
-    title: "Rechargeable Battery",
-    img: "/RechargeableBattery.jpg",
+    title: "Table Top TV Stand",
+    img: "/TableTopTVStand.jpg",
   },
   {
-    title: "Lithium Battery",
-    img: "/LithiumBattery.jpg",
+    title: "Mobile TV Stand",
+    img: "/MobileTVStand.jpg",
   },
   {
-    title: "Alkaline Battery",
-    img: "/AlkalineBattery.jpg",
+    title: "Heavy Duty TV Stand",
+    img: "/HeavyDutyTVStand.jpg",
   },
   {
-    title: "Battery Pack",
-    img: "/BatteryPack.jpg",
+    title: "Swivel TV Stand",
+    img: "/SwivelTVStand.jpg",
   },
   {
-    title: "Special Battery",
-    img: "/SpecialBattery.jpg",
+    title: "Tilt TV Stand",
+    img: "/TiltTVStand.jpg",
   },
   {
-    title: "Li-Po Battery",
-    img: "/LiPoBattery.jpg",
-  },
-  {
-    title: "Cordless Phone Battery",
-    img: "/CordlessPhoneBattery.jpg",
-  },
-  {
-    title: "Coin & Button Battery",
-    img: "/CoinButtonBattery.jpg",
-  },
-   {
-    title: "Lead-Acid Battery Charger",
-    img: "/LeadAcidBatteryCharger.jpg",
-  },
-  {
-    title: "BATTERY CHARGER",
-    img: "/BATTERYCHARGER.jpg",
-  },
-   {
-    title: "Battery Materials",
-    img: "/BatteryMaterials.jpg",
+    title: "LED/LCD TV Stand Mount",
+    img: "/LEDLCDTVStandMount.jpg",
   },
 ];
 
-export default function InverterPage() {
+export default function TVStandMountPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -89,11 +69,11 @@ export default function InverterPage() {
                 Products Category
               </Link>
               <span className="mx-2">/</span>
-              <span>Batteries</span>
+              <span>TV Stand Mount</span>
             </div>
 
             <h1 className="text-3xl sm:text-4xl font-bold">
-              BATTERIES
+              TV STAND MOUNT
             </h1>
           </div>
         </div>

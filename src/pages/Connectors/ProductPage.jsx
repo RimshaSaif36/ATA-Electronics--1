@@ -5,60 +5,40 @@ import EnquiryModal from "../../components/EnquiryModal";
 
 const products = [
   {
-    title: "Lithium Ion Battery",
-    img: "/lithiumionbattery.jpg",
+    title: "USB Connector",
+    img: "/USBConnector.jpg",
   },
   {
-    title: "Lead Acid Battery",
-    img: "/LeadAcidBattery.jpg",
+    title: "HDMI Connector",
+    img: "/HDMIConnector.jpg",
   },
   {
-    title: "Rechargeable Battery",
-    img: "/RechargeableBattery.jpg",
+    title: "Audio Connector",
+    img: "/AudioConnector.jpg",
   },
   {
-    title: "Lithium Battery",
-    img: "/LithiumBattery.jpg",
+    title: "Power Connector",
+    img: "/PowerConnector.jpg",
   },
   {
-    title: "Alkaline Battery",
-    img: "/AlkalineBattery.jpg",
+    title: "LAN Connector",
+    img: "/LANConnector.jpg",
   },
   {
-    title: "Battery Pack",
-    img: "/BatteryPack.jpg",
+    title: "Coaxial Connector",
+    img: "/CoaxialConnector.jpg",
   },
   {
-    title: "Special Battery",
-    img: "/SpecialBattery.jpg",
+    title: "DC Jack Connector",
+    img: "/DCJackConnector.jpg",
   },
   {
-    title: "Li-Po Battery",
-    img: "/LiPoBattery.jpg",
-  },
-  {
-    title: "Cordless Phone Battery",
-    img: "/CordlessPhoneBattery.jpg",
-  },
-  {
-    title: "Coin & Button Battery",
-    img: "/CoinButtonBattery.jpg",
-  },
-   {
-    title: "Lead-Acid Battery Charger",
-    img: "/LeadAcidBatteryCharger.jpg",
-  },
-  {
-    title: "BATTERY CHARGER",
-    img: "/BATTERYCHARGER.jpg",
-  },
-   {
-    title: "Battery Materials",
-    img: "/BatteryMaterials.jpg",
+    title: "Terminal Block Connector",
+    img: "/TerminalBlockConnector.jpg",
   },
 ];
 
-export default function InverterPage() {
+export default function ConnectorsPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -89,11 +69,11 @@ export default function InverterPage() {
                 Products Category
               </Link>
               <span className="mx-2">/</span>
-              <span>Batteries</span>
+              <span>Connectors</span>
             </div>
 
             <h1 className="text-3xl sm:text-4xl font-bold">
-              BATTERIES
+              CONNECTORS
             </h1>
           </div>
         </div>

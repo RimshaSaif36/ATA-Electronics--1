@@ -5,60 +5,40 @@ import EnquiryModal from "../../components/EnquiryModal";
 
 const products = [
   {
-    title: "Lithium Ion Battery",
-    img: "/lithiumionbattery.jpg",
+    title: "TV Remote Control",
+    img: "/TVRemote.jpg",
   },
   {
-    title: "Lead Acid Battery",
-    img: "/LeadAcidBattery.jpg",
+    title: "AC Remote Control",
+    img: "/ACRemote.jpg",
   },
   {
-    title: "Rechargeable Battery",
-    img: "/RechargeableBattery.jpg",
+    title: "Universal Remote",
+    img: "/UniversalRemote.jpg",
   },
   {
-    title: "Lithium Battery",
-    img: "/LithiumBattery.jpg",
+    title: "Set Top Box Remote",
+    img: "/SetTopBoxRemote.jpg",
   },
   {
-    title: "Alkaline Battery",
-    img: "/AlkalineBattery.jpg",
+    title: "Projector Remote",
+    img: "/ProjectorRemote.jpg",
   },
   {
-    title: "Battery Pack",
-    img: "/BatteryPack.jpg",
+    title: "Sound System Remote",
+    img: "/SoundSystemRemote.jpg",
   },
   {
-    title: "Special Battery",
-    img: "/SpecialBattery.jpg",
+    title: "Fan Remote Control",
+    img: "/FanRemote.jpg",
   },
   {
-    title: "Li-Po Battery",
-    img: "/LiPoBattery.jpg",
-  },
-  {
-    title: "Cordless Phone Battery",
-    img: "/CordlessPhoneBattery.jpg",
-  },
-  {
-    title: "Coin & Button Battery",
-    img: "/CoinButtonBattery.jpg",
-  },
-   {
-    title: "Lead-Acid Battery Charger",
-    img: "/LeadAcidBatteryCharger.jpg",
-  },
-  {
-    title: "BATTERY CHARGER",
-    img: "/BATTERYCHARGER.jpg",
-  },
-   {
-    title: "Battery Materials",
-    img: "/BatteryMaterials.jpg",
+    title: "Smart Remote",
+    img: "/SmartRemote.jpg",
   },
 ];
 
-export default function InverterPage() {
+export default function RemotePage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -89,11 +69,11 @@ export default function InverterPage() {
                 Products Category
               </Link>
               <span className="mx-2">/</span>
-              <span>Batteries</span>
+              <span>Remote </span>
             </div>
 
             <h1 className="text-3xl sm:text-4xl font-bold">
-              BATTERIES
+              REMOTE 
             </h1>
           </div>
         </div>

@@ -13,9 +13,18 @@ import ProductPage from "./pages/Batteries/ProductPage";
 import SoundProduct from "./pages/SoundSystems/ProductPage";
 import ElectronicProducts from "./pages/MicroElectronics/ProductPage";
 import InverterPage from "./pages/Inverter/ProductPage";
+import TVStandMountPage from "./pages/TVStandMount/ProductPage";
 import VoltageStabilizerPage from "./pages/VoltageStabilizer/ProductPage";
 import CablesPage from "./pages/Cables/ProductPage";
 import SpeakerPage from "./pages/Speaker/ProductPage";
+import ConnectorsPage from "./pages/Connectors/ProductPage";
+import PowerSuppliersPage from "./pages/PowerSuppliers/ProductPage";
+import RemotePage from "./pages/Remote/ProductPage";
+import SchoolProjectPage from "./pages/SchoolProject/ProductPage";
+import MicrophonePage from "./pages/Microphone/ProductPage";
+import MicSpeakerStandPage from "./pages/MicSpeakerStandPage/ProductPage";
+import ToolsPage from "./pages/Tools/ProductPage";
+
 import SupportPage from "./pages/SupportPage";
 import AboutPage from "./pages/AboutPage";
 function App() {
@@ -39,6 +48,18 @@ function App() {
         <Route path="/sound" element={<SoundProduct />} />
         <Route path="/micro-electronics" element={<ElectronicProducts />} />
         <Route path="/support" element={<SupportPage />} />
+        <Route path="/tv-stand-mount" element={<TVStandMountPage />} />
+        <Route path="/connectors" element={<ConnectorsPage />} />
+        <Route path="/power-supplies" element={<PowerSuppliersPage />} />
+        <Route path="/remote" element={<RemotePage />} />
+        <Route path="/school-projects" element={<SchoolProjectPage />} />
+        <Route path="/microphone" element={<MicrophonePage />} />
+        <Route
+          path="/mic-speaker-stand"
+          element={<MicSpeakerStandPage />}
+        />
+        <Route path="/tools" element={<ToolsPage />} />
+      
         <Route path="/about" element={<AboutPage />} />
       </Routes>
     </Router>
