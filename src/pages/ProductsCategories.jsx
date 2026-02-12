@@ -185,7 +185,7 @@ const categories = [
   {
     title: "Soldering Tools",
     image: "/SolderingTools.jpg",
-    to: "/Soldering Tools",
+    to: "/soldering-tools",
   },
   {
     title: "Thermometer & Hygromet",

@@ -4,41 +4,17 @@ import Header from "../../components/mainnavbar";
 import EnquiryModal from "../../components/EnquiryModal";
 
 const products = [
-  {
-    title: "Floor Stand",
-    img: "/FloorStand.jpg",
-  },
-  {
-    title: "Single Arm Swivel Mount",
-    img: "/SingleArmSwivelMount.jpg",
-  },
-  {
-    title: "Dual Arm Swivel Mount",
-    img: "/DualArmSwivelMount.jpg",
-  },
-  {
-    title: "Mobile TV Stand",
-    img: "/MobileTVStand.jpg",
-  },
-  {
-    title: "Heavy Duty TV Stand",
-    img: "/HeavyDutyTVStand.jpg",
-  },
-  {
-    title: "Swivel TV Stand",
-    img: "/SwivelTVStand.jpg",
-  },
-  {
-    title: "Tilt TV Stand",
-    img: "/TiltTVStand.jpg",
-  },
-  {
-    title: "LED/LCD TV Stand Mount",
-    img: "/LEDLCDTVStandMount.jpg",
-  },
+  { title: "Soldering Iron", img: "/SolderingIron.jpg" },
+  { title: "Soldering Station", img: "/SolderingStation.jpg" },
+  { title: "Desoldering Pump", img: "/DesolderingPump.jpg" },
+  { title: "Solder Wire", img: "/SolderWire.jpg" },
+  { title: "Heat Gun", img: "/HeatGun.jpg" },
+  { title: "Flux Pen", img: "/FluxPen.jpg" },
+  { title: "PCB Holder", img: "/PCBHolder.jpg" },
+  { title: "Soldering Tip Kit", img: "/SolderingTipKit.jpg" },
 ];
 
-export default function TVStandMountPage() {
+export default function SolderingToolsPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -69,11 +45,11 @@ export default function TVStandMountPage() {
                 Products Category
               </Link>
               <span className="mx-2">/</span>
-              <span>TV Stand Mount</span>
+              <span>Soldering Tools</span>
             </div>
 
             <h1 className="text-3xl sm:text-4xl font-bold">
-              TV STAND MOUNT
+              SOLDERING TOOLS
             </h1>
           </div>
         </div>

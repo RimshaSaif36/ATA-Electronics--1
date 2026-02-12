@@ -24,8 +24,9 @@ import SchoolProjectPage from "./pages/SchoolProject/ProductPage";
 import MicrophonePage from "./pages/Microphone/ProductPage";
 import MicSpeakerStandPage from "./pages/MicSpeakerStandPage/ProductPage";
 import ToolsPage from "./pages/Tools/ProductPage";
-
+import SolderingToolsPage from "./pages/SolderingTools/ProductPage";
 import SupportPage from "./pages/SupportPage";
+import RelaysPage from "./pages/Relays/ProductPage";
 import AboutPage from "./pages/AboutPage";
 function App() {
   return (
@@ -58,8 +59,10 @@ function App() {
           path="/mic-speaker-stand"
           element={<MicSpeakerStandPage />}
         />
+        <Route path="/relays" element={<RelaysPage />} />
         <Route path="/tools" element={<ToolsPage />} />
-      
+        <Route path="/soldering-tools" element={<SolderingToolsPage />} />
+
         <Route path="/about" element={<AboutPage />} />
       </Routes>
     </Router>

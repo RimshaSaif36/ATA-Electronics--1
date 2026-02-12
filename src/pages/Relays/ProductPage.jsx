@@ -4,41 +4,17 @@ import Header from "../../components/mainnavbar";
 import EnquiryModal from "../../components/EnquiryModal";
 
 const products = [
-  {
-    title: "Floor Stand",
-    img: "/FloorStand.jpg",
-  },
-  {
-    title: "Single Arm Swivel Mount",
-    img: "/SingleArmSwivelMount.jpg",
-  },
-  {
-    title: "Dual Arm Swivel Mount",
-    img: "/DualArmSwivelMount.jpg",
-  },
-  {
-    title: "Mobile TV Stand",
-    img: "/MobileTVStand.jpg",
-  },
-  {
-    title: "Heavy Duty TV Stand",
-    img: "/HeavyDutyTVStand.jpg",
-  },
-  {
-    title: "Swivel TV Stand",
-    img: "/SwivelTVStand.jpg",
-  },
-  {
-    title: "Tilt TV Stand",
-    img: "/TiltTVStand.jpg",
-  },
-  {
-    title: "LED/LCD TV Stand Mount",
-    img: "/LEDLCDTVStandMount.jpg",
-  },
+  { title: "Power Relay", img: "/PowerRelay.jpg" },
+  { title: "Solid State Relay", img: "/SolidStateRelay.jpg" },
+  { title: "Automotive Relay", img: "/AutomotiveRelay.jpg" },
+  { title: "Time Delay Relay", img: "/TimeDelayRelay.jpg" },
+  { title: "PCB Relay", img: "/PCBRelay.jpg" },
+  { title: "Miniature Relay", img: "/MiniatureRelay.jpg" },
+  { title: "Latching Relay", img: "/LatchingRelay.jpg" },
+  { title: "Electromagnetic Relay", img: "/ElectromagneticRelay.jpg" },
 ];
 
-export default function TVStandMountPage() {
+export default function RelaysPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -69,11 +45,11 @@ export default function TVStandMountPage() {
                 Products Category
               </Link>
               <span className="mx-2">/</span>
-              <span>TV Stand Mount</span>
+              <span>Relays</span>
             </div>
 
             <h1 className="text-3xl sm:text-4xl font-bold">
-              TV STAND MOUNT
+              RELAYS
             </h1>
           </div>
         </div>
