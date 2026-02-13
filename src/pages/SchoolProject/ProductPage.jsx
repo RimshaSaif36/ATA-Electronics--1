@@ -5,36 +5,52 @@ import EnquiryModal from "../../components/EnquiryModal";
 
 const products = [
   {
-    title: "Science Project Kit",
-    img: "/ScienceProjectKit.jpg",
+    title: "School ProjectKits",
+    img: "/SchoolProjectKits.jpg",
   },
   {
-    title: "Electronics Learning Kit",
-    img: "/ElectronicsLearningKit.jpg",
+    title: "LED & Bulbs",
+    img: "/LEDBulbs.jpg",
   },
   {
-    title: "Robotics Starter Kit",
-    img: "/RoboticsStarterKit.jpg",
+    title: "Motor & Pumps",
+    img: "/MotorPumps.jpg",
   },
   {
-    title: "STEM Education Kit",
-    img: "/STEMEducationKit.jpg",
+    title: "Buzzer",
+    img: "/Buzzer.jpg",
   },
   {
-    title: "DIY Circuit Kit",
-    img: "/DIYCircuitKit.jpg",
+    title: "Battery Holders",
+    img: "/BatteryHolders.jpg",
   },
   {
-    title: "Arduino Starter Kit",
-    img: "/ArduinoStarterKit.jpg",
+    title: "Clips & Wires",
+    img: "/ClipsWires.jpg",
   },
   {
-    title: "Solar Project Kit",
-    img: "/SolarProjectKit.jpg",
+    title: "Copper Wire",
+    img: "/CopperWire.jpg",
   },
   {
-    title: "Model Making Kit",
-    img: "/ModelMakingKit.jpg",
+    title: "Solar Panel",
+    img: "/SolarPanel.jpg",
+  },
+  {
+    title: "Breadboard",
+    img: "/Breadboard.jpg",
+  },
+  {
+    title: "PeltierModule",
+    img: "/PeltierModule.jpg",
+  },
+  {
+    title: "VoltmeterAmpmeter",
+    img: "/VoltmeterAmpmeter.jpg",
+  },
+  {
+    title: "Magnet",
+    img: "/Magnet.jpg",
   },
 ];
 

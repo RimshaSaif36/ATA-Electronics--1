@@ -4,14 +4,9 @@ import Header from "../../components/mainnavbar";
 import EnquiryModal from "../../components/EnquiryModal";
 
 const products = [
-  { title: "Power Relay", img: "/PowerRelay.jpg" },
-  { title: "Solid State Relay", img: "/SolidStateRelay.jpg" },
-  { title: "Automotive Relay", img: "/AutomotiveRelay.jpg" },
-  { title: "Time Delay Relay", img: "/TimeDelayRelay.jpg" },
-  { title: "PCB Relay", img: "/PCBRelay.jpg" },
-  { title: "Miniature Relay", img: "/MiniatureRelay.jpg" },
-  { title: "Latching Relay", img: "/LatchingRelay.jpg" },
-  { title: "Electromagnetic Relay", img: "/ElectromagneticRelay.jpg" },
+  { title: "Relay", img: "/Relay1.jpg" },
+  { title: "Timer Relay", img: "/TimerRelay.jpg" },
+  
 ];
 
 export default function RelaysPage() {

@@ -5,37 +5,18 @@ import EnquiryModal from "../../components/EnquiryModal";
 
 const products = [
   {
-    title: "TV Remote Control",
+    title: "TVRemote",
     img: "/TVRemote.jpg",
   },
   {
-    title: "AC Remote Control",
+    title: "Receiver Remote",
+    img: "/ReceiverRemote.jpg",
+  },
+  {
+    title: "AC Remote",
     img: "/ACRemote.jpg",
   },
-  {
-    title: "Universal Remote",
-    img: "/UniversalRemote.jpg",
-  },
-  {
-    title: "Set Top Box Remote",
-    img: "/SetTopBoxRemote.jpg",
-  },
-  {
-    title: "Projector Remote",
-    img: "/ProjectorRemote.jpg",
-  },
-  {
-    title: "Sound System Remote",
-    img: "/SoundSystemRemote.jpg",
-  },
-  {
-    title: "Fan Remote Control",
-    img: "/FanRemote.jpg",
-  },
-  {
-    title: "Smart Remote",
-    img: "/SmartRemote.jpg",
-  },
+  
 ];
 
 export default function RemotePage() {

@@ -17,24 +17,24 @@ const products = [
     img: "/DualArmSwivelMount.jpg",
   },
   {
-    title: "Mobile TV Stand",
-    img: "/MobileTVStand.jpg",
+    title: "Video Wall Stand",
+    img: "/VideoWallStand.jpg",
   },
   {
-    title: "Heavy Duty TV Stand",
-    img: "/HeavyDutyTVStand.jpg",
+    title: "Fixed Mount",
+    img: "/FixedMount.jpg",
   },
   {
-    title: "Swivel TV Stand",
-    img: "/SwivelTVStand.jpg",
+    title: "Ceiling Mount",
+    img: "/CeilingMount.jpg",
   },
   {
-    title: "Tilt TV Stand",
-    img: "/TiltTVStand.jpg",
+    title: "Table Stand",
+    img: "/TableStand.jpg",
   },
   {
-    title: "LED/LCD TV Stand Mount",
-    img: "/LEDLCDTVStandMount.jpg",
+    title: "DVD Stand",
+    img: "/DVDStand.jpg",
   },
 ];
 

@@ -5,36 +5,64 @@ import EnquiryModal from "../../components/EnquiryModal";
 
 const products = [
   {
-    title: "Power Cable",
-    img: "/PowerCable.jpg",
+    title: "HDMI Cables",
+    img: "/HDMICables.jpg",
   },
   {
-    title: "HDMI Cable",
-    img: "/HDMICable.jpg",
+    title: "Display Port Cables",
+    img: "/DisplayPortCables.jpg",
   },
   {
-    title: "USB Cable",
-    img: "/USBCable.jpg",
+    title: "USB Cables",
+    img: "/USBCables.jpg",
   },
   {
-    title: "LAN Cable",
-    img: "/LANCable.jpg",
+    title: "Network Cables",
+    img: "/NetworkCables.jpg",
   },
   {
-    title: "Speaker Cable",
-    img: "/SpeakerCable.jpg",
+    title: "Audio Cables",
+    img: "/AudioCables.jpg",
   },
   {
-    title: "Coaxial Cable",
-    img: "/CoaxialCable.jpg",
+    title: "VGA Cables",
+    img: "/VGACables.jpg",
   },
   {
-    title: "Audio Cable",
-    img: "/AudioCable.jpg",
+    title: "Optical Cables",
+    img: "/OpticalCables.jpg",
   },
   {
-    title: "Charging Cable",
-    img: "/ChargingCable.jpg",
+    title: "Printer Cables",
+    img: "/PrinterCables.jpg",
+  },
+   {
+    title: "Aux Cables",
+    img: "/AuxCables.jpg",
+  },
+  {
+    title: "Coaxial Cables",
+    img: "/CoaxialCables.jpg",
+  },
+  {
+    title: "Telephone Cables",
+    img: "/TelephoneCables.jpg",
+  },
+   {
+    title: "Speaker Cables",
+    img: "/SpeakerCables.jpg",
+  },
+  {
+    title: "Power Cables",
+    img: "/PowerCables.jpg",
+  },
+  {
+    title: "AV Cables",
+    img: "/AVCables.jpg",
+  },
+   {
+    title: "FIBER PATCHCORDS",
+    img: "/FIBERPATCHCORDS.jpg",
   },
 ];
 

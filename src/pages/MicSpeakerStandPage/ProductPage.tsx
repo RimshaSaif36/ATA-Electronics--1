@@ -11,14 +11,9 @@ type Product = {
 
 // ✅ Typed products array
 const products: Product[] = [
-  { title: "Adjustable Mic Stand", img: "/AdjustableMicStand.jpg" },
-  { title: "Tripod Mic Stand", img: "/TripodMicStand.jpg" },
-  { title: "Desk Mic Stand", img: "/DeskMicStand.jpg" },
-  { title: "Boom Mic Stand", img: "/BoomMicStand.jpg" },
+  { title: "Microphone Stand", img: "/MicrophoneStand.jpg" },
   { title: "Speaker Stand", img: "/SpeakerStand.jpg" },
-  { title: "Foldable Mic Stand", img: "/FoldableMicStand.jpg" },
-  { title: "Heavy-Duty Stand", img: "/HeavyDutyStand.jpg" },
-  { title: "Compact Speaker Stand", img: "/CompactSpeakerStand.jpg" },
+  
 ];
 
 export default function MicSpeakerStandPage() {

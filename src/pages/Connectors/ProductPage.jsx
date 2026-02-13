@@ -5,36 +5,36 @@ import EnquiryModal from "../../components/EnquiryModal";
 
 const products = [
   {
-    title: "USB Connector",
-    img: "/USBConnector.jpg",
+    title: "XLR Connectors",
+    img: "/XLRConnectors.jpg",
   },
   {
-    title: "HDMI Connector",
-    img: "/HDMIConnector.jpg",
+    title: "Microphone Jack",
+    img: "/MicrophoneJack.jpg",
   },
   {
-    title: "Audio Connector",
-    img: "/AudioConnector.jpg",
+    title: "POWERCON",
+    img: "/POWERCON.jpg",
   },
   {
-    title: "Power Connector",
-    img: "/PowerConnector.jpg",
+    title: "Terminal Block",
+    img: "/TerminalBlock.jpg",
   },
   {
-    title: "LAN Connector",
-    img: "/LANConnector.jpg",
+    title: "Network Connectors",
+    img: "/NetworkConnectors.jpg",
   },
   {
-    title: "Coaxial Connector",
-    img: "/CoaxialConnector.jpg",
+    title: "F Connectors",
+    img: "/FConnectors.jpg",
   },
   {
-    title: "DC Jack Connector",
-    img: "/DCJackConnector.jpg",
+    title: "Telephone Connectors",
+    img: "/TelephoneConnectors.jpg",
   },
   {
-    title: "Terminal Block Connector",
-    img: "/TerminalBlockConnector.jpg",
+    title: "IEC Connectors",
+    img: "/IECConnectors.jpg",
   },
 ];
 

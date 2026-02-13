@@ -12,30 +12,7 @@ const products = [
     title: "Wireless Microphone",
     img: "/WirelessMicrophone.jpg",
   },
-  {
-    title: "Lapel Microphone",
-    img: "/LapelMicrophone.jpg",
-  },
-  {
-    title: "Condenser Microphone",
-    img: "/CondenserMicrophone.jpg",
-  },
-  {
-    title: "Dynamic Microphone",
-    img: "/DynamicMicrophone.jpg",
-  },
-  {
-    title: "USB Microphone",
-    img: "/USBMicrophone.jpg",
-  },
-  {
-    title: "Headset Microphone",
-    img: "/HeadsetMicrophone.jpg",
-  },
-  {
-    title: "Conference Microphone",
-    img: "/ConferenceMicrophone.jpg",
-  },
+  
 ];
 
 export default function MicrophonePage() {

@@ -5,37 +5,22 @@ import EnquiryModal from "../../components/EnquiryModal";
 
 const products = [
   {
-    title: "Bluetooth Speaker",
-    img: "/BluetoothSpeaker.jpg",
-  },
-  {
-    title: "Portable Speaker",
-    img: "/PortableSpeaker.jpg",
-  },
-  {
-    title: "Tower Speaker",
-    img: "/TowerSpeaker.jpg",
-  },
-  {
-    title: "Home Theatre Speaker",
-    img: "/HomeTheatreSpeaker.jpg",
+    title: "Wall Speaker",
+    img: "/WallSpeaker.jpg",
   },
   {
     title: "Ceiling Speaker",
     img: "/CeilingSpeaker.jpg",
   },
   {
-    title: "Wall Mount Speaker",
-    img: "/WallMountSpeaker.jpg",
+    title: "Horn Speaker",
+    img: "/HornSpeaker.jpg",
   },
   {
-    title: "PA Speaker",
-    img: "/PASpeaker.jpg",
+    title: "Driver Unit",
+    img: "/DriverUnit.jpg",
   },
-  {
-    title: "Subwoofer Speaker",
-    img: "/SubwooferSpeaker.jpg",
-  },
+  
 ];
 
 export default function SpeakerPage() {

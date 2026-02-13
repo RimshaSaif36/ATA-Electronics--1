@@ -5,37 +5,30 @@ import EnquiryModal from "../../components/EnquiryModal";
 
 const products = [
   {
-    title: "AC DC Power Supply",
-    img: "/ACDCPowerSupply.jpg",
+    title: "Adapter",
+    img: "/Adapter.jpg",
   },
   {
-    title: "SMPS Power Supply",
-    img: "/SMPSPowerSupply.jpg",
+    title: "Laptop Type",
+    img: "/LaptopType.jpg",
   },
   {
-    title: "Desktop Power Adapter",
-    img: "/DesktopPowerAdapter.jpg",
+    title: "SMPS",
+    img: "/SMPS.jpg",
   },
   {
-    title: "Wall Mount Power Adapter",
-    img: "/WallMountPowerAdapter.jpg",
+    title: "Mean Well",
+    img: "/MeanWell.jpg",
   },
   {
-    title: "Industrial Power Supply",
-    img: "/IndustrialPowerSupply.jpg",
+    title: "Multi Adapter",
+    img: "/MultiAdapter1.jpg",
   },
   {
-    title: "LED Power Supply",
-    img: "/LEDPowerSupply.jpg",
+    title: "Charging station",
+    img: "/Chargingstation.jpg",
   },
-  {
-    title: "Battery Charger Power Supply",
-    img: "/BatteryChargerPowerSupply.jpg",
-  },
-  {
-    title: "Open Frame Power Supply",
-    img: "/OpenFramePowerSupply.jpg",
-  },
+  
 ];
 
 export default function PowerSuppliersPage() {
