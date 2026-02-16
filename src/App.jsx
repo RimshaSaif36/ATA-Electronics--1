@@ -27,7 +27,9 @@ import ToolsPage from "./pages/Tools/ProductPage";
 import SolderingToolsPage from "./pages/SolderingTools/ProductPage";
 import SupportPage from "./pages/SupportPage";
 import RelaysPage from "./pages/Relays/ProductPage";
+import LeadAcidBatteryPage from "./pages/Batteries/LeadAcidBatteryPage";
 import AboutPage from "./pages/AboutPage";
+import LithiumIonBatteryPage from "./pages/Batteries/LithiumIonBatteryPage";
 function App() {
   return (
     <Router>
@@ -62,8 +64,11 @@ function App() {
         <Route path="/relays" element={<RelaysPage />} />
         <Route path="/tools" element={<ToolsPage />} />
         <Route path="/soldering-tools" element={<SolderingToolsPage />} />
+        
+        <Route path="/battery/lithium-ion-battery" element={<LeadAcidBatteryPage />} />
 
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/battery/lithium-ion-battery" element={<LithiumIonBatteryPage />} />
       </Routes>
     </Router>
   );
