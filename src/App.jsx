@@ -65,7 +65,7 @@ function App() {
         <Route path="/tools" element={<ToolsPage />} />
         <Route path="/soldering-tools" element={<SolderingToolsPage />} />
         
-        <Route path="/battery/lithium-ion-battery" element={<LeadAcidBatteryPage />} />
+        <Route path="/battery/lead-acid-battery" element={<LeadAcidBatteryPage />} />
 
         <Route path="/about" element={<AboutPage />} />
         <Route path="/battery/lithium-ion-battery" element={<LithiumIonBatteryPage />} />
