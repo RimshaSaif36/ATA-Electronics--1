@@ -5,10 +5,10 @@ import EnquiryModal from "../../components/EnquiryModal";
 
 const alkalineBatteries = [
   {
-    title: "DURACELL AA",
-    spec: "1.5V ALKALINE BATTERY",
-    type: "AA ALKALINE BATTERY",
-    img: "/DURACELLAA.jpg",
+    title: "KODAK AAAA LR8D425",
+    spec: "1.5 VOLT , MADE IN CHINA",
+    type: "AAAA ALKALINE BATTERY",
+    img: "/KODAK AAAA LR8D425.jpg",
   },
   {
     title: "DURACELL AAA",
