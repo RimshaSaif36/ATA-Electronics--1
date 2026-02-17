@@ -30,6 +30,11 @@ import RelaysPage from "./pages/Relays/ProductPage";
 import LeadAcidBatteryPage from "./pages/Batteries/LeadAcidBatteryPage";
 import AboutPage from "./pages/AboutPage";
 import LithiumIonBatteryPage from "./pages/Batteries/LithiumIonBatteryPage";
+import RechargeableBatteryPage from "./pages/Batteries/RechargeableBatteryPage";
+import LithiumBatteries from "./pages/Batteries/LithiumBatteries";
+
+<Route path="/battery/rechargeable" element={<RechargeableBatteryPage />} />
+
 function App() {
   return (
     <Router>
@@ -66,9 +71,10 @@ function App() {
         <Route path="/soldering-tools" element={<SolderingToolsPage />} />
         
         <Route path="/battery/lead-acid-battery" element={<LeadAcidBatteryPage />} />
-
+         <Route path="/battery/lithium-battery" element={<LithiumBatteries />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/battery/lithium-ion-battery" element={<LithiumIonBatteryPage />} />
+        <Route path="/battery/rechargeable-battery" element={<RechargeableBatteryPage />} />
       </Routes>
     </Router>
   );
