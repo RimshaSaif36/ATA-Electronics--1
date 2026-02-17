@@ -32,6 +32,7 @@ import AboutPage from "./pages/AboutPage";
 import LithiumIonBatteryPage from "./pages/Batteries/LithiumIonBatteryPage";
 import RechargeableBatteryPage from "./pages/Batteries/RechargeableBatteryPage";
 import LithiumBatteries from "./pages/Batteries/LithiumBatteries";
+import AlkalineBatteryPage from "./pages/Batteries/AlkalineBatteryPage";
 
 <Route path="/battery/rechargeable" element={<RechargeableBatteryPage />} />
 
@@ -75,6 +76,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/battery/lithium-ion-battery" element={<LithiumIonBatteryPage />} />
         <Route path="/battery/rechargeable-battery" element={<RechargeableBatteryPage />} />
+        <Route path="/battery/alkaline-battery" element={<AlkalineBatteryPage />} />
       </Routes>
     </Router>
   );

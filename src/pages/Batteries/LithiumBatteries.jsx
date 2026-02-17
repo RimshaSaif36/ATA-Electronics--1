@@ -128,6 +128,60 @@ const lithiumBatteries = [
     type: "26500 LITHIUM BATTERY",
     img: "/SAFTLS26500LITHIUMBATTERY.jpg",
   },
+  {
+    title: "VARTA 9V ULTRA LITHIUM BATTERY",
+    spec: "HEAVY DUTY LITHIUM BATTERY",
+    type: "BATTERY FOR SMOKE DETECTOR",
+    img: "/VARTA 9V ULTRA LITHIUM BATTERY.jpg",
+  },
+   {
+    title: "ULTRALIFE 9V LITHIUM BATTERY",
+    spec: "HEAVY DUTY LITHIUM BATTERY",
+    type: "9V LITHIUM BATTERY",
+    img: "/ULTRALIFE 9V LITHIUM BATTERY.jpg",
+  },
+  {
+    title: "SAFT LS 9V LITHIUM BATTERY",
+    spec: "9V , (LI-SOCL2)",
+    type: "9V LITHIUM BATTERY",
+    img: "/SAFT LS 9V LITHIUM BATTERY.jpg",
+  },
+  {
+    title: "PANASONIC CR2 BATTERY",
+    spec: "3 VOLT , MADE IN INDONESIA",
+    type: "CR2 LITHIUM BATTERY",
+    img: "/PANASONIC CR2 BATTERY.jpg",
+  },
+  {
+    title: "PANASONIC CR123A BATTERY",
+    spec: "3 VOLT , MADE IN INDONESIA",
+    type: "CR123 LITHIUM BATTERY",
+    img: "/PANASONIC CR123A BATTERY.jpg",
+  },
+   {
+    title: "PANASONIC CR-P2 BATTERY",
+    spec: "6 VOLT , MADE IN USA",
+    type: "CR-P2 LITHIUM BATTERY",
+    img: "/PANASONIC CR-P2 BATTERY.jpg",
+  },
+  {
+    title: "PANASONIC 2CR-5 BATTERY",
+    spec: "6 VOLT , MADE IN USA",
+    type: "2CR5 LITHIUM BATTERY",
+    img: "/PANASONIC 2CR-5 BATTERY.jpg",
+  },
+   {
+    title: "ENERGIZER LITHIUM AAA FR03",
+    spec: "ENERGIZER LITHIUM AAA FR03",
+    type: "AAA LITHIUM BATTERY",
+    img: "/ENERGIZER LITHIUM AAA FR03.jpg",
+  },
+  {
+    title: "ENERGIZER LITHIUM AA FR6",
+    spec: "1.5 VOLT , MADE IN SINGAPORE",
+    type: "AA LITHIUM BATTERY",
+    img: "/ENERGIZER LITHIUM AA FR6.jpg",
+  },
 ];
 
 export default function LithiumBatteries() {
