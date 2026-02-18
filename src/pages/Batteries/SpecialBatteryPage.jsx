@@ -51,7 +51,7 @@ const specialBatteries = [
     spec: "3.6V , WITH 2PIN WIRE , JAPAN",
     type: "CR17330 LITHUM BATTERY",
     img: "/MITSUBISHI CR17330V 3.6V.jpg",
-  },
+  }, 
 ];
 
 export default function SpecialBatteryPage() {
