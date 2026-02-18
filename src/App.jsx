@@ -33,7 +33,8 @@ import LithiumIonBatteryPage from "./pages/Batteries/LithiumIonBatteryPage";
 import RechargeableBatteryPage from "./pages/Batteries/RechargeableBatteryPage";
 import LithiumBatteries from "./pages/Batteries/LithiumBatteries";
 import AlkalineBatteryPage from "./pages/Batteries/AlkalineBatteryPage";
-
+import BatteryPackPage from "./pages/Batteries/BatteryPackPage";
+import SpecialBatteryPage from "./pages/Batteries/SpecialBatteryPage";
 <Route path="/battery/rechargeable" element={<RechargeableBatteryPage />} />
 
 function App() {
@@ -77,6 +78,9 @@ function App() {
         <Route path="/battery/lithium-ion-battery" element={<LithiumIonBatteryPage />} />
         <Route path="/battery/rechargeable-battery" element={<RechargeableBatteryPage />} />
         <Route path="/battery/alkaline-battery" element={<AlkalineBatteryPage />} />
+        <Route path="/battery/battery-pack" element={<BatteryPackPage />} />
+        <Route path="/battery/special-battery" element={<SpecialBatteryPage />} />
+
       </Routes>
     </Router>
   );
