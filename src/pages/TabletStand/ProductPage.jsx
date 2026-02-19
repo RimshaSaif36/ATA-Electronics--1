@@ -3,46 +3,46 @@ import { FaWhatsapp } from "react-icons/fa";
 import Header from "../../components/mainnavbar";
 import EnquiryModal from "../../components/EnquiryModal";
 
-const inverters = [
+const tabletStands = [
   {
-    title: "12V 500W POWER INVERTER",
-    spec: "DC 12V TO AC 220V",
-    type: "MODIFIED SINE WAVE INVERTER",
-    img: "/12V-500W-INVERTER.jpg",
+    title: "ADJUSTABLE TABLET DESK STAND",
+    spec: "360° Rotation, Height Adjustable",
+    type: "DESKTOP TABLET STAND",
+    img: "/adjustable-tablet-stand.jpg",
   },
   {
-    title: "12V 1000W POWER INVERTER",
-    spec: "DC 12V TO AC 220V",
-    type: "MODIFIED SINE WAVE INVERTER",
-    img: "/12V-1000W-INVERTER.jpg",
+    title: "FOLDABLE TABLET STAND",
+    spec: "Portable & Lightweight",
+    type: "PORTABLE TABLET HOLDER",
+    img: "/foldable-tablet-stand.jpg",
   },
   {
-    title: "24V 1500W INVERTER",
-    spec: "DC 24V TO AC 220V",
-    type: "PURE SINE WAVE INVERTER",
-    img: "/24V-1500W-INVERTER.jpg",
+    title: "HEAVY DUTY TABLET FLOOR STAND",
+    spec: "Adjustable Height up to 1.5m",
+    type: "FLOOR TABLET STAND",
+    img: "/floor-tablet-stand.jpg",
   },
   {
-    title: "24V 2000W INVERTER",
-    spec: "DC 24V TO AC 220V",
-    type: "PURE SINE WAVE INVERTER",
-    img: "/24V-2000W-INVERTER.jpg",
+    title: "ANTI-THEFT TABLET STAND",
+    spec: "Lockable Design for Retail Display",
+    type: "SECURITY TABLET STAND",
+    img: "/anti-theft-tablet-stand.jpg",
   },
   {
-    title: "SOLAR HYBRID INVERTER 3KW",
-    spec: "MPPT CONTROLLER BUILT-IN",
-    type: "SOLAR INVERTER",
-    img: "/3KW-SOLAR-INVERTER.jpg",
+    title: "WALL MOUNT TABLET HOLDER",
+    spec: "Tilt & Swivel Adjustable",
+    type: "WALL TABLET MOUNT",
+    img: "/wall-tablet-holder.jpg",
   },
   {
-    title: "SOLAR HYBRID INVERTER 5KW",
-    spec: "MPPT CONTROLLER BUILT-IN",
-    type: "SOLAR INVERTER",
-    img: "/5KW-SOLAR-INVERTER.jpg",
+    title: "CAR HEADREST TABLET HOLDER",
+    spec: "Fits 7\" to 12\" Tablets",
+    type: "CAR TABLET MOUNT",
+    img: "/car-tablet-holder.jpg",
   },
 ];
 
-export default function InverterPage() {
+export default function TabletStandPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -64,7 +64,7 @@ export default function InverterPage() {
       <section className="bg-gradient-to-r from-red-800 via-red-700 to-red-900">
         <div className="max-w-6xl mx-auto px-6 py-10 text-white">
           <h1 className="text-3xl sm:text-4xl font-bold">
-          INVERTERS
+            TABLET STANDS
           </h1>
         </div>
       </section>
@@ -73,7 +73,7 @@ export default function InverterPage() {
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {inverters.map((item, index) => (
+            {tabletStands.map((item, index) => (
               <div
                 key={index}
                 className="border border-red-500 p-6 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300"

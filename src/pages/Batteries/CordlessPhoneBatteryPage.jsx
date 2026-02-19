@@ -3,46 +3,46 @@ import { FaWhatsapp } from "react-icons/fa";
 import Header from "../../components/mainnavbar";
 import EnquiryModal from "../../components/EnquiryModal";
 
-const inverters = [
+const cordlessPhoneBatteries = [
   {
-    title: "12V 500W POWER INVERTER",
-    spec: "DC 12V TO AC 220V",
-    type: "MODIFIED SINE WAVE INVERTER",
-    img: "/12V-500W-INVERTER.jpg",
+    title: "MULTIPLE POWER MP-104",
+    spec: "3.6V 850MAH , REPLACEMENT FOR HHR-P104",
+    type: "PANASONIC CORDLESS PHONE BATTERY",
+    img: "/MULTIPLE POWER MP-104.jpg",
   },
   {
-    title: "12V 1000W POWER INVERTER",
-    spec: "DC 12V TO AC 220V",
-    type: "MODIFIED SINE WAVE INVERTER",
-    img: "/12V-1000W-INVERTER.jpg",
+    title: "MULTIPLE POWER MP-105",
+    spec: "2.4V 830MAH , REPLACEMENT FOR HHR-P105",
+    type: "PANASONIC CORDLESS PHONE BATTERY",
+    img: "/MULTIPLE POWER MP-105.jpg",
   },
   {
-    title: "24V 1500W INVERTER",
-    spec: "DC 24V TO AC 220V",
-    type: "PURE SINE WAVE INVERTER",
-    img: "/24V-1500W-INVERTER.jpg",
+    title: "MULTIPLE POWER MP-107",
+    spec: "3.6V 800MAH , REPLACEMENT FOR HHR-P107",
+    type: "PANASONIC CORDLESS PHONE BATTERY",
+    img: "/MULTIPLE POWER MP-107.jpg",
   },
   {
-    title: "24V 2000W INVERTER",
-    spec: "DC 24V TO AC 220V",
-    type: "PURE SINE WAVE INVERTER",
-    img: "/24V-2000W-INVERTER.jpg",
+    title: "PANASONIC BK-4LDAW",
+    spec: "1.2V 650MAH , AAA CELL X 2 PCS",
+    type: "PANASONIC CORDLESS PHONE BATTERY",
+    img: "/PANASONIC BK-4LDAW.jpg",
   },
-  {
-    title: "SOLAR HYBRID INVERTER 3KW",
-    spec: "MPPT CONTROLLER BUILT-IN",
-    type: "SOLAR INVERTER",
-    img: "/3KW-SOLAR-INVERTER.jpg",
+    {
+    title: "PANASONIC HHR-P301",
+    spec: "3.6V 350MAH , 3 CELL NI-MH",
+    type: "PANASONIC CORDLESS PHONE BATTERY",
+    img: "/PANASONIC HHR-P301.jpg",
   },
-  {
-    title: "SOLAR HYBRID INVERTER 5KW",
-    spec: "MPPT CONTROLLER BUILT-IN",
-    type: "SOLAR INVERTER",
-    img: "/5KW-SOLAR-INVERTER.jpg",
+   {
+    title: "PANASONIC HHR-P102",
+    spec: "3.6V 700MAH , 3 CELL NI-MH",
+    type: "PANASONIC CORDLESS PHONE BATTERY",
+    img: "/PANASONIC HHR-P102.jpg",
   },
 ];
 
-export default function InverterPage() {
+export default function CordlessPhoneBatteryPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -60,24 +60,22 @@ export default function InverterPage() {
     <>
       <Header />
 
-      {/* Page Banner */}
+      {/* PAGE HEADER */}
       <section className="bg-gradient-to-r from-red-800 via-red-700 to-red-900">
         <div className="max-w-6xl mx-auto px-6 py-10 text-white">
           <h1 className="text-3xl sm:text-4xl font-bold">
-          INVERTERS
+            CORDLESS PHONE BATTERIES
           </h1>
         </div>
       </section>
 
-      {/* Products Section */}
+      {/* PRODUCTS */}
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {inverters.map((item, index) => (
-              <div
-                key={index}
-                className="border border-red-500 p-6 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-              >
+            {cordlessPhoneBatteries.map((item, index) => (
+              <div key={index} className="border border-red-500 p-6 text-center">
+
                 <img
                   src={item.img}
                   alt={item.title}
@@ -103,14 +101,15 @@ export default function InverterPage() {
                   </button>
 
                   <a
-                    href={`https://wa.me/923000000000?text=I am interested in ${item.title}`}
+                    href="https://wa.me/923000000000"
                     target="_blank"
                     rel="noreferrer"
-                    className="bg-green-500 text-white p-2 rounded hover:bg-green-600"
+                    className="bg-green-500 text-white p-2 rounded"
                   >
                     <FaWhatsapp size={16} />
                   </a>
                 </div>
+
               </div>
             ))}
           </div>

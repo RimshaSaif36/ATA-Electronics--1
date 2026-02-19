@@ -3,46 +3,46 @@ import { FaWhatsapp } from "react-icons/fa";
 import Header from "../../components/mainnavbar";
 import EnquiryModal from "../../components/EnquiryModal";
 
-const inverters = [
+const projectorMounts = [
   {
-    title: "12V 500W POWER INVERTER",
-    spec: "DC 12V TO AC 220V",
-    type: "MODIFIED SINE WAVE INVERTER",
-    img: "/12V-500W-INVERTER.jpg",
+    title: "CEILING PROJECTOR MOUNT",
+    spec: "Adjustable tilt & rotation, Holds up to 15kg",
+    type: "FIXED CEILING MOUNT",
+    img: "/ceiling-projector-mount.jpg",
   },
   {
-    title: "12V 1000W POWER INVERTER",
-    spec: "DC 12V TO AC 220V",
-    type: "MODIFIED SINE WAVE INVERTER",
-    img: "/12V-1000W-INVERTER.jpg",
+    title: "EXTENDABLE PROJECTOR MOUNT",
+    spec: "Telescopic arm up to 50cm, 360° Rotation",
+    type: "ADJUSTABLE CEILING MOUNT",
+    img: "/extendable-projector-mount.jpg",
   },
   {
-    title: "24V 1500W INVERTER",
-    spec: "DC 24V TO AC 220V",
-    type: "PURE SINE WAVE INVERTER",
-    img: "/24V-1500W-INVERTER.jpg",
+    title: "WALL PROJECTOR MOUNT",
+    spec: "Mounts projector to wall, Tilt & Swivel",
+    type: "WALL MOUNT",
+    img: "/wall-projector-mount.jpg",
   },
   {
-    title: "24V 2000W INVERTER",
-    spec: "DC 24V TO AC 220V",
-    type: "PURE SINE WAVE INVERTER",
-    img: "/24V-2000W-INVERTER.jpg",
+    title: "UNIVERSAL PROJECTOR MOUNT",
+    spec: "Fits most projectors, Height & Tilt adjustable",
+    type: "UNIVERSAL CEILING MOUNT",
+    img: "/universal-projector-mount.jpg",
   },
   {
-    title: "SOLAR HYBRID INVERTER 3KW",
-    spec: "MPPT CONTROLLER BUILT-IN",
-    type: "SOLAR INVERTER",
-    img: "/3KW-SOLAR-INVERTER.jpg",
+    title: "HEAVY DUTY PROJECTOR MOUNT",
+    spec: "Supports projectors up to 25kg",
+    type: "INDUSTRIAL MOUNT",
+    img: "/heavy-duty-projector-mount.jpg",
   },
   {
-    title: "SOLAR HYBRID INVERTER 5KW",
-    spec: "MPPT CONTROLLER BUILT-IN",
-    type: "SOLAR INVERTER",
-    img: "/5KW-SOLAR-INVERTER.jpg",
+    title: "SHORT ARM CEILING PROJECTOR MOUNT",
+    spec: "Compact design, Height adjustable",
+    type: "CEILING MOUNT",
+    img: "/short-arm-projector-mount.jpg",
   },
 ];
 
-export default function InverterPage() {
+export default function ProjectorMountPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -64,7 +64,7 @@ export default function InverterPage() {
       <section className="bg-gradient-to-r from-red-800 via-red-700 to-red-900">
         <div className="max-w-6xl mx-auto px-6 py-10 text-white">
           <h1 className="text-3xl sm:text-4xl font-bold">
-          INVERTERS
+            PROJECTOR MOUNTS
           </h1>
         </div>
       </section>
@@ -73,7 +73,7 @@ export default function InverterPage() {
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {inverters.map((item, index) => (
+            {projectorMounts.map((item, index) => (
               <div
                 key={index}
                 className="border border-red-500 p-6 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300"

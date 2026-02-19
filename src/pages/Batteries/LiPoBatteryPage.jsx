@@ -3,46 +3,35 @@ import { FaWhatsapp } from "react-icons/fa";
 import Header from "../../components/mainnavbar";
 import EnquiryModal from "../../components/EnquiryModal";
 
-const inverters = [
+const liPoBatteries = [
   {
-    title: "12V 500W POWER INVERTER",
-    spec: "DC 12V TO AC 220V",
-    type: "MODIFIED SINE WAVE INVERTER",
-    img: "/12V-500W-INVERTER.jpg",
+    title: "601235 LI-PO BATTERY",
+    spec: "3.7V 300MAH",
+    type: "LI-PO BATTERY",
+    img: "/601235 LI-PO BATTERY.jpg",
   },
   {
-    title: "12V 1000W POWER INVERTER",
-    spec: "DC 12V TO AC 220V",
-    type: "MODIFIED SINE WAVE INVERTER",
-    img: "/12V-1000W-INVERTER.jpg",
+    title: "802540 LI-PO BATTERY",
+    spec: "3.7V 850MAH",
+    type: "LI-PO BATTERY",
+    img: "/802540 LI-PO BATTERY.jpg",
   },
   {
-    title: "24V 1500W INVERTER",
-    spec: "DC 24V TO AC 220V",
-    type: "PURE SINE WAVE INVERTER",
-    img: "/24V-1500W-INVERTER.jpg",
+    title: "503450 LI-PO BATTERY",
+    spec: "3.7V 1000MAH",
+    type: "LI-PO BATTERY",
+    img: "/503450 LI-PO BATTERY.jpg",
   },
   {
-    title: "24V 2000W INVERTER",
-    spec: "DC 24V TO AC 220V",
-    type: "PURE SINE WAVE INVERTER",
-    img: "/24V-2000W-INVERTER.jpg",
+    title: "606090 LI-PO BATTERY",
+    spec: "3.7V 4500MAH",
+    type: "LI-PO BATTERY",
+    img: "/606090 LI-PO BATTERY.jpg",
   },
-  {
-    title: "SOLAR HYBRID INVERTER 3KW",
-    spec: "MPPT CONTROLLER BUILT-IN",
-    type: "SOLAR INVERTER",
-    img: "/3KW-SOLAR-INVERTER.jpg",
-  },
-  {
-    title: "SOLAR HYBRID INVERTER 5KW",
-    spec: "MPPT CONTROLLER BUILT-IN",
-    type: "SOLAR INVERTER",
-    img: "/5KW-SOLAR-INVERTER.jpg",
-  },
+ 
 ];
 
-export default function InverterPage() {
+export default function LiPoBatteryPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -60,27 +49,21 @@ export default function InverterPage() {
     <>
       <Header />
 
-      {/* Page Banner */}
       <section className="bg-gradient-to-r from-red-800 via-red-700 to-red-900">
         <div className="max-w-6xl mx-auto px-6 py-10 text-white">
           <h1 className="text-3xl sm:text-4xl font-bold">
-          INVERTERS
+            LI-PO / SPECIAL LITHIUM BATTERIES
           </h1>
         </div>
       </section>
 
-      {/* Products Section */}
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {inverters.map((item, index) => (
-              <div
-                key={index}
-                className="border border-red-500 p-6 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-              >
-                <img
-                  src={item.img}
-                  alt={item.title}
+            {liPoBatteries.map((item, index) => (
+              <div key={index} className="border border-red-500 p-6 text-center">
+
+                <img src={item.img} alt={item.title}
                   className="mx-auto h-44 object-contain mb-4"
                 />
 
@@ -103,14 +86,15 @@ export default function InverterPage() {
                   </button>
 
                   <a
-                    href={`https://wa.me/923000000000?text=I am interested in ${item.title}`}
+                    href="https://wa.me/923000000000"
                     target="_blank"
                     rel="noreferrer"
-                    className="bg-green-500 text-white p-2 rounded hover:bg-green-600"
+                    className="bg-green-500 text-white p-2 rounded"
                   >
                     <FaWhatsapp size={16} />
                   </a>
                 </div>
+
               </div>
             ))}
           </div>

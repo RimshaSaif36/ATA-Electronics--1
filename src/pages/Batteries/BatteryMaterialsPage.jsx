@@ -3,46 +3,46 @@ import { FaWhatsapp } from "react-icons/fa";
 import Header from "../../components/mainnavbar";
 import EnquiryModal from "../../components/EnquiryModal";
 
-const inverters = [
+const batteryMaterials = [
   {
-    title: "12V 500W POWER INVERTER",
-    spec: "DC 12V TO AC 220V",
-    type: "MODIFIED SINE WAVE INVERTER",
-    img: "/12V-500W-INVERTER.jpg",
+    title: "18650 LI-ION BATTERY",
+    spec: "3.7V RECHARGEABLE CELL",
+    type: "LITHIUM-ION BATTERY",
+    img: "/18650.jpg",
   },
   {
-    title: "12V 1000W POWER INVERTER",
-    spec: "DC 12V TO AC 220V",
-    type: "MODIFIED SINE WAVE INVERTER",
-    img: "/12V-1000W-INVERTER.jpg",
+    title: "21700 LI-ION BATTERY",
+    spec: "3.7V HIGH CAPACITY CELL",
+    type: "LITHIUM-ION BATTERY",
+    img: "/21700.jpg",
   },
   {
-    title: "24V 1500W INVERTER",
-    spec: "DC 24V TO AC 220V",
-    type: "PURE SINE WAVE INVERTER",
-    img: "/24V-1500W-INVERTER.jpg",
+    title: "AA RECHARGEABLE BATTERY",
+    spec: "1.2V NI-MH",
+    type: "RECHARGEABLE BATTERY",
+    img: "/AA.jpg",
   },
   {
-    title: "24V 2000W INVERTER",
-    spec: "DC 24V TO AC 220V",
-    type: "PURE SINE WAVE INVERTER",
-    img: "/24V-2000W-INVERTER.jpg",
+    title: "AAA RECHARGEABLE BATTERY",
+    spec: "1.2V NI-MH",
+    type: "RECHARGEABLE BATTERY",
+    img: "/AAA.jpg",
   },
   {
-    title: "SOLAR HYBRID INVERTER 3KW",
-    spec: "MPPT CONTROLLER BUILT-IN",
-    type: "SOLAR INVERTER",
-    img: "/3KW-SOLAR-INVERTER.jpg",
+    title: "9V RECHARGEABLE BATTERY",
+    spec: "NI-MH / LI-ION",
+    type: "RECHARGEABLE BATTERY",
+    img: "/9V.jpg",
   },
   {
-    title: "SOLAR HYBRID INVERTER 5KW",
-    spec: "MPPT CONTROLLER BUILT-IN",
-    type: "SOLAR INVERTER",
-    img: "/5KW-SOLAR-INVERTER.jpg",
+    title: "BATTERY HOLDERS",
+    spec: "18650 / AA / AAA",
+    type: "BATTERY ACCESSORIES",
+    img: "/holder.jpg",
   },
 ];
 
-export default function InverterPage() {
+export default function BatteryMaterialsPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -64,7 +64,7 @@ export default function InverterPage() {
       <section className="bg-gradient-to-r from-red-800 via-red-700 to-red-900">
         <div className="max-w-6xl mx-auto px-6 py-10 text-white">
           <h1 className="text-3xl sm:text-4xl font-bold">
-          INVERTERS
+            BATTERY MATERIALS
           </h1>
         </div>
       </section>
@@ -73,7 +73,7 @@ export default function InverterPage() {
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {inverters.map((item, index) => (
+            {batteryMaterials.map((item, index) => (
               <div
                 key={index}
                 className="border border-red-500 p-6 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300"

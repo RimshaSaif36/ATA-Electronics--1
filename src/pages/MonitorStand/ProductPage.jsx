@@ -3,46 +3,46 @@ import { FaWhatsapp } from "react-icons/fa";
 import Header from "../../components/mainnavbar";
 import EnquiryModal from "../../components/EnquiryModal";
 
-const inverters = [
+const monitorStands = [
   {
-    title: "12V 500W POWER INVERTER",
-    spec: "DC 12V TO AC 220V",
-    type: "MODIFIED SINE WAVE INVERTER",
-    img: "/12V-500W-INVERTER.jpg",
+    title: "ERGONOMIC SINGLE MONITOR STAND",
+    spec: "Holds up to 27 inches, Adjustable Height",
+    type: "DESKTOP MONITOR STAND",
+    img: "/ergonomic-single-stand.jpg",
   },
   {
-    title: "12V 1000W POWER INVERTER",
-    spec: "DC 12V TO AC 220V",
-    type: "MODIFIED SINE WAVE INVERTER",
-    img: "/12V-1000W-INVERTER.jpg",
+    title: "DUAL MONITOR STAND",
+    spec: "Holds 2 monitors up to 24 inches each",
+    type: "DUAL MONITOR MOUNT",
+    img: "/dual-monitor-stand.jpg",
   },
   {
-    title: "24V 1500W INVERTER",
-    spec: "DC 24V TO AC 220V",
-    type: "PURE SINE WAVE INVERTER",
-    img: "/24V-1500W-INVERTER.jpg",
+    title: "TRIPLE MONITOR STAND",
+    spec: "Supports 3 monitors, Height adjustable",
+    type: "TRIPLE MONITOR MOUNT",
+    img: "/triple-monitor-stand.jpg",
   },
   {
-    title: "24V 2000W INVERTER",
-    spec: "DC 24V TO AC 220V",
-    type: "PURE SINE WAVE INVERTER",
-    img: "/24V-2000W-INVERTER.jpg",
+    title: "LAPTOP & MONITOR COMBO STAND",
+    spec: "For laptop + monitor setup, Space saving",
+    type: "COMBO DESK STAND",
+    img: "/laptop-monitor-combo-stand.jpg",
   },
   {
-    title: "SOLAR HYBRID INVERTER 3KW",
-    spec: "MPPT CONTROLLER BUILT-IN",
-    type: "SOLAR INVERTER",
-    img: "/3KW-SOLAR-INVERTER.jpg",
+    title: "HEAVY DUTY MONITOR STAND",
+    spec: "Holds monitors up to 32 inches, Strong Base",
+    type: "INDUSTRIAL MONITOR STAND",
+    img: "/heavy-duty-monitor-stand.jpg",
   },
   {
-    title: "SOLAR HYBRID INVERTER 5KW",
-    spec: "MPPT CONTROLLER BUILT-IN",
-    type: "SOLAR INVERTER",
-    img: "/5KW-SOLAR-INVERTER.jpg",
+    title: "ADJUSTABLE ROTATING MONITOR STAND",
+    spec: "360° Rotation, Height & Tilt adjustable",
+    type: "ERGONOMIC ROTATING STAND",
+    img: "/rotating-monitor-stand.jpg",
   },
 ];
 
-export default function InverterPage() {
+export default function MonitorStandPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -64,7 +64,7 @@ export default function InverterPage() {
       <section className="bg-gradient-to-r from-red-800 via-red-700 to-red-900">
         <div className="max-w-6xl mx-auto px-6 py-10 text-white">
           <h1 className="text-3xl sm:text-4xl font-bold">
-          INVERTERS
+            MONITOR STANDS
           </h1>
         </div>
       </section>
@@ -73,7 +73,7 @@ export default function InverterPage() {
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {inverters.map((item, index) => (
+            {monitorStands.map((item, index) => (
               <div
                 key={index}
                 className="border border-red-500 p-6 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300"

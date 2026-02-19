@@ -35,8 +35,19 @@ import LithiumBatteries from "./pages/Batteries/LithiumBatteries";
 import AlkalineBatteryPage from "./pages/Batteries/AlkalineBatteryPage";
 import BatteryPackPage from "./pages/Batteries/BatteryPackPage";
 import SpecialBatteryPage from "./pages/Batteries/SpecialBatteryPage";
-<Route path="/battery/rechargeable" element={<RechargeableBatteryPage />} />
-
+import LiPoBatteryPage from "./pages/Batteries/LiPoBatteryPage";
+import CordlessPhoneBatteryPage from "./pages/Batteries/CordlessPhoneBatteryPage";
+import CoinButtonBatteryPage from "./pages/Batteries/CoinButtonBatteryPage";
+import LeadAcidBatteryCharger from "./pages/Batteries/LeadAcidBatteryCharger";
+import BatteryChargerPage from "./pages/Batteries/BatteryChargerPage";
+import BatteryMaterialsPage from "./pages/Batteries/BatteryMaterialsPage";
+import VoltageConverterPage from "./pages/VoltageConverters/ProductPage";
+import MonitorStandPage from "./pages/MonitorStand/ProductPage";
+import ProjectorMountPage from "./pages/ProjectorMount/ProductPage";
+import TabletStandPage from "./pages/TabletStand/ProductPage";
+import CableConverterPage from "./pages/CableConverters/ProductPage";
+import AudioVideoConverterPage from "./pages/AudioVideoConverters/ProductPage";
+import SplitterPage from "./pages/Splitters/ProductPage";
 function App() {
   return (
     <Router>
@@ -80,8 +91,20 @@ function App() {
         <Route path="/battery/alkaline-battery" element={<AlkalineBatteryPage />} />
         <Route path="/battery/battery-pack" element={<BatteryPackPage />} />
         <Route path="/battery/special-battery" element={<SpecialBatteryPage />} />
-
-      </Routes>
+        <Route path="/battery/li-po-battery" element={<LiPoBatteryPage />} />
+        <Route path="/battery/cordless-phone-battery" element={<CordlessPhoneBatteryPage />} />
+        <Route path="/battery/coin-&-button-battery" element={<CoinButtonBatteryPage />} />
+        <Route path="/battery/lead-acid-battery-charger" element={<LeadAcidBatteryCharger />} />
+        <Route path="/battery/battery-charger" element={<BatteryChargerPage />} />
+        <Route path="/battery/battery-materials" element={<BatteryMaterialsPage />} />
+        <Route path="/voltage-converters" element={<VoltageConverterPage />} />
+        <Route path="/monitor-stand-mount" element={<MonitorStandPage />} />
+        <Route path="/projector" element={<ProjectorMountPage />} />
+        <Route path="/tablet-stand" element={<TabletStandPage />} />
+        <Route path="/cable-converter" element={<CableConverterPage />} />
+        <Route path="/audio-video-converter" element={<AudioVideoConverterPage />} />
+        <Route path="/splitter" element={<SplitterPage />} />
+         </Routes>
     </Router>
   );
 }

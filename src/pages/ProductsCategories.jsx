@@ -29,7 +29,7 @@ const categories = [
     to: "/tv-stand-mount",
   },
   {
-    title: "Monitor Stand & Mount",
+    title: "Monitor Stand",
     image: "/MonitorStand.jpg",
     to: "/monitor-stand-mount",
   },
@@ -52,12 +52,12 @@ const categories = [
   {
     title: "Cable Converters",
     image: "/cable.jpg",
-    to: "/tablet-stand",
+    to: "/cable-converter",
   },
   {
     title: "Audio-Video Converters",
     image: "/Audiovideoconverters.jpg",
-    to: "/tablet-stand",
+    to: "/audio-video-converter",
   },
   {
     title: "Splitter",

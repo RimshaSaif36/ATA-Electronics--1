@@ -3,46 +3,58 @@ import { FaWhatsapp } from "react-icons/fa";
 import Header from "../../components/mainnavbar";
 import EnquiryModal from "../../components/EnquiryModal";
 
-const inverters = [
+const splitters = [
   {
-    title: "12V 500W POWER INVERTER",
-    spec: "DC 12V TO AC 220V",
-    type: "MODIFIED SINE WAVE INVERTER",
-    img: "/12V-500W-INVERTER.jpg",
+    title: "HDMI 1x2 SPLITTER",
+    spec: "1 Input to 2 Outputs, 4K Support",
+    type: "HDMI SPLITTER",
+    img: "/hdmi-1x2-splitter.jpg",
   },
   {
-    title: "12V 1000W POWER INVERTER",
-    spec: "DC 12V TO AC 220V",
-    type: "MODIFIED SINE WAVE INVERTER",
-    img: "/12V-1000W-INVERTER.jpg",
+    title: "HDMI 1x4 SPLITTER",
+    spec: "1 Input to 4 Outputs, Full HD",
+    type: "HDMI DISTRIBUTOR",
+    img: "/hdmi-1x4-splitter.jpg",
   },
   {
-    title: "24V 1500W INVERTER",
-    spec: "DC 24V TO AC 220V",
-    type: "PURE SINE WAVE INVERTER",
-    img: "/24V-1500W-INVERTER.jpg",
+    title: "VGA 1x2 SPLITTER",
+    spec: "1 Input to 2 Outputs",
+    type: "VGA VIDEO SPLITTER",
+    img: "/vga-1x2-splitter.jpg",
   },
   {
-    title: "24V 2000W INVERTER",
-    spec: "DC 24V TO AC 220V",
-    type: "PURE SINE WAVE INVERTER",
-    img: "/24V-2000W-INVERTER.jpg",
+    title: "AUDIO 3.5MM SPLITTER",
+    spec: "1 Male to 2 Female",
+    type: "AUDIO SPLITTER",
+    img: "/3.5mm-splitter.jpg",
   },
   {
-    title: "SOLAR HYBRID INVERTER 3KW",
-    spec: "MPPT CONTROLLER BUILT-IN",
-    type: "SOLAR INVERTER",
-    img: "/3KW-SOLAR-INVERTER.jpg",
+    title: "HDMI AUDIO EXTRACTOR SPLITTER",
+    spec: "HDMI to HDMI + Optical + 3.5mm",
+    type: "AUDIO VIDEO SPLITTER",
+    img: "/hdmi-audio-splitter.jpg",
   },
   {
-    title: "SOLAR HYBRID INVERTER 5KW",
-    spec: "MPPT CONTROLLER BUILT-IN",
-    type: "SOLAR INVERTER",
-    img: "/5KW-SOLAR-INVERTER.jpg",
+    title: "DISPLAYPORT 1x2 SPLITTER",
+    spec: "4K Resolution Support",
+    type: "DISPLAY SPLITTER",
+    img: "/dp-1x2-splitter.jpg",
+  },
+  {
+    title: "USB HUB SPLITTER",
+    spec: "1 USB to 4 USB Ports",
+    type: "USB SPLITTER",
+    img: "/usb-hub-splitter.jpg",
+  },
+  {
+    title: "DVI 1x2 SPLITTER",
+    spec: "Digital Video Distribution",
+    type: "DVI SPLITTER",
+    img: "/dvi-1x2-splitter.jpg",
   },
 ];
 
-export default function InverterPage() {
+export default function SplitterPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -64,7 +76,7 @@ export default function InverterPage() {
       <section className="bg-gradient-to-r from-red-800 via-red-700 to-red-900">
         <div className="max-w-6xl mx-auto px-6 py-10 text-white">
           <h1 className="text-3xl sm:text-4xl font-bold">
-          INVERTERS
+            SPLITTERS
           </h1>
         </div>
       </section>
@@ -73,7 +85,7 @@ export default function InverterPage() {
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {inverters.map((item, index) => (
+            {splitters.map((item, index) => (
               <div
                 key={index}
                 className="border border-red-500 p-6 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
