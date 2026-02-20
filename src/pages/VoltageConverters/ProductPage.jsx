@@ -5,10 +5,10 @@ import EnquiryModal from "../../components/EnquiryModal";
 
 const voltageConverters = [
   {
-    title: "500W STEP-UP / STEP-DOWN CONVERTER",
-    spec: "110V ↔ 220V",
-    type: "VOLTAGE TRANSFORMER",
-    img: "/500W-CONVERTER.jpg",
+    title: "TERMINATOR TACC 90W",
+    spec: "UPTO 90W , 3PIN PLUG",
+    type: "220V ⇋ 110V VOLTAGE CONVERTER",
+    img: "/TERMINATOR TACC 90W.jpg",
   },
   {
     title: "1000W VOLTAGE CONVERTER",
