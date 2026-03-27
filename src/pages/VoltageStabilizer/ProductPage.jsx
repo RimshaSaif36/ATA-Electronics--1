@@ -6,52 +6,74 @@ import EnquiryModal from "../../components/EnquiryModal";
 
 const products = [
   {
-    title: "AC VOLTAGE STABILIZER",
-    size: "200×150×80MM (L×W×H)",
-    battery: "220V - 5KVA AUTOMATIC STABILIZER",
-    img: "/stabilizer1.jpg",
+    title: "TERMINATOR TVS 500W",
+    size: "MAXIMUM POWER LOAD : 500W",
+    battery: "AUTOMATIC VOLTAGE REGULATOR",
+    img: "/voltage.jpg",
   },
   {
-    title: "SERVO VOLTAGE STABILIZER",
-    size: "300×200×100MM (L×W×H)",
-    battery: "415V - 10KVA SERVO STABILIZER",
-    img: "/stabilizer2.jpg",
+    title: "TERMINATOR TVS 1000W",
+    size: "MAXIMUM POWER LOAD : 1000W",
+    battery: "AUTOMATIC VOLTAGE REGULATOR",
+    img: "/voltage1.jpg",
   },
   {
-    title: "DIGITAL VOLTAGE STABILIZER",
-    size: "180×120×60MM (L×W×H)",
-    battery: "220V - 2KVA DIGITAL STABILIZER",
-    img: "/stabilizer3.jpg",
+    title: "TERMINATOR TVS 1000W WM",
+    size: "MAXIMUM POWER LOAD : 1000W",
+    battery: "AUTOMATIC VOLTAGE REGULATOR",
+    img: "/v3.jpg",
   },
   {
-    title: "RELAY VOLTAGE STABILIZER",
-    size: "250×180×90MM (L×W×H)",
-    battery: "220V - 3KVA RELAY STABILIZER",
-    img: "/stabilizer4.jpg",
+    title: "TERMINATOR TVS 1500W",
+    size: "MAXIMUM POWER LOAD : 1500W",
+    battery: "AUTOMATIC VOLTAGE REGULATOR",
+    img: "/v4.jpg",
   },
   {
-    title: "SINGLE PHASE STABILIZER",
-    size: "220×160×85MM (L×W×H)",
-    battery: "220V - 1KVA SINGLE PHASE",
-    img: "/stabilizer1.jpg",
+    title: "TERMINATOR TVS 2000W",
+    size: "MAXIMUM POWER LOAD : 2000W",
+    battery: "AUTOMATIC VOLTAGE REGULATOR",
+    img: "/v5.jpg",
   },
   {
-    title: "THREE PHASE STABILIZER",
-    size: "400×300×150MM (L×W×H)",
-    battery: "415V - 25KVA THREE PHASE",
-    img: "/stabilizer2.jpg",
+    title: "TERMINATOR TVS 2000W WM",
+    size: "MAXIMUM POWER LOAD : 1000W",
+    battery: "AUTOMATIC VOLTAGE REGULATOR",
+    img: "/v6.jpg",
   },
   {
-    title: "OIL COOLED STABILIZER",
-    size: "500×350×200MM (L×W×H)",
-    battery: "415V - 50KVA OIL COOLED",
-    img: "/stabilizer3.jpg",
+    title: "TERMINATOR TVS 3000W",
+    size: "MAXIMUM POWER LOAD : 3000W",
+    battery: "AUTOMATIC VOLTAGE REGULATOR",
+    img: "/v7.jpg",
   },
   {
-    title: "MAINLINE STABILIZER",
-    size: "350×250×120MM (L×W×H)",
-    battery: "220V - 5KVA MAINLINE STABILIZER",
-    img: "/stabilizer4.jpg",
+    title: "TERMINATOR TVS 5000W",
+    size: "MAXIMUM POWER LOAD : 5000W",
+    battery: "TERMINATOR TVS 5000W",
+    img: "/v8.jpg",
+  },
+  {
+    title: "ANDELI SVC-D500VA",
+    size: "COLOR : GRAY",
+    battery: "500W VOLTAGE STABILIZER",
+    img: "/v9.jpg",
+  },{
+    title: "ANDELI SVC-1500VA",
+    size: "COLOR : GRAY",
+    battery: "1500W VOLTAGE STABILIZER",
+    img: "/v10.jpg",
+  },{
+    title: "ANDELI SVC-D3000VA",
+    size: "COLOR : GREY",
+    battery: "3000W VOLTAGE STABILIZER",
+    img: "/v11.jpg",
+  },
+  {
+    title: "TERMINATOR TVS 10000W",
+    size: "MAXIMUM POWER LOAD : 10,000W",
+    battery: "AUTOMATIC VOLTAGE REGULATOR",
+    img: "/v12.jpg",
   },
 ];
 
@@ -121,7 +143,7 @@ function ProductCard({ title, size, battery, img, onEnquiry }) {
       />
       <h3 className="font-bold text-sm mb-2 uppercase">{title}</h3>
       <p className="text-xs mb-1">
-        <span className="font-semibold">DIMENSION :</span> {size}
+        <span className="font-semibold"></span> {size}
       </p>
       <p className="text-xs font-semibold text-red-600 mb-4">
         {battery}
