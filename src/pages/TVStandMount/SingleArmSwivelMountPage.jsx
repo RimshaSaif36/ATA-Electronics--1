@@ -34,17 +34,17 @@ const products = [
     spec: "VESA SIZE 400X400 - 20'' TO 60'' - 40KG",
     type: "FULL MOTION SWIVEL MOUNT",
     img: "/ss5.jpg",
-  },{
+  }, {
     title: "SKILL TECH SH 43P",
     spec: "VESA SIZE 400X400 - 20'' TO 55'' - 30KG",
     type: "FULL MOTION SWIVEL MOUNT",
     img: "/ss6.jpg",
-  },{
+  }, {
     title: "NB P4",
     spec: "VESA SIZE 400X400 - 32 TO 55 - 27KG",
     type: "FULL MOTION SWIVEL MOUNT",
     img: "/ss7.jpg",
-  },{
+  }, {
     title: "TERMINATOR TTWM 3255S",
     spec: "VESA SIZE 400X400 - 32'' TO 55'' - 35KG",
     type: "FULL MOTION SWIVEL MOUNT",
@@ -131,4 +131,3 @@ export default function SingleArmSwivelMountPage() {
     </>
   );
 }
-                                      

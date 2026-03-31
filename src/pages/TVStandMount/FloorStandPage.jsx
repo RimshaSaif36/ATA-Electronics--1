@@ -34,17 +34,17 @@ const floorStands = [
     spec: "60\" - 85\" 80KG MAX HEIGHT : 1470MM",
     type: "HEAVY DUTY TV TROLLEY STAND",
     img: "/f5.jpg",
-  },{
+  }, {
     title: "DG TECH DG 110B FS",
     spec: "42\" - 86\" 80KG MAX HEIGHT : 1470MM",
     type: "HEAVY DUTY TV TROLLEY STAND",
     img: "/f6.jpg",
-  },{
+  }, {
     title: "SKILL TECH SH 666TB",
     spec: "60\" - 100\" 100KG MAX HEIGHT : 1660MM",
     type: "HEAVY DUTY TV TROLLEY STAND",
     img: "/f7.jpg",
-  },{
+  }, {
     title: "SKILL TECH SH 400 FS",
     spec: "32\" - 70\" 40KG MAX HEIGHT : 1800MM",
     type: "PREMIUM TV TROLLEY STAND",
@@ -55,17 +55,17 @@ const floorStands = [
     spec: "65\"- 85\" 60KG MAX HEIGHT : 1445MM",
     type: "STEEL STUDIO FLOOR STAND",
     img: "/f9.jpg",
-  },{
+  }, {
     title: "SKILL TECH SH 17FS",
     spec: "VESA : 400X400 - 32\" - 65\" - 40KG",
     type: "FIXED TV FLOOR STAND",
     img: "/f10.jpg",
-  },{
+  }, {
     title: "SKILL TECH SH 223FS",
     spec: "23\" - 50\" 40KG MAX HEIGHT : 1294MM",
     type: "TABLE TYPE TV STAND",
     img: "/f11.jpg",
-  },{
+  }, {
     title: "SKILL TECH SH 224FS",
     spec: "23\" - 50\" 40KG MAX HEIGHT : 1394MM",
     type: "TABLE TYPE TV STAND",

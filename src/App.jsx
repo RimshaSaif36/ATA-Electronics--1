@@ -104,9 +104,9 @@ function App() {
         <Route path="/relays" element={<RelaysPage />} />
         <Route path="/tools" element={<ToolsPage />} />
         <Route path="/soldering-tools" element={<SolderingToolsPage />} />
-        
+
         <Route path="/battery/lead-acid-battery" element={<LeadAcidBatteryPage />} />
-         <Route path="/battery/lithium-battery" element={<LithiumBatteries />} />
+        <Route path="/battery/lithium-battery" element={<LithiumBatteries />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/battery/lithium-ion-battery" element={<LithiumIonBatteryPage />} />
         <Route path="/battery/rechargeable-battery" element={<RechargeableBatteryPage />} />
@@ -126,7 +126,7 @@ function App() {
         <Route path="/cable-converter" element={<CableConverterPage />} />
         <Route path="/audio-video-converter" element={<AudioVideoConverterPage />} />
         <Route path="/splitter" element={<SplitterPage />} />
-         </Routes>
+      </Routes>
     </Router>
   );
 }
