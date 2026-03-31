@@ -4,31 +4,12 @@ import Header from "../../components/mainnavbar";
 import EnquiryModal from "../../components/EnquiryModal";
 
 const products = [
-  {
-    title: "Adapter",
-    img: "/Adapter.jpg",
-  },
-  {
-    title: "Laptop Type",
-    img: "/LaptopType.jpg",
-  },
-  {
-    title: "SMPS",
-    img: "/SMPS.jpg",
-  },
-  {
-    title: "Mean Well",
-    img: "/MeanWell.jpg",
-  },
-  {
-    title: "Multi Adapter",
-    img: "/MultiAdapter1.jpg",
-  },
-  {
-    title: "Charging station",
-    img: "/Chargingstation.jpg",
-  },
-  
+  { title: "Adapter", img: "/Adapter.jpg", link: "/power-supplies/adapter" },
+  { title: "Laptop Type", img: "/LaptopType.jpg", link: "/power-supplies/laptop-type" },
+  { title: "SMPS", img: "/SMPS.jpg", link: "/power-supplies/smps" },
+  { title: "Mean Well", img: "/MeanWell.jpg", link: "/power-supplies/mean-well" },
+  { title: "Multi Adapter", img: "/MultiAdapter1.jpg", link: "/power-supplies/multi-adapter" },
+  { title: "Charging station", img: "/Chargingstation.jpg", link: "/power-supplies/charging-station" },
 ];
 
 export default function PowerSuppliersPage() {
@@ -91,12 +72,21 @@ export default function PowerSuppliersPage() {
                   {item.title}
                 </h3>
 
-                <button
-                  onClick={() => openModal(item)}
-                  className="inline-flex items-center justify-center rounded-full bg-red-600 text-white text-xs font-semibold px-5 py-2 hover:bg-red-700 transition"
-                >
-                  View More
-                </button>
+                {item.link ? (
+                  <Link
+                    to={item.link}
+                    className="inline-flex items-center justify-center rounded-full bg-red-600 text-white text-xs font-semibold px-5 py-2 hover:bg-red-700 transition"
+                  >
+                    View More
+                  </Link>
+                ) : (
+                  <button
+                    onClick={() => openModal(item)}
+                    className="inline-flex items-center justify-center rounded-full bg-red-600 text-white text-xs font-semibold px-5 py-2 hover:bg-red-700 transition"
+                  >
+                    View More
+                  </button>
+                )}
               </div>
             ))}
           </div>

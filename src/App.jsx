@@ -14,11 +14,22 @@ import SoundProduct from "./pages/SoundSystems/ProductPage";
 import ElectronicProducts from "./pages/MicroElectronics/ProductPage";
 import InverterPage from "./pages/Inverter/ProductPage";
 import TVStandMountPage from "./pages/TVStandMount/ProductPage";
+import FloorStandPage from "./pages/TVStandMount/FloorStandPage";
+import SingleArmSwivelMountPage from "./pages/TVStandMount/SingleArmSwivelMountPage";
+import DualArmSwivelMountPage from "./pages/TVStandMount/DualArmSwivelMountPage";
+import VideoWallStandPage from "./pages/TVStandMount/VideoWallStandPage";
+import FixedMountPage from "./pages/TVStandMount/FixedMountPage";
+import CeilingMountPage from "./pages/TVStandMount/CeilingMountPage";
+import TableStandTVPage from "./pages/TVStandMount/TableStandPage";
+import DVDStandPage from "./pages/TVStandMount/DVDStandPage";
 import VoltageStabilizerPage from "./pages/VoltageStabilizer/ProductPage";
 import CablesPage from "./pages/Cables/ProductPage";
+import CableDetailPage from "./pages/Cables/CableDetailPage";
 import SpeakerPage from "./pages/Speaker/ProductPage";
 import ConnectorsPage from "./pages/Connectors/ProductPage";
+import ConnectorDetailPage from "./pages/Connectors/ConnectorDetailPage";
 import PowerSuppliersPage from "./pages/PowerSuppliers/ProductPage";
+import PowerSupplyDetailPage from "./pages/PowerSuppliers/PowerSupplyDetailPage";
 import RemotePage from "./pages/Remote/ProductPage";
 import SchoolProjectPage from "./pages/SchoolProject/ProductPage";
 import MicrophonePage from "./pages/Microphone/ProductPage";
@@ -65,13 +76,24 @@ function App() {
         <Route path="/inverter" element={<InverterPage />} />
         <Route path="/voltage-stabilizer" element={<VoltageStabilizerPage />} />
         <Route path="/cables" element={<CablesPage />} />
+        <Route path="/cables/:slug" element={<CableDetailPage />} />
         <Route path="/speaker" element={<SpeakerPage />} />
         <Route path="/sound" element={<SoundProduct />} />
         <Route path="/micro-electronics" element={<ElectronicProducts />} />
         <Route path="/support" element={<SupportPage />} />
         <Route path="/tv-stand-mount" element={<TVStandMountPage />} />
+        <Route path="/tv-stand-mount/floor-stand" element={<FloorStandPage />} />
+        <Route path="/tv-stand-mount/single-arm-swivel-mount" element={<SingleArmSwivelMountPage />} />
+        <Route path="/tv-stand-mount/dual-arm-swivel-mount" element={<DualArmSwivelMountPage />} />
+        <Route path="/tv-stand-mount/video-wall-stand" element={<VideoWallStandPage />} />
+        <Route path="/tv-stand-mount/fixed-mount" element={<FixedMountPage />} />
+        <Route path="/tv-stand-mount/ceiling-mount" element={<CeilingMountPage />} />
+        <Route path="/tv-stand-mount/table-stand" element={<TableStandTVPage />} />
+        <Route path="/tv-stand-mount/dvd-stand" element={<DVDStandPage />} />
         <Route path="/connectors" element={<ConnectorsPage />} />
+        <Route path="/connectors/:slug" element={<ConnectorDetailPage />} />
         <Route path="/power-supplies" element={<PowerSuppliersPage />} />
+        <Route path="/power-supplies/:slug" element={<PowerSupplyDetailPage />} />
         <Route path="/remote" element={<RemotePage />} />
         <Route path="/school-projects" element={<SchoolProjectPage />} />
         <Route path="/microphone" element={<MicrophonePage />} />

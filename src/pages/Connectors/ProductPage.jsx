@@ -4,38 +4,14 @@ import Header from "../../components/mainnavbar";
 import EnquiryModal from "../../components/EnquiryModal";
 
 const products = [
-  {
-    title: "XLR Connectors",
-    img: "/XLRConnectors.jpg",
-  },
-  {
-    title: "Microphone Jack",
-    img: "/MicrophoneJack.jpg",
-  },
-  {
-    title: "POWERCON",
-    img: "/POWERCON.jpg",
-  },
-  {
-    title: "Terminal Block",
-    img: "/TerminalBlock.jpg",
-  },
-  {
-    title: "Network Connectors",
-    img: "/NetworkConnectors.jpg",
-  },
-  {
-    title: "F Connectors",
-    img: "/FConnectors.jpg",
-  },
-  {
-    title: "Telephone Connectors",
-    img: "/TelephoneConnectors.jpg",
-  },
-  {
-    title: "IEC Connectors",
-    img: "/IECConnectors.jpg",
-  },
+  { title: "XLR Connectors", img: "/XLRConnectors.jpg", link: "/connectors/xlr-connectors" },
+  { title: "Microphone Jack", img: "/MicrophoneJack.jpg", link: "/connectors/microphone-jack" },
+  { title: "POWERCON", img: "/POWERCON.jpg", link: "/connectors/powercon" },
+  { title: "Terminal Block", img: "/TerminalBlock.jpg", link: "/connectors/terminal-block" },
+  { title: "Network Connectors", img: "/NetworkConnectors.jpg", link: "/connectors/network-connectors" },
+  { title: "F Connectors", img: "/FConnectors.jpg", link: "/connectors/f-connectors" },
+  { title: "Telephone Connectors", img: "/TelephoneConnectors.jpg", link: "/connectors/telephone-connectors" },
+  { title: "IEC Connectors", img: "/IECConnectors.jpg", link: "/connectors/iec-connectors" },
 ];
 
 export default function ConnectorsPage() {
@@ -98,12 +74,21 @@ export default function ConnectorsPage() {
                   {item.title}
                 </h3>
 
-                <button
-                  onClick={() => openModal(item)}
-                  className="inline-flex items-center justify-center rounded-full bg-red-600 text-white text-xs font-semibold px-5 py-2 hover:bg-red-700 transition"
-                >
-                  View More
-                </button>
+                {item.link ? (
+                  <Link
+                    to={item.link}
+                    className="inline-flex items-center justify-center rounded-full bg-red-600 text-white text-xs font-semibold px-5 py-2 hover:bg-red-700 transition"
+                  >
+                    View More
+                  </Link>
+                ) : (
+                  <button
+                    onClick={() => openModal(item)}
+                    className="inline-flex items-center justify-center rounded-full bg-red-600 text-white text-xs font-semibold px-5 py-2 hover:bg-red-700 transition"
+                  >
+                    View More
+                  </button>
+                )}
               </div>
             ))}
           </div>

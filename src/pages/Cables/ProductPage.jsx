@@ -4,66 +4,21 @@ import Header from "../../components/mainnavbar";
 import EnquiryModal from "../../components/EnquiryModal";
 
 const products = [
-  {
-    title: "HDMI Cables",
-    img: "/HDMICables.jpg",
-  },
-  {
-    title: "Display Port Cables",
-    img: "/DisplayPortCables.jpg",
-  },
-  {
-    title: "USB Cables",
-    img: "/USBCables.jpg",
-  },
-  {
-    title: "Network Cables",
-    img: "/NetworkCables.jpg",
-  },
-  {
-    title: "Audio Cables",
-    img: "/AudioCables.jpg",
-  },
-  {
-    title: "VGA Cables",
-    img: "/VGACables.jpg",
-  },
-  {
-    title: "Optical Cables",
-    img: "/OpticalCables.jpg",
-  },
-  {
-    title: "Printer Cables",
-    img: "/PrinterCables.jpg",
-  },
-   {
-    title: "Aux Cables",
-    img: "/AuxCables.jpg",
-  },
-  {
-    title: "Coaxial Cables",
-    img: "/CoaxialCables.jpg",
-  },
-  {
-    title: "Telephone Cables",
-    img: "/TelephoneCables.jpg",
-  },
-   {
-    title: "Speaker Cables",
-    img: "/SpeakerCables.jpg",
-  },
-  {
-    title: "Power Cables",
-    img: "/PowerCables.jpg",
-  },
-  {
-    title: "AV Cables",
-    img: "/AVCables.jpg",
-  },
-   {
-    title: "FIBER PATCHCORDS",
-    img: "/FIBERPATCHCORDS.jpg",
-  },
+  { title: "HDMI Cables", img: "/HDMICables.jpg", link: "/cables/hdmi-cables" },
+  { title: "Display Port Cables", img: "/DisplayPortCables.jpg", link: "/cables/display-port-cables" },
+  { title: "USB Cables", img: "/USBCables.jpg", link: "/cables/usb-cables" },
+  { title: "Network Cables", img: "/NetworkCables.jpg", link: "/cables/network-cables" },
+  { title: "Audio Cables", img: "/AudioCables.jpg", link: "/cables/audio-cables" },
+  { title: "VGA Cables", img: "/VGACables.jpg", link: "/cables/vga-cables" },
+  { title: "Optical Cables", img: "/OpticalCables.jpg", link: "/cables/optical-cables" },
+  { title: "Printer Cables", img: "/PrinterCables.jpg", link: "/cables/printer-cables" },
+  { title: "Aux Cables", img: "/AuxCables.jpg", link: "/cables/aux-cables" },
+  { title: "Coaxial Cables", img: "/CoaxialCables.jpg", link: "/cables/coaxial-cables" },
+  { title: "Telephone Cables", img: "/TelephoneCables.jpg", link: "/cables/telephone-cables" },
+  { title: "Speaker Cables", img: "/SpeakerCables.jpg", link: "/cables/speaker-cables" },
+  { title: "Power Cables", img: "/PowerCables.jpg", link: "/cables/power-cables" },
+  { title: "AV Cables", img: "/AVCables.jpg", link: "/cables/av-cables" },
+  { title: "FIBER PATCHCORDS", img: "/FIBERPATCHCORDS.jpg", link: "/cables/fiber-patchcords" },
 ];
 
 export default function CablesPage() {
@@ -126,12 +81,21 @@ export default function CablesPage() {
                   {item.title}
                 </h3>
 
-                <button
-                  onClick={() => openModal(item)}
-                  className="inline-flex items-center justify-center rounded-full bg-red-600 text-white text-xs font-semibold px-5 py-2 hover:bg-red-700 transition"
-                >
-                  View More
-                </button>
+                {item.link ? (
+                  <Link
+                    to={item.link}
+                    className="inline-flex items-center justify-center rounded-full bg-red-600 text-white text-xs font-semibold px-5 py-2 hover:bg-red-700 transition"
+                  >
+                    View More
+                  </Link>
+                ) : (
+                  <button
+                    onClick={() => openModal(item)}
+                    className="inline-flex items-center justify-center rounded-full bg-red-600 text-white text-xs font-semibold px-5 py-2 hover:bg-red-700 transition"
+                  >
+                    View More
+                  </button>
+                )}
               </div>
             ))}
           </div>

@@ -7,34 +7,42 @@ const products = [
   {
     title: "Floor Stand",
     img: "/FloorStand.jpg",
+    link: "/tv-stand-mount/floor-stand",
   },
   {
     title: "Single Arm Swivel Mount",
     img: "/SingleArmSwivelMount.jpg",
+    link: "/tv-stand-mount/single-arm-swivel-mount",
   },
   {
     title: "Dual Arm Swivel Mount",
     img: "/DualArmSwivelMount.jpg",
+    link: "/tv-stand-mount/dual-arm-swivel-mount",
   },
   {
     title: "Video Wall Stand",
     img: "/VideoWallStand.jpg",
+    link: "/tv-stand-mount/video-wall-stand",
   },
   {
     title: "Fixed Mount",
     img: "/FixedMount.jpg",
+    link: "/tv-stand-mount/fixed-mount",
   },
   {
     title: "Ceiling Mount",
     img: "/CeilingMount.jpg",
+    link: "/tv-stand-mount/ceiling-mount",
   },
   {
     title: "Table Stand",
     img: "/TableStand.jpg",
+    link: "/tv-stand-mount/table-stand",
   },
   {
     title: "DVD Stand",
     img: "/DVDStand.jpg",
+    link: "/tv-stand-mount/dvd-stand",
   },
 ];
 
@@ -98,12 +106,21 @@ export default function TVStandMountPage() {
                   {item.title}
                 </h3>
 
-                <button
-                  onClick={() => openModal(item)}
-                  className="inline-flex items-center justify-center rounded-full bg-red-600 text-white text-xs font-semibold px-5 py-2 hover:bg-red-700 transition"
-                >
-                  View More
-                </button>
+                {item.link ? (
+                  <Link
+                    to={item.link}
+                    className="inline-flex items-center justify-center rounded-full bg-red-600 text-white text-xs font-semibold px-5 py-2 hover:bg-red-700 transition"
+                  >
+                    View More
+                  </Link>
+                ) : (
+                  <button
+                    onClick={() => openModal(item)}
+                    className="inline-flex items-center justify-center rounded-full bg-red-600 text-white text-xs font-semibold px-5 py-2 hover:bg-red-700 transition"
+                  >
+                    View More
+                  </button>
+                )}
               </div>
             ))}
           </div>
