@@ -6,29 +6,18 @@ import EnquiryModal from "../../components/EnquiryModal";
 
 const products = [
   {
-    title: "VIDEO WALL STAND",
-    spec: "Supports 2x2 Video Wall Configuration",
-    type: "VIDEO WALL STAND",
-    img: "/VideoWallStand.jpg",
+    title: "SKILL TECH SVW02-46T",
+    spec: "VESA SIZE 600X400 - 37'' TO 70'' - 45KG",
+    type: "POP OUT VIDEO WALL MOUNT",
+    img: "/vi1.jpg",
   },
   {
-    title: "VIDEO WALL STAND 3X3",
-    spec: "Supports 3x3 Video Wall Configuration",
-    type: "VIDEO WALL STAND",
-    img: "/VideoWallStand.jpg",
+    title: "SKILL TECH 64AF",
+    spec: "VESA SIZE 400X600 - 37'' TO 75'' - 75KG",
+    type: "PORTRAIT FIXED VIDEO WALL MOUNT",
+    img: "/vi2.jpg",
   },
-  {
-    title: "SLIM VIDEO WALL MOUNT",
-    spec: "Ultra Thin Profile, Easy Installation",
-    type: "SLIM VIDEO WALL MOUNT",
-    img: "/VideoWallStand.jpg",
-  },
-  {
-    title: "ADJUSTABLE VIDEO WALL STAND",
-    spec: "Height & Angle Adjustable",
-    type: "ADJUSTABLE VIDEO WALL STAND",
-    img: "/VideoWallStand.jpg",
-  },
+
 ];
 
 export default function VideoWallStandPage() {

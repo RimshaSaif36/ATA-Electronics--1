@@ -41,14 +41,44 @@ const products = [
     img: "/ss6.jpg",
   }, {
     title: "NB P4",
-    spec: "VESA SIZE 400X400 - 32 TO 55 - 27KG",
+    spec: "VESA SIZE 400X400 - 32\" TO 55\" - 27KG",
     type: "FULL MOTION SWIVEL MOUNT",
     img: "/ss7.jpg",
   }, {
-    title: "TERMINATOR TTWM 3255S",
-    spec: "VESA SIZE 400X400 - 32'' TO 55'' - 35KG",
+    title: "GULF STAR GS 806-2",
+    spec: "VESA SIZE 400X400 - 17\" TO 46\" - 35KG",
     type: "FULL MOTION SWIVEL MOUNT",
     img: "/ss8.jpg",
+  },
+  {
+    title: "GULF STAR GS 806-1",
+    spec: "VESA SIZE 200X200 - 14\" TO 42\" - 30KG",
+    type: "FULL MOTION SWIVEL MOUNT",
+    img: "/ss9.jpg",
+  },
+  {
+    title: "SKILL TECH SH 34P",
+    spec: "VESA SIZE 200X200 - 14\" TO 43\" - 35KG",
+    type: "FULL MOTION SWIVEL MOUNT",
+    img: "/ss10.jpg",
+  },
+  {
+    title: "DG TECH DG 1010P",
+    spec: "VESA SIZE 100X100 - 10\" TO 32\" - 25KG",
+    type: "SMALL SCREEN SWIVEL MOUNT",
+    img: "/ss11.jpg",
+  },
+  {
+    title: "SKILL TECH SH 21P",
+    spec: "VESA SIZE 100X100 - 10\" TO 26\" - 20KG",
+    type: "SMALL SCREEN SWIVEL MOUNT",
+    img: "/ss12.jpg",
+  },
+  {
+    title: "SKILL TECH SH 10P",
+    spec: "VESA SIZE 100X100 - 10\" TO 26\" - 10KG",
+    type: "SMALL SCREEN SWIVEL MOUNT",
+    img: "/ss13.jpg",
   },
 ];
 

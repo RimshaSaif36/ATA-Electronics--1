@@ -6,29 +6,108 @@ import EnquiryModal from "../../components/EnquiryModal";
 
 const products = [
   {
-    title: "FIXED WALL MOUNT",
-    spec: "Fits 26 - 55 inch TVs, Ultra Slim",
-    type: "FIXED WALL MOUNT",
-    img: "/FixedMount.jpg",
+    title: "NEOSTAR PLB-43a",
+    spec: "VESA SIZE 810X410 / 37'' TO 70''",
+    type: "FIXED TILTING MOUNT FOR LCD/LED/OLED TV",
+    img: "/ff1.jpg",
   },
   {
-    title: "FIXED MOUNT LOW PROFILE",
-    spec: "Fits 32 - 65 inch TVs, 1 inch from Wall",
-    type: "LOW PROFILE FIXED MOUNT",
-    img: "/FixedMount.jpg",
+    title: "NEOSTAR LP38-46T",
+    spec: "VESA SIZE 640Ã—404 / 37",
+    type: "FIXED TILTING MOUNT FOR LCD/LED/OLED TV",
+    img: "/ff2.jpg",
   },
   {
-    title: "HEAVY DUTY FIXED MOUNT",
-    spec: "Fits 40 - 86 inch TVs, Steel Construction",
-    type: "HEAVY DUTY FIXED MOUNT",
-    img: "/FixedMount.jpg",
+    title: "STAR TRACK LCD-905SF",
+    spec: "VESA SIZE 400Ã—400 / 23",
+    type: "FIXED MOUNT FOR LCD/LED/OLED TV",
+    img: "/ff3.jpg",
   },
   {
-    title: "UNIVERSAL FIXED MOUNT",
-    spec: "Fits Most 32 - 75 inch TVs",
-    type: "UNIVERSAL FIXED MOUNT",
-    img: "/FixedMount.jpg",
+    title: "STAR TRACK LCD-905MF",
+    spec: "VESA SIZE 600Ã—400 / 32",
+    type: "FIXED MOUNT FOR LCD/LED/OLED TV",
+    img: "/ff4.jpg",
   },
+
+  {
+    title: "STAR TRACK LCD-06ST",
+    spec: "VESA SIZE 400X300 / 23'' TO 47''",
+    type: "FIXED TILTING MOUNT FOR LCD/LED/OLED TV",
+    img: "/ff5.jpg",
+  },
+  {
+    title: "GULF STAR GS 10F",
+    spec: "VESA SIZE 700X450 / 32'' to 65",
+    type: "FIXED MOUNT FOR LCD/LED/OLED TV",
+    img: "/ff6.jpg",
+  },
+  {
+    title: "GULF STAR GS 10-46F",
+    spec: "VESA SIZE 600Ã—400 / 37",
+    type: "FIXED MOUNT FOR LCD/LED/OLED TV",
+    img: "/ff7.jpg",
+  },
+  {
+    title: "SKILL TECH SH 4040P",
+    spec: "VESA SIZE 400Ã—400 / 26",
+    type: "FIXED MOUNT FOR LCD/LED/OLED TV",
+    img: "/ff8.jpg",
+  },
+  {
+    title: "SKILL TECH SH 129T",
+    spec: "VESA SIZE 1200Ã—900 / 60",
+    type: "FIXED MOUNT FOR LCD/LED/OLED TV",
+    img: "/ff9.jpg",
+  },
+   {
+    title: "SKILL TECH SH 85F",
+    spec: "VESA SIZE 800Ã—600 / 46",
+    type: "FIXED MOUNT FOR LCD/LED/OLED TV",
+    img: "/ff10.jpg",
+  },
+    {
+    title: "SKILL TECH SH 65F",
+    spec: "VESA SIZE 600Ã—400 / 32",
+    type: "FIXED MOUNT FOR LCD/LED/OLED TV",
+    img: "/ff11.jpg",
+  },
+  {
+    title: "SKILL TECH SH 42F",
+    spec: "VESA SIZE 340Ã—280 / 15",
+    type: "FIXED MOUNT FOR LCD/LED/OLED TV",
+    img: "/ff12.jpg",
+  },
+  {
+    title: "SKILL TECH SH 41F",
+    spec: "VESA SIZE 300Ã—300 / 22",
+    type: "FIXED MOUNT FOR LCD/LED/OLED TV",
+    img: "/ff13.jpg",
+  },
+  {
+    title: "SKILL TECH SH 43F",
+    spec: "VESA SIZE 400Ã—400 / 23",
+    type: "FIXED MOUNT FOR LCD/LED/OLED TV",
+    img: "/ff14.jpg",
+  },
+  {
+    title: "SKILL TECH SH 42T",
+    spec: "VESA SIZE 300Ã—300 / 15",
+    type: "FIXED TILTING MOUNT FOR LCD/LED/OLED TV",
+    img: "/ff15.jpg",
+  },
+   {
+    title: "SKILL TECH SH 63T",
+    spec: "VESA SIZE 760Ã—500 / 32",
+    type: "FIXED TILTING MOUNT FOR LCD/LED/OLED TV",
+    img: "/ff16.jpg",
+  }, {
+    title: "SKILL TECH SH 10T",
+    spec: "VESA SIZE 100X100 ,13'' TO 30'', 15KG",
+    type: "SMALL TV , MONITOR STAND",
+    img: "/ff17.jpg",
+  },
+
 ];
 
 export default function FixedMountPage() {

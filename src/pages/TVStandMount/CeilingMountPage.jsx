@@ -6,22 +6,22 @@ import EnquiryModal from "../../components/EnquiryModal";
 
 const products = [
   {
-    title: "CEILING MOUNT",
-    spec: "Fits 32 - 65 inch TVs, 360° Rotation",
-    type: "CEILING MOUNT",
-    img: "/CeilingMount.jpg",
+    title: "SKILL TECH SH 22C",
+    spec: "HEIGHT : 745~1120MM , 200X200 , 25KG",
+    type: "TV CEILING MOUNT (17\" TO 42\")",
+    img: "/c1.jpg",
   },
   {
-    title: "DROP DOWN CEILING MOUNT",
-    spec: "Fits 32 - 70 inch TVs, Adjustable Drop",
-    type: "DROP DOWN CEILING MOUNT",
-    img: "/CeilingMount.jpg",
+    title: "SKILL TECH SH 44C",
+    spec: "HEIGHT : 970~1470MM , 600X400 , 50KG",
+    type: "TV CEILING MOUNT (26\" TO 75\")",
+    img: "/c2.jpg",
   },
   {
-    title: "HEAVY DUTY CEILING MOUNT",
-    spec: "Fits 40 - 86 inch TVs, Extra Strong",
-    type: "HEAVY DUTY CEILING MOUNT",
-    img: "/CeilingMount.jpg",
+    title: "SKILL TECH SH 32C",
+    spec: "HEIGHT : 1050~1560MM , 200X200 , 25KG",
+    type: "TV CEILING MOUNT (17\" TO 42\")",
+    img: "/c3.jpg",
   },
   {
     title: "TILT CEILING MOUNT",
